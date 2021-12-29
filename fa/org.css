@@ -1,0 +1,192 @@
+/* Font Awesome uses the Unicode Private Use Area (PUA) to ensure screen
+readers do not read off random characters that represent icons */
+
+.fa-alipay:before {
+  content: "\f642";
+}
+.fa-amazon:before {
+  content: "\f270";
+}
+.fa-amazon-pay:before {
+  content: "\f42c";
+}
+.fa-android:before {
+  content: "\f17b";
+}
+.fa-app-store:before {
+  content: "\f36f";
+}
+.fa-app-store-ios:before {
+  content: "\f370";
+}
+.fa-apple:before {
+  content: "\f179";
+}
+.fa-apple-alt:before {
+  content: "\f5d1";
+}
+.fa-apple-pay:before {
+  content: "\f415";
+}
+.fa-aws:before {
+  content: "\f375";
+}
+.fa-bitcoin:before {
+  content: "\f379";
+}
+.fa-ethereum:before {
+  content: "\f42e";
+}
+.fa-facebook:before {
+  content: "\f09a";
+}
+.fa-facebook-f:before {
+  content: "\f39e";
+}
+.fa-facebook-messenger:before {
+  content: "\f39f";
+}
+.fa-facebook-square:before {
+  content: "\f082";
+}
+.fa-figma:before {
+  content: "\f799";
+}
+.fa-git:before {
+  content: "\f1d3";
+}
+.fa-git-alt:before {
+  content: "\f841";
+}
+.fa-git-square:before {
+  content: "\f1d2";
+}
+.fa-github:before {
+  content: "\f09b";
+}
+.fa-github-alt:before {
+  content: "\f113";
+}
+.fa-github-square:before {
+  content: "\f092";
+}
+.fa-google:before {
+  content: "\f1a0";
+}
+.fa-google-drive:before {
+  content: "\f3aa";
+}
+.fa-google-pay:before {
+  content: "\e079";
+}
+.fa-google-play:before {
+  content: "\f3ab";
+}
+.fa-google-plus:before {
+  content: "\f2b3";
+}
+.fa-google-plus-g:before {
+  content: "\f0d5";
+}
+.fa-google-plus-square:before {
+  content: "\f0d4";
+}
+.fa-google-wallet:before {
+  content: "\f1ee";
+}
+.fa-imdb:before {
+  content: "\f2d8";
+}
+.fa-instagram:before {
+  content: "\f16d";
+}
+.fa-instagram-square:before {
+  content: "\e055";
+}
+.fa-itunes:before {
+  content: "\f3b4";
+}
+.fa-itunes-note:before {
+  content: "\f3b5";
+}
+.fa-linkedin:before {
+  content: "\f08c";
+}
+.fa-linkedin-in:before {
+  content: "\f0e1";
+}
+.fa-linux:before {
+  content: "\f17c";
+}
+.fa-microsoft:before {
+  content: "\f3ca";
+}
+.fa-rss:before {
+  content: "\f09e";
+}
+.fa-rss-square:before {
+  content: "\f143";
+}
+.fa-skype:before {
+  content: "\f17e";
+}
+.fa-slack:before {
+  content: "\f198";
+}
+.fa-slack-hash:before {
+  content: "\f3ef";
+}
+.fa-snapchat:before {
+  content: "\f2ab";
+}
+.fa-snapchat-ghost:before {
+  content: "\f2ac";
+}
+.fa-snapchat-square:before {
+  content: "\f2ad";
+}
+.fa-telegram:before {
+  content: "\f2c6";
+}
+.fa-telegram-plane:before {
+  content: "\f3fe";
+}
+.fa-tiktok:before {
+  content: "\e07b";
+}
+.fa-twitter:before {
+  content: "\f099";
+}
+.fa-twitter-square:before {
+  content: "\f081";
+}
+.fa-whatsapp:before {
+  content: "\f232";
+}
+.fa-whatsapp-square:before {
+  content: "\f40c";
+}
+.fa-whmcs:before {
+  content: "\f40d";
+}
+.fa-wikipedia-w:before {
+  content: "\f266";
+}
+.fa-windows:before {
+  content: "\f17a";
+}
+.fa-wordpress:before {
+  content: "\f19a";
+}
+.fa-wordpress-simple:before {
+  content: "\f411";
+}
+.fa-yahoo:before {
+  content: "\f19e";
+}
+.fa-youtube:before {
+  content: "\f167";
+}
+.fa-youtube-square:before {
+  content: "\f431";
+}
