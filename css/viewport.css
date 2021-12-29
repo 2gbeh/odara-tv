@@ -1,0 +1,68 @@
+@charset "utf-8";
+/* CSS Document */
+@media only screen and (max-width: 1366px) {
+}
+
+@media only screen and (max-width: 1024px) {
+  header .center form input {
+    width: 75%;
+  }
+  main {
+    margin: 80px 0 20px;
+  }
+  main .card article {
+    min-height: auto;
+  }  
+}
+
+@media only screen and (max-width: 683px) {
+  .sabb {
+    display: none;
+  }
+  .fabb {
+    bottom: 20px;
+    right: 20px;
+  }
+  .fabb a {
+    width: 55px;
+    height: 55px;
+  }
+  .fabb i {
+    font-size: 30px;
+  }
+  header {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+  header .center form input {
+    width: 100%;
+  }
+  header .left ul {
+    display: none;
+  }
+  nav {
+    display: block;
+  }
+  main {
+    margin: 108px 0 0;
+  }
+  main .card ul li {
+    min-width: 100%;
+    max-width: 100%;
+    margin: 0;
+    margin-bottom: 10px;
+  }
+  main .card .thumbnail {
+    height: 280px;
+  }
+  main .pager {
+    margin: 20px 0 0;
+    text-align: center;
+  }
+  aside {
+    padding: 50px 10px;
+  }
+  aside h2 {
+    font-size: 18px;
+  }
+}

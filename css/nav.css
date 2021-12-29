@@ -1,0 +1,51 @@
+@charset "utf-8";
+/* CSS Document */
+nav {
+  background-color: #333;
+  color: #fff;
+  margin-bottom: 1px;
+  padding: 0 0 5px 0;
+  display: none;
+}
+
+nav table tr {
+  vertical-align: bottom;
+}
+nav table tr td {
+  min-width: 10px;
+  max-width: 10px;
+  text-align: center;
+  white-space: nowrap;
+}
+
+nav table tr td a {
+  display: inline-block;
+  cursor: pointer;
+}
+nav table tr td a:hover {
+  color: #ccc;
+}
+nav table tr td a.focus {
+  color: #ddd;
+}
+nav table tr td i {
+  font-size: 18px;
+}
+nav table tr td p {
+  margin: 5px 0;
+  font-size: 12px;
+}
+
+nav table tr td.important {
+  position: relative;
+}
+nav table tr td.important sup {
+  position: absolute;
+  top: -3px;
+  right: 20px;
+  background-color: #e11;
+  border-radius: 100%;
+  width: 10px;
+  height: 10px;
+  display: inline-block;
+}

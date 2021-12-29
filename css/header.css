@@ -1,0 +1,91 @@
+@charset "utf-8";
+/* CSS Document */
+header {
+  padding: 8px 40px 0;
+  background-color: #222;
+  color: #fff;
+  min-height: 55px;
+  position: relative;
+}
+
+header table tr {
+  vertical-align: bottom;
+}
+header table tr td:first-child,
+header table tr td:last-child {
+  width: 1px;
+  white-space: nowrap;
+}
+
+header .left ul {
+  margin-left: 0;
+  display: inline-block;
+  vertical-align: bottom;
+}
+header .left ul li {
+  margin: 0 10px;
+}
+header .left ul li.important {
+  position: relative;
+}
+header .left ul li a {
+  display: block;
+  cursor: pointer;
+}
+header .left ul li a:hover {
+  color: #ccc;
+}
+header .left ul li a.focus {
+  color: #ddd;
+}
+header .left ul li i {
+  font-size: 18px;
+}
+header .left ul li sup {
+  position: absolute;
+  top: -5px;
+  right: -5px;  
+  background-color: #e11;
+  border-radius: 100%;
+  width: 10px;
+  height: 10px;
+  display: inline-block;
+}
+
+header .center {
+  text-align: right;
+}
+header .center form input {
+  color: #fff;
+  border: none;
+  border-bottom: 1px solid #ccc;
+  padding: 5px 5px;
+  width: 50%;
+  float: right;
+  display: none;
+}
+header .center form input:focus {
+  background-color: transparent;
+  border-bottom: 1px solid #fff;
+}
+
+header .right {
+  text-align: right;
+}
+header .right a {
+  display: inline-block;
+  cursor: pointer;
+}
+header .right a.important {
+  margin: 0 20px 0 10px;
+}
+header .right a:hover {
+  color: #ccc;
+}
+header .right a.focus {
+  color: #ddd;
+}
+header .right i {
+  font-size: 18px;
+}
+

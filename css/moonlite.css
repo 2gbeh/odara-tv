@@ -1,0 +1,66 @@
+@charset "utf-8";
+/* CSS Document */
+/*
+	logo-bg		#222222
+	logo-txt 	#00d8ff
+	site-txt	#60dbfb	
+	bg, header	#20232a
+	fg, nav, txt	#282c34
+	bd, wtmk	#33373e
+	aside		#f7f7f7
+	link		#eafafe
+*/
+
+body {
+  background-color: #282c34;
+}
+
+main .card ul li,
+main .card .thumbnail,
+main .pager form input,
+main .pager form button,
+footer {
+  background-color: #20232a;
+}
+main .pager form button:hover {
+  color: #20232a;
+}
+
+
+main .card .byline a,
+main .pager form button:hover {
+  background-color: #60dbfb;
+  border-color: #20232a;
+}
+
+main .card .headline a:hover,
+main .card .summary,
+main .card .activity table tr td,
+aside {
+  color: #eafafe;
+}
+
+main .card .thumbnail,
+main .card .activity {
+  border-color: #33373e;
+}
+
+main .card .headline a,
+main .card .activity table tr td:hover,
+main .pager form input,
+main .pager form button,
+aside,
+aside p {
+  color: #fff;
+  text-shadow: none;
+}
+
+footer address {
+  background-color: #222;
+}
+
+main .card ul li,
+main .pager form input,
+main .pager form button {  
+  box-shadow: 0 4px 4px #111;
+}

@@ -1,0 +1,44 @@
+@charset "utf-8";
+/* CSS Document */
+ain {
+  min-height: 100px;
+}
+ain ul {
+  display: none;
+}
+
+aside {
+  color: #333;
+  padding: 100px 10px;
+  text-align: center;
+  text-shadow: 0 1px #fff;
+}
+
+aside h2 {
+  margin: 15px 0;
+  font-size: 24px;
+  font-weight: lighter;
+}
+
+aside p {  
+  color: #555;
+  margin: 10px 0;  
+  font-size: 16px;
+  line-height: 25px;
+}
+
+aside .action a {
+  background-color: #222;
+  color: #fff;
+  border-bottom: 1px solid #333;
+  margin-top: 10px;
+  padding: 15px 20px 15px 15px;
+  text-transform: uppercase;
+  text-shadow: none;
+  font-weight: 600;
+  font-size: 12px;
+  letter-spacing: 1px;
+}
+aside .action i {
+  margin: 0 5px;
+}

@@ -1,0 +1,95 @@
+@charset "utf-8";
+/* CSS Document */
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 0;
+  text-align: center;
+}
+
+footer .connect {
+  padding: 40px 0 20px;
+}
+footer .connect h2 {
+  margin: 20px 0;
+  font-size: 18px;
+}
+footer .connect a {
+  margin: 0 20px;
+}
+footer .connect a i {
+  font-size: 32px;
+}
+
+footer .nav {
+  padding: 0 10px 40px;
+}
+footer .nav ul li {
+  margin: 10px;
+}
+footer .nav ul li a {
+  color: #ccc;
+  text-decoration: underline;
+  display: block;
+}
+footer .nav ul li a:hover {
+  color: #fff;
+  text-decoration: none;
+}
+footer .nav p {
+  color: #eee;
+  margin: 20px 10px;
+  line-height: 25px;
+}
+
+footer address {
+  background-color: #222;
+  padding: 20px;
+  font-size: 12px;
+  display: block;
+}
+
+
+
+
+
+
+/* 
+footer .nav {
+  padding: 40px 0 20px;
+}
+footer .nav h1 {
+  margin: 10px 0 0;
+  font-size: 16px;
+}
+footer .nav p {
+  color: #eee;
+  margin: 10px;
+}
+footer .nav ul {
+  margin: 20px 0;
+}
+footer .nav ul li {
+  margin: 0 10px;
+}
+footer .nav ul li a {
+  text-decoration: underline;
+  display: block;
+}
+
+footer .connect {
+  padding-bottom: 40px;
+}
+footer .connect a {
+  margin: 0 20px;
+}
+footer .connect a i {
+  font-size: 32px;
+}
+footer address {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  font-size: 12px;
+  display: block;
+} */

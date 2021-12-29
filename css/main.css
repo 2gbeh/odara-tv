@@ -1,0 +1,168 @@
+@charset "utf-8";
+/* CSS Document */
+main {
+  margin: 80px 40px 20px;
+}
+
+main .card ul {
+  text-align: center;
+}
+main .card ul li {
+  background-color: #fff;
+  box-shadow: 0 4px 4px #ccc;
+  margin: 15px;
+  min-width: 340px;
+  max-width: 340px;
+  text-align: left;
+  display: inline-block;
+  vertical-align: top;
+}
+
+main .card .thumbnail {
+  position: relative;
+  background-color: #fff;
+  background-image: url("../thumbnail.png");
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
+  border-bottom: solid thin #ddd;
+  width: 100%;
+  height: 240px; 
+}
+main .card .thumbnail sup {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background-color: #222;
+  color: #eee;
+  padding: 2px 4px 3px;
+  font-size: 10px;
+  letter-spacing: 1px;
+  cursor: help;
+}
+main .card .thumbnail sub {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;  
+  background-color: #222;
+  color: #eee;
+  padding: 2px 4px 3px;
+  font-size: 10px;
+  letter-spacing: 1px;
+  cursor: help;  
+}
+
+main .card article {
+  min-height: 200px;
+  min-height: auto;
+}
+main .card .headline {
+  margin: 10px 15px 0;
+}
+main .card .headline a {
+  color: #333;
+  font-size: 20px;
+  line-height: 25px;
+  display: inline-block;
+}
+main .card .headline a:hover {
+  color: inherit;
+  text-decoration: underline;
+}
+
+main .card .byline {
+  margin: 5px 10px 0;
+}
+main .card .byline a {
+  background-color: #eee;
+  border-bottom: 1px solid #ddd;
+  margin: 2px;
+  padding: 1px 4px;
+  font-size: 12px;
+}
+
+main .card .summary {  
+  color: #333;
+  margin: 0 15px 5px;
+  padding: 5px 0 0;
+  text-align: justify;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 16px;
+  line-height: 22px;
+}
+main .card .summary a {
+  color: #069;
+  font-size: 12px;
+} 
+main .card .summary a:hover {
+  color: #e11;
+} 
+
+main .card .activity {
+  border-top: solid thin #eee;
+  margin: 10px 5px 0;
+  padding: 10px 0 0;
+  
+}
+main .card .activity table tr td {
+  color: #444;
+  min-width: 10px;
+  max-width: 10px;
+  text-align: center;  
+}
+main .card .activity table tr td:hover {
+  color: #333;
+}
+
+main .card .activity i {
+  font-size: 18px;  
+  font-weight: normal;
+  cursor: pointer;
+}
+
+main .card .activity p {
+  margin: 5px 0 10px;
+  font-size: 12px;
+  cursor: default;
+}
+
+ain {
+  min-height: 100px;
+}
+ain ul {
+  display: none;
+}
+
+main .pager {
+  margin: 20px 20px 0;
+  text-align: right;
+}
+
+main .pager form {
+  display: inline-block;
+}
+
+main .pager form input,
+main .pager form button {
+  background-color: #fff;
+  color: #555;
+  border: none;
+  box-shadow: 0 4px 4px #ccc;
+  margin: 0 1px;
+  width: 50px;
+  height: 40px;  
+  text-align: center;
+  font-weight: 600;
+}
+main .pager form button {
+  width: 70px;
+}
+main .pager form button:hover {
+  background-color: #eee;
+}
+main .pager form button i {
+  font-size: 16px;
+  line-height: 0; 
+  vertical-align: bottom;
+}
+

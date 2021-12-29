@@ -1,0 +1,64 @@
+@charset "utf-8";
+/* CSS Document */
+/*
+	logo-bg		#222222
+	logo-txt 	#00d8ff
+	site-txt	#60dbfb	
+	bg, header	#20232a
+	fg, nav, txt	#282c34
+	bd, wtmk	#33373e
+	aside		#f7f7f7
+	link		#eafafe
+*/
+
+body {
+	background-color: #f7f7f7;
+}
+
+header, 
+nav,
+footer address {
+  background-color: #20232a;
+}
+.fabb a,
+aside .action a {
+  color: #20232a;
+}
+aside .action a {
+  border-color: #20232a;
+}
+
+footer {
+  background-color: #282c34;
+}
+aside {
+  color: #282c34;
+}
+
+.fabb a,
+aside .action a {
+  background-color: #60dbfb;
+}
+header .center form input:focus {
+  border-color: #60dbfb;
+}
+.svgg img,
+header .left ul li a.focus,
+header .right a.focus,
+nav table tr td a.focus,
+footer .nav ul li a {
+  color: #60dbfb;
+}
+
+main .card .byline a,
+aside .action a:hover {
+	background-color: #eafafe;
+}
+header .svgg sub,
+header .left ul li a:hover,
+header .right a:hover,
+nav table tr td a:hover,
+footer .nav ul li a:hover,
+footer .nav p {
+  color: #eafafe;
+}
