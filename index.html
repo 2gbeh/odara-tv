@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- META TAGS -->
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Discover Tech-Inspired News, Movies and TV Shows" />
+  <meta name="keywords" content="udara,udara ng,udara nigeria,african start apple,hwp labs,emmanuel tugbeh" />
+  <meta name="robots" content="index,follow" />
+  <meta name="owner" content="HWP Labs" />
+  <meta name="author" content="Tugbeh Emmanuel" />
+  <meta name="copyright" content="2017" />
+  <meta name="theme-color" content="#20232a" />
+  <meta name="msapplication-TileColor" content="#20232a" />
+  <meta name="msapplication-TileImage" content="./msapplication-tile-image.png" />
+  <!-- ICONS AND MANIFEST -->
+  <link rel="icon" href="./favicon.ico" type="image/x-icon" sizes="32x32" />
+  <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon" />
+  <link rel="apple-touch-icon" href="./apple-touch-icon.png" type="image/png" sizes="192x192" />
+  <link rel="mask-icon" href="./mask-icon.svg" type="image/svg+xml" color="#60dbfb" />  
+  <link href="./manifest.json" rel="manifest" />  
+  <!-- CSS ICON LIBRARY -->  
+  <link type="text/css" href="./fa/top.css" rel="stylesheet" />
+  <!-- <link type="text/css" href="./fa/use.css" rel="stylesheet" /> -->
+  <link type="text/css" href="./fa/org.css" rel="stylesheet" />
+  <link type="text/css" href="./fa/end.css" rel="stylesheet" />
+  <link type="text/css" href="./fi/uicons-regular-straight.css" rel="stylesheet" />
+  <!-- CSS LIBRARY -->
+  <link type="text/css" href="./css/master.css" rel="stylesheet" />
+  <link type="text/css" href="./css/header.css" rel="stylesheet" />
+  <link type="text/css" href="./css/nav.css" rel="stylesheet" />
+  <link type="text/css" href="./css/main.css" rel="stylesheet" />
+  <link type="text/css" href="./css/aside.css" rel="stylesheet" />
+  <link type="text/css" href="./css/footer.css" rel="stylesheet" />
+  <link type="text/css" href="./css/template.css" rel="stylesheet" />
+  <link type="text/css" href="./css/theme.css" rel="stylesheet" />  
+  <link type="text/css" href="./css/moonlite.css" rel="styleshee" />  
+  <link type="text/css" href="./css/viewport.css" rel="stylesheet" />
+  <!-- JS LIBRARY -->  
+  <script type="text/javascript" src="./js/master.js"></script>
+  <!-- <script type="text/javascript" src="./js/bom.js"></script> -->
+  <script type="text/javascript" src="./js/router.js"></script>
+  <script type="text/javascript" src="./js/events.js"></script>  
+  <title>Udara TV</title>
+</head>
+<body id="top">
+<noscript>You need to enable JavaScript to run this app.</noscript>
+
+  <div class="fabb" id="fabb">
+    <a href="#top" title="TOP">
+      <i class="fi fi-rs-angle-small-up"></i>
+    </a>
+  </div>
+
+  <div class="overflow">
+    <header>
+      <div class="sabb">
+        <a href="#end" title="END">
+          &nbsp;
+        </a>
+      </div>
+
+      <table border="0">
+        <tr>
+          <td class="left">
+            <h1 class="svgg" id="svgg">
+              <a href="index.html" title="Home">
+                <img src="./typeface.png" alt="udara" />
+                <sub>.tv</sub>
+              </a>
+            </h1>
+            <ul>
+              <li>
+                <a onClick="routeTo('/')" title="Home" class="focus">
+                  <i class="fi fi-rs-home"></i>
+                </a>
+              </li>      
+              <li>
+                <a onClick="routeTo('/news')" title="News">
+                  <i class="fi fi-rs-browser"></i>
+                </a>
+              </li>
+              <li>
+                <a onClick="routeTo('/movies')" title="Movies">
+                  <!-- <i class="fi fi-rs-film"></i> -->
+                  <i class="fi fi-rs-video-camera"></i>
+                </a>
+              </li>
+              <li>
+                <a onClick="routeTo('/tvshows')" title="TV Shows">
+                  <!-- <i class="fi fi-rs-gallery"></i> -->
+                  <i class="fi fi-rs-film"></i>
+                </a>
+              </li>
+              <li class="important">
+                <a onClick="routeTo('/youtube')" title="YouTube">
+                  <i class="fi fi-rs-play-alt"></i>
+                  <sup>&nbsp;</sup>
+                </a>
+              </li>
+            </ul>           
+          </td>
+          <td class="center">
+            <form onSubmit="return false" method="post" action="" autocomplete="off">
+              <input onChange="routeTo(`/${this.value}`)" type="search" name="k" placeholder="Search..." list="hint" required />
+              <datalist id="hint">
+                <option value="News" />
+                <option value="Movies" />
+                <option value="TV Shows" />
+                <option value="YouTube" />
+              </datalist>
+            </form>
+          </td>
+          <td class="right">
+            <a onClick="toggleSearch('header form input', this)" title="Search" class="important">
+              <i class="fi fi-rs-search"></i>
+            </a>
+            <a href="#" title="Account">
+              <i class="fi fi-rs-user"></i>
+            </a>
+          </td>
+        </tr>
+      </table>
+    </header>
+
+    <nav>
+      <table border="0">
+        <tr>
+          <td>
+            <a onClick="routeTo('/')" title="Home" class="focus">
+              <i class="fi fi-rs-home"></i>
+              <p>Home</p>
+            </a>
+          </td>      
+          <td>
+            <a onClick="routeTo('/news')" title="News">
+              <i class="fi fi-rs-browser"></i>
+              <p>News</p>
+            </a>
+          </td>
+          <td>
+            <a onClick="routeTo('/movies')" title="Movies">
+              <i class="fi fi-rs-video-camera"></i>
+              <p>Movies</p>
+            </a>
+          </td>
+          <td>
+            <a onClick="routeTo('/tvshows')" title="TV Shows">
+              <i class="fi fi-rs-film"></i>            
+              <p>TV Shows</p>
+            </a>
+          </td>
+          <td class="important">
+            <a onClick="routeTo('/youtube')" title="YouTube">
+              <i class="fi fi-rs-play-alt"></i>
+              <p>YouTube</p>
+              <sup>&nbsp;</sup>
+            </a>
+          </td>
+        </tr>
+      </table>
+    </nav>
+  </div>
+
+  <main>
+    <section class="card" id="card">
+      <!-- <ul><li> ./main.html </li></ul> -->
+    </section>
+
+    <section class="pager" id="pager">
+      <form onSubmit="return false" method="post" action="" autocomplete="off">
+        <button onClick="pagerPrev()" title="Previous Page">
+          <i class="fi fi-rs-angle-double-small-left"></i>
+          Prev
+        </button>
+        <input type="number" name="p" value="1" min="1" onChange="pagerSkip()" maxlength="3" required />
+        <button onClick="pagerNext()" title="Next Page">
+          Next
+          <i class="fi fi-rs-angle-double-small-right"></i>
+        </button>
+      </form>
+    </section>
+  </main>
+
+  <aside>
+    <h1 class="svgg" id="svgg">
+      <a href="#top" title="TOP">
+        <img src="./typeface-b.png" alt="udara" />
+        <!-- <sub>.tv</sub> -->
+      </a>
+    </h1>
+    <h2>Tech-Inspired News, Movies &amp; TV Shows</h2>    
+    <p>Improve your experience with personalized feeds from our content curators</p>
+    <div class="action">
+      <a href="signup.html">
+        <i class="fi fi-rs-rocket"></i> 
+        <!-- Okay, let's go! -->
+        Okay, sign me the f**k up!
+      </a>
+    </div>
+  </aside> 
+
+  <footer id="end">
+    <div class="connect">
+      <h2>Connect with Udara TV</h2>
+
+      <a href="https://www.facebook.com/hwplabs" target="_blank" title="Facebook Page">
+        <i class="fab fa-facebook"></i>
+      </a>
+      <a href="https://wa.me/2348169960927" target="_blank" title="WhatsApp Group">
+        <i class="fab fa-whatsapp"></i>
+      </a>
+      <a href="https://www.github.com/2gbeh" target="_blank" title="GitHub Repository">
+        <i class="fab fa-github-alt"></i>
+      </a>      
+    </div> 
+
+    <div class="nav">
+      <ul>
+        <li>
+          <a href="signup.html">Subscribe</a>
+        </li>
+        <li>
+          <a href="#">Advertise</a>
+        </li>        
+        <li>
+          <a href="#">Preferences</a>
+        </li>
+        <li>
+          <a href="mailto:hello@udara.tv" target="_blank">hello@udara.tv</a>
+        </li> 
+        <li>
+          <a href="#">Privacy Policy</a>
+        </li>
+        <li>
+          <a href="#">Terms of Service</a>
+        </li>                                
+      </ul>
+      <p>[HTTP 507] All video download files are currently out-sourced from third party servers.</p>      
+    </div>
+
+    <address>  
+      Copyright &copy; 2017
+      <a href="https://www.hwplabs.com/" target="_blank" rel="noreferrer" title="Contact Webmaster">
+        HWP LABS.
+      </a>
+      <cite>CRBN 658815</cite>
+    </address>
+  </footer>
+
+<script type="text/javascript">  
+  if (darkMode('./css/moonlite.css') === true) {
+    document.querySelector('aside #svgg img').src = 'typeface.png';
+  }
+
+  fetchBlog('./json/Blog.json', getBlog);
+  
+  window.onscroll = () => stickyFab('#fabb');
+</script> 
+<script type="text/javascript">      
+  if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.register('./service-worker.js', {scope: './'})
+    .then(function(registration) {console.log('Service worker registered', registration);})
+    .catch(function(error) {console.log('Service worker not registered', error);});
+  }
+</script>
+</body>
+</html>

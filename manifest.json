@@ -1,0 +1,23 @@
+{
+  "name": "UDARA",
+  "short_name": "Udara",  
+  "description": "Discover Tech-Inspired News, Movies and TV Shows",
+  "start_url": "https://udara.com.ng/",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "portrait",  
+  "background_color": "#60dbfb",
+  "theme_color": "#20232a",    
+  "icons": [
+    {
+      "src": "favicon.ico",
+      "sizes": "32x32",
+      "type": "image/x-icon"
+    },
+    {
+      "src": "logo.png",
+      "type": "image/png",
+      "sizes": "32x32"
+    }
+  ]
+}

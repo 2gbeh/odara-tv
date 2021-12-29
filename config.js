@@ -1,0 +1,36 @@
+// TODO global variables (shared props*)
+export const Config = {
+  APPNAME: 'Udara',
+  TYPEFACE: 'udara',
+  ALIAS: 'udara.tv',  
+  TITLE: 'Discover Tech-Inspired News, Movies and TV Shows',
+  CAPTION: 'African Star Apple', 
+  SUMMARY: 'HWP Labs is a Nigerian-based software company specialized in enterprise software development and training. Contact: webmaster@hwplabs.com, (234)81-6996-0927.',
+  KEYWORDS: 'software development,enterprise application software,website design and development,mobile app development,computer training,computer programming,hwp labs,emmanuel tugbeh',
+  OWNER: 'HWP Labs', 
+  AUTHOR: 'Tugbeh Emmanuel', 
+  COPYRIGHT: <>Copyright &copy; 2017 <a href="https://hwplabs.com.ng" target="_blank" rel="noreferrer" title="Visit Webmaster">HWP Labs.</a> <cite>CRBN 658815</cite></>,
+  EMAIL: 'webmaster@hwplabs.com', 
+  TEL: '(234)81-6996-0927',
+  ADDRESS: 'No. 6, Orikeze Avenue, Agbor-Obi, Delta',
+  THEME: '#60dbfb',   
+  CREATED: '2021-12-05',
+  HOSTED: '2022-01-05',
+  REVISED: '2023-01-04',
+  VERSION: '1',
+  BUNDLE: '0.5.12.21',
+  
+  DOMAIN: 'udara.com.ng',
+  SERVER: 'udara',  
+  SITE: './public/index.html',
+
+  DATABASE: 'udara_db',
+  USERNAME: 'root',
+  PASSWORD: '',
+  DB_CONN: function() {console.dir(this.USERNAME, this.PASSWORD, this.DB_CONN);},
+
+  ROOT: document.getElementById('root'),
+  FORM_ATTRIB: 'action="" method="post" autoComplete="off" encType="multipart/form-data"',
+  ECHO: args => console.dir(args),
+  GOTO: url => window.location.assign(url),
+};
