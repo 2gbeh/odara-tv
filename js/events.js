@@ -153,6 +153,7 @@ async function shareBlog (title, text, url) {
   const data = {title: title, text: text, url: url}
   // console.log(data);
   if (navigator.canShare) {
+	  data.url = '?' + data.url.split('?')[1];
     navigator.share(data)
     .then((data) => console.log('File share successful!', data))
     .catch((err) => console.log('File share unsuccessful!', err));
