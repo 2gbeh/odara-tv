@@ -43,6 +43,7 @@ nav table tr td.important sup {
   position: absolute;
   top: -3px;
   right: 20px;
+  z-index: 99;
   background-color: #e11;
   border-radius: 100%;
   width: 10px;
