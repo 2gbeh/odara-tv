@@ -36,8 +36,9 @@ main .pager form button:hover {
 main .card .headline a:hover,
 main .card .summary,
 main .card .activity table tr td,
-aside {
+aside h2 {
   color: #eafafe;
+  text-shadow: none;
 }
 
 main .card .thumbnail,
@@ -49,7 +50,6 @@ main .card .headline a,
 main .card .activity table tr td:hover,
 main .pager form input,
 main .pager form button,
-aside,
 aside p {
   color: #fff;
   text-shadow: none;

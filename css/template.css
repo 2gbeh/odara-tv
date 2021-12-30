@@ -47,6 +47,12 @@
   display: none;
 }
 
+.overlay-fill {
+  background-color: #e11;
+  min-height: 55px;
+}
+
+
 svgg,
 fabb,
 eader,

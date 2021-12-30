@@ -17,7 +17,7 @@ aside {
 aside h2 {
   margin: 15px 0;
   font-size: 24px;
-  font-weight: lighter;
+  font-weight: normal;
 }
 
 aside p {  
@@ -32,7 +32,7 @@ aside .action a {
   color: #fff;
   border-bottom: 1px solid #333;
   margin-top: 10px;
-  padding: 15px 20px 15px 15px;
+  padding: 15px 20px;
   text-transform: uppercase;
   text-shadow: none;
   font-weight: 600;

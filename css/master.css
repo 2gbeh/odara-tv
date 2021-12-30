@@ -36,7 +36,9 @@ mobile.............455-sm
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   box-sizing: border-box;
 }
-
+html {
+  scroll-behavior: smooth;
+}
 body {
   padding: 0;
   margin: 0;
@@ -59,8 +61,8 @@ a {
   text-decoration: none;
   color: inherit;
   display: inline-block;
-  -webkit-transition: all 0.2s;
-  transition: all 0.2s;
+  -webkit-transition: all 0.1s;
+  transition: all 0.1s;
 }
 ul {
   padding: 0;
@@ -297,13 +299,13 @@ figure {
   align-items: flex-start;
 }
 
-.overflow {
+.overlay {
   position: fixed;
   width: 100%;
   top: 0;
   z-index: 99;
 }
-.overlay {
+.backlay {
   position: fixed;
   width: 100%;
   height: 100%;

@@ -1,7 +1,7 @@
 @charset "utf-8";
 /* CSS Document */
 main {
-  margin: 80px 40px 20px;
+  margin: 40px 40px 20px;
 }
 
 main .card ul {
@@ -39,6 +39,7 @@ main .card .thumbnail sup {
   font-size: 10px;
   letter-spacing: 1px;
   cursor: help;
+  display: none;
 }
 main .card .thumbnail sub {
   position: absolute;
@@ -79,6 +80,7 @@ main .card .byline a {
   margin: 2px;
   padding: 1px 4px;
   font-size: 12px;
+  cursor: default;
 }
 
 main .card .summary {  
@@ -152,7 +154,7 @@ main .pager form button {
   width: 50px;
   height: 40px;  
   text-align: center;
-  font-weight: 600;
+  font-weight: 400;
 }
 main .pager form button {
   width: 70px;
