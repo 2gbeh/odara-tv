@@ -1,9 +1,9 @@
 // JavaScript Document
 async function fetchBlog (directory, callback) {
-		// MUST be running on a server
-		let fileSystem = await fetch(directory);
-		let content = await fileSystem.text();
-		callback(content);
+  // MUST be running on a server
+  let fileSystem = await fetch(directory);
+  let content = await fileSystem.text();
+  callback(content);
 };  
 
 function getBlog (data) {
@@ -52,7 +52,7 @@ function getBlogList (row, n) {
             '+ getActivity2(row.status, row.meta) +'\
           </td>\
           <td>\
-            '+ getActivity3(row.status, row.title) +'\
+            '+ getActivity3(row) +'\
           </td>\
           <td>\
             '+ getActivity4(row.status) +'\
@@ -72,9 +72,11 @@ function getSubAttrib(status) {
   return `itemprop="${itemprop[status]}" title="${tooltip[status]}"`;
 }
 
-function getHeadline(e) {
-  const tooltip = ['','Read','Download','Download','Watch'];
-  return `<a itemprop="headline" href="${e.url}" target="_blank" title="${tooltip[e.status]}">${e.title}</a>`;
+function getHeadline(row) {
+  const tooltip = ['','Read','Download','Download','Watch'],
+  href = `href="${row.url}" target="_blank"`,
+  title = `title="${tooltip[row.status]}"`;
+  return `<a itemprop="headline" ${href} ${title}>${row.title}</a>`;
 }
 
 function getBylineProp(status) {
@@ -133,17 +135,31 @@ function getActivity2(status, meta) {
   return i + p;
 }
 
-function getActivity3(status, title) { 
-  title = title.replaceAll(' ','_');  
-  const DOMAIN = window.location.hostname,
-  SUBDIR = 'udara-tv/?req=',
-  STATUS = ['','news','movies','tvshows','youtube'];
-  let uri = `${DOMAIN}/${SUBDIR}${STATUS[status]}/${title}`,
-  clk = `onClick="prompt('', '${uri}')"`,
-  i = '<i class="fi fi-rs-share" title="Share"></i>',
-  p = '<p>Share</p';
-  return `<a ${clk}>${i + p}</a>`;
+function getActivity3(row) { 
+  const PARAM  = row.title.replaceAll(' ','_'),
+  DOMAIN = window.location.hostname,
+  SUBDIR = 'udara-tv',
+  STATUS = ['','news','movies','tvshows','youtube'],
+  PREFIX = ['','[READ]','[DOWNLOAD]','[DOWNLOAD]','[WATCH]'],
+  URI = `${DOMAIN}/${SUBDIR}/?req=${STATUS[row.status]}/${PARAM}`,
+  DATA = { title: 'Udara', text: `${PREFIX[row.status]} ${row.title}`, url: URI };  
+  let i = '<i class="fi fi-rs-share" title="Share"></i>', p = '<p>Share</p';
+  return `<a onClick="shareBlog('${DATA.title}', '${DATA.text}', '${DATA.url}')">${i + p}</a>`;
 }
+
+async function shareBlog (title, text, url) {
+  // MUST be running on a server
+  // const data = {title: 'MDN', text: 'Learn web development on MDN!', url: 'https://developer.mozilla.org'}
+  const data = {title: title, text: text, url: url}
+  // console.log(data);
+  if (navigator.canShare) {
+    navigator.share(data)
+    .then((data) => console.log('File share successful!', data))
+    .catch((err) => console.log('File share unsuccessful!', err));
+  } else {
+    prompt('Copy to clipboard', data.url);
+  }
+};  
 
 function getActivity4(status) {
   let i = p = '';
