@@ -1,23 +1,80 @@
 {
-  "name": "UDARA",
+  "name": "Udara TV",
   "short_name": "Udara",  
-  "description": "Discover Tech-Inspired News, Movies and TV Shows",
-  "start_url": "https://udara.com.ng/",
-  "scope": "/",
-  "display": "standalone",
-  "orientation": "portrait",  
+  "description": "Tech News, Movies and TV Shows",  
   "background_color": "#60dbfb",
-  "theme_color": "#20232a",    
+  "theme_color": "#20232a",
+  "start_url": "index.html",
+  "scope": "/",  
+  "display": "standalone",
+  "orientation": "portrait",
   "icons": [
     {
-      "src": "favicon.ico",
-      "sizes": "32x32",
-      "type": "image/x-icon"
+      "src": "/apple-touch-icon.png",
+      "type": "image/png",
+      "sizes": "192x192"
     },
     {
-      "src": "logo.png",
+      "src": "/msapplication-tile-image.png",
       "type": "image/png",
-      "sizes": "32x32"
+      "sizes": "512x512"
+    },
+    {
+      "src": "/mask-icon.svg",
+      "type": "image/svg+xml",
+      "sizes": "683x683"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Tech News",
+      "short_name": "News",
+      "description": "Read News",
+      "url": "/?req=/news",
+      "icons": [{ "src": "/svg/fi-rs-browser.svg", "sizes": "512x512" }]
+    },
+    {
+      "name": "Tech Movies",
+      "short_name": "Movies",
+      "description": "Download Movies",
+      "url": "/?req=/movies",
+      "icons": [{ "src": "/svg/fi-rs-video-camera.svg", "sizes": "512x512" }]
+    },
+    {
+      "name": "Tech TV Shows",
+      "short_name": "TV Shows",
+      "description": "Download TV Shows",
+      "url": "/?req=/tvshows",
+      "icons": [{ "src": "/svg/fi-rs-film.svg", "sizes": "512x512" }]
+    },
+    {
+      "name": "YouTube Videos",
+      "short_name": "Youtube",
+      "description": "Watch Youtube Videos",
+      "url": "/?req=/youtube",
+      "icons": [{ "src": "/svg/fi-rs-play-alt.svg", "sizes": "512x512" }]
+    }
+  ],  
+  "screenshots": [
+    {
+      "src": "/ui/screenshot1.png",
+      "type": "image/png",
+      "sizes": "320x669"
+    },
+    {
+      "src": "/ui/screenshot2.png",
+      "type": "image/png",
+      "sizes": "320x659"
+    },
+    {
+      "src": "/ui/screenshot3.png",
+      "type": "image/png",
+      "sizes": "320x642"
+    },
+    {
+      "src": "/ui/screenshot4.png",
+      "type": "image/png",
+      "sizes": "320x643"
     }
   ]
 }

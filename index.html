@@ -1,23 +1,25 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-US" class="no-js" prefix="og: https://ogp.me/ns#">
 <head>
   <!-- META TAGS -->
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Discover Tech-Inspired News, Movies and TV Shows" />
-  <meta name="keywords" content="udara,udara ng,udara nigeria,african start apple,hwp labs,emmanuel tugbeh" />
+  <meta name="description" content="Tech News, Movies and TV Shows" />
+  <meta name="keywords" content="udara,udara tv,udara ng,udara naija,udara nigeria,african star apple,tech news,tech movies,tech series,tech shows,tech tv series,tech tv shows,youtube videos,download movies,download tv series,download tv shows,download youtube videos,cnn,cnbc,wired,bloomberg,tech crunch,the verge,tech point africa,imdb,o2tvseries,tv4shows,fzmovies,netnaija,sabishare,youtube,netflix,hwp labs,emmanuel tugbeh" />
   <meta name="robots" content="index,follow" />
   <meta name="owner" content="HWP Labs" />
   <meta name="author" content="Tugbeh Emmanuel" />
   <meta name="copyright" content="2017" />
   <meta name="theme-color" content="#20232a" />
+  <!-- <meta name="theme-color" media="(prefers-color-scheme: light)" content="white">
+  <meta name="theme-color" media="(prefers-color-scheme: dark)"  content="black">   -->
   <meta name="msapplication-TileColor" content="#20232a" />
   <meta name="msapplication-TileImage" content="./msapplication-tile-image.png" />
   <!-- ICONS AND MANIFEST -->
-  <link rel="icon" href="./favicon.ico" type="image/x-icon" sizes="32x32" />
+  <link rel="icon" href="./favicon.ico" type="image/x-icon" />
   <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon" />
-  <link rel="apple-touch-icon" href="./apple-touch-icon.png" type="image/png" sizes="192x192" />
+  <link rel="apple-touch-icon" href="./apple-touch-icon.png" type="image/png" />
   <link rel="mask-icon" href="./mask-icon.svg" type="image/svg+xml" color="#60dbfb" />  
   <link href="./manifest.json" rel="manifest" />  
   <!-- CSS ICON LIBRARY -->  
@@ -42,6 +44,29 @@
   <!-- <script type="text/javascript" src="./js/bom.js"></script> -->
   <script type="text/javascript" src="./js/router.js"></script>
   <script type="text/javascript" src="./js/events.js"></script>  
+  <!-- Open Graph -->
+  <meta property="og:site_name" content="Udara TV" />
+  <meta property="og:title" content="Tech News, Movies and TV Shows" />
+  <meta property="og:url" content="https://2gbeh.github.io/udara-tv/" />
+  <meta property="og:type" content="website" />
+  <meta
+    property="og:description"
+    content="Build and deploy MERN stack Progressive Web Apps using MongoDB, Express, React and Node."
+  />
+  <meta property="og:image" content="https://2gbeh.github.io/udara-tv/thumbnail.png" />
+  <meta property="og:determiner" content="auto" />
+  <meta property="og:locale" content="en_US" />
+  <meta property="og:locale:alternate" content="en_GB" />
+  <meta property="og:locale:alternate" content="fr_FR" />
+  <!-- Twitter Card -->
+  <meta property="twitter:card" content="summary" />
+  <meta property="twitter:title" content="Tech News, Movies and TV Shows" />
+  <meta property="twitter:url" content="https://2gbeh.github.io/udara-tv/" />
+  <meta
+    property="twitter:description"
+    content="Build and deploy MERN stack Progressive Web Apps using MongoDB, Express, React and Node."
+  />
+  <meta property="twitter:image" content="https://2gbeh.github.io/udara-tv/thumbnail.png" />  
   <title>Udara TV</title>
 </head>
 <body id="top">
@@ -51,9 +76,9 @@
     <a href="#top" title="TOP">
       <i class="fi fi-rs-angle-small-up"></i>
     </a>
-  </div>
+  </div> 
 
-  <div class="overflow">
+  <div class="overlay">
     <header>
       <div class="sabb">
         <a href="#end" title="END">
@@ -123,45 +148,46 @@
         </tr>
       </table>
     </header>
-
-    <nav>
-      <table border="0">
-        <tr>
-          <td>
-            <a onClick="routeTo('/')" title="Home" class="focus">
-              <i class="fi fi-rs-home"></i>
-              <p>Home</p>
-            </a>
-          </td>      
-          <td>
-            <a onClick="routeTo('/news')" title="News">
-              <i class="fi fi-rs-browser"></i>
-              <p>News</p>
-            </a>
-          </td>
-          <td>
-            <a onClick="routeTo('/movies')" title="Movies">
-              <i class="fi fi-rs-video-camera"></i>
-              <p>Movies</p>
-            </a>
-          </td>
-          <td>
-            <a onClick="routeTo('/tvshows')" title="TV Shows">
-              <i class="fi fi-rs-film"></i>            
-              <p>TV Shows</p>
-            </a>
-          </td>
-          <td class="important">
-            <a onClick="routeTo('/youtube')" title="YouTube">
-              <i class="fi fi-rs-play-alt"></i>
-              <p>YouTube</p>
-              <sup>&nbsp;</sup>
-            </a>
-          </td>
-        </tr>
-      </table>
-    </nav>
   </div>
+  <div class="overlay-fill">&nbsp;</div>
+
+  <nav>    
+    <table border="0">
+      <tr>
+        <td>
+          <a onClick="routeTo('/')" title="Home" class="focus">
+            <i class="fi fi-rs-home"></i>
+            <p>Home</p>
+          </a>
+        </td>      
+        <td>
+          <a onClick="routeTo('/news')" title="News">
+            <i class="fi fi-rs-browser"></i>
+            <p>News</p>
+          </a>
+        </td>
+        <td>
+          <a onClick="routeTo('/movies')" title="Movies">
+            <i class="fi fi-rs-video-camera"></i>
+            <p>Movies</p>
+          </a>
+        </td>
+        <td>
+          <a onClick="routeTo('/tvshows')" title="TV Shows">
+            <i class="fi fi-rs-film"></i>            
+            <p>TV Shows</p>
+          </a>
+        </td>
+        <td class="important">
+          <a onClick="routeTo('/youtube')" title="YouTube">
+            <i class="fi fi-rs-play-alt"></i>
+            <p>YouTube</p>
+            <sup>&nbsp;</sup>
+          </a>
+        </td>
+      </tr>
+    </table>
+  </nav> 
 
   <main>
     <section class="card" id="card">
@@ -190,11 +216,11 @@
         <!-- <sub>.tv</sub> -->
       </a>
     </h1>
-    <h2>Tech-Inspired News, Movies &amp; TV Shows</h2>    
-    <p>Improve your experience with personalized feeds from our content curators</p>
+    <h2>Tech News, Movies &amp; TV Shows</h2>    
+    <p>Improve your experience with personalized content from our curators</p>
     <div class="action">
-      <a href="signup.html">
-        <i class="fi fi-rs-rocket"></i> 
+      <a href="#">
+        <!-- <i class="fi fi-rs-rocket"></i>  -->
         <!-- Okay, let's go! -->
         Okay, sign me the f**k up!
       </a>
@@ -219,7 +245,7 @@
     <div class="nav">
       <ul>
         <li>
-          <a href="signup.html">Subscribe</a>
+          <a href="#">Subscribe</a>
         </li>
         <li>
           <a href="#">Advertise</a>
@@ -228,7 +254,7 @@
           <a href="#">Preferences</a>
         </li>
         <li>
-          <a href="mailto:hello@udara.tv" target="_blank">hello@udara.tv</a>
+          <a href="mailto:webmaster@hwplabs.com" target="_blank">hello@udara.tech</a>
         </li> 
         <li>
           <a href="#">Privacy Policy</a>
@@ -237,13 +263,13 @@
           <a href="#">Terms of Service</a>
         </li>                                
       </ul>
-      <p>[HTTP 507] All video download files are currently out-sourced from third party servers.</p>      
+      <p>[HTTP 507] All download files are currently out-sourced from third party servers.</p>      
     </div>
 
     <address>  
       Copyright &copy; 2017
       <a href="https://www.hwplabs.com/" target="_blank" rel="noreferrer" title="Contact Webmaster">
-        HWP LABS.
+        HWP Labs.
       </a>
       <cite>CRBN 658815</cite>
     </address>
