@@ -122,7 +122,7 @@
     },    
     {
       "thumbnail": "aioc.jpeg",
-      "title": "Build and Deploy a MERN Stack Web Application using MongoDB, Express, React and Node.js",
+      "title": "Build and deploy MERN stack Progressive Web Apps using MongoDB, Express, React &amp; Node",
       "subtitle": "Medium",
       "tags": "Leandro Ercoli",
       "posted": "2021-05-03",
@@ -169,6 +169,18 @@
       "date": "2021-12-24"
     },
     {
+      "thumbnail": "invas.jpeg",
+      "title": "Invasion - Season 1 (2021)",
+      "subtitle": "E1-10",
+      "tags": "Golshifteh Farahani, Shiori Kutsuna, Sam Neill, Shamier Anderson, Billy Barratt, Azhy Robertson",
+      "posted": "2021-10-22",
+      "meta": "5.3/10",
+      "summary": "An Alien Invasion is chronicled by piecing together various perspective of individuals from around the world.",
+      "url": "https://o2tvseries.com/Invasion/Season-01/index.html",
+      "status": 3,
+      "date": "2021-12-29"
+    },    
+    {
       "thumbnail": "tbdc.jpg",
       "title": "The Billion Dollar Code - Season 1 (2021)",
       "subtitle": "E1-4",
@@ -179,6 +191,30 @@
       "url": "https://o2tvseries.com/The-Billion-Dollar-Code/Season-01/index.html",
       "status": 3,
       "date": "2021-12-24"
+    },
+    {
+      "thumbnail": "fdtn.jpeg",
+      "title": "Foundation - Season 1 (2021)",
+      "subtitle": "E1-10",
+      "tags": "Terrnce Mann, Lee Pace, Cassian Bilton, Laura Birn, Jared Harris, Alfred Enoch, Lou Llobell, Leah Harvey",
+      "posted": "2021-09-24",
+      "meta": "7.5/10",
+      "summary": "Dr. Hari Seldon and his followers attempt to preserve their culture by building a Foundation of knowledge as the galaxy ruled by The Galactic Empire collapses. His loyal followers attempt to preserve their culture as the galaxy collapses around them.",
+      "url": "https://o2tvseries.com/Foundation/Season-01/index.html",
+      "status": 3,
+      "date": "2021-12-29"
+    },    
+    {
+      "thumbnail": "squid.jpeg",
+      "title": "Squid Game - Season 1 (2021)",
+      "subtitle": "E1-9",
+      "tags": "HoYeon Jung, Lee Jung-jae, Wi Ha-joon, Lee Yoo-Mi, Park Hae-soo, Heo Sung-tae, Kim Joo-ryeong, Lee Ji-ha, Christian Lagahit",
+      "posted": "2021-09-17",
+      "meta": "8.7/10",
+      "summary": "Hundreds of contestants accept an invitation to compete in a seemingly children's games for a tempting cash prize; but the stakes  soon turn deadly.",
+      "url": "https://o2tvseries.com/Squid-Game/Season-01/index.html",
+      "status": 3,
+      "date": "2021-12-29"
     },
     {
       "thumbnail": "seo.jpeg",
@@ -211,7 +247,7 @@
       "tags": "Luke Hwaker, Michael Lloyd, Tahlia Sturzaker, Summer Lenton, Maddie Lenton",
       "posted": "2019-01-25",
       "meta": "7.4/10",
-      "summary": "After hunmanity's extinction, a robot raises a human girl and loves her like a daughter. However, their bond is threatened when a stranger enters their lives.",
+      "summary": "After humanity's extinction, a robot raises a human girl and loves her like a daughter. However, their bond is threatened when a stranger enters their lives.",
       "url": "https://fzmovies.net/movie-I%20Am%20Mother--hmp4.htm",
       "status": 2,
       "date": "2021-12-28"

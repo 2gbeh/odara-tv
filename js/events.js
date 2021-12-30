@@ -26,21 +26,19 @@ function getBlog (data) {
 }
 
 function getBlogList (row, n) {
-  return '<li>\
-    <div class="thumbnail" style="background-image: url(./img/'+ row.thumbnail +')">\
-      <sup>#'+ n +'</sup>\
-      <sub title="'+ getSubTooltip(row.status) + '">'+ row.subtitle +'</sub>\
+  return '<li itemscope itemtype="https://schema.org/CreativeWork">\
+    <div itemprop="image" class="thumbnail" style="background-image: url(./img/'+ row.thumbnail +')">\
+      <sup itemprop="identifier">#'+ n +'</sup>\
+      <sub '+ getSubAttrib(row.status) + '>'+ row.subtitle +'</sub>\
     </div>\
     <article>\
       <div class="headline">\
-        <a '+ getAnchorAttrib(row.status, row.url) +'>\
-          '+ row.title +'\
-        </a>\
+        '+ getHeadline(row) +'\
       </div>\
-      <div class="byline" title="'+ getBylineTooltip(row.status) +'">\
+      <div '+ getBylineAttrib(row.status) +' class="byline">\
         '+ getByline(row.tags) +'\
       </div>\
-      <div class="summary">\
+      <div itemprop="abstract" class="summary">\
         '+ getSummary(row.summary, row.url) +'\
       </div>\
     </article>\
@@ -48,21 +46,19 @@ function getBlogList (row, n) {
       <table border="0" width="100%">\
         <tr>\
           <td>\
-            <i class="fi fi-rs-clock" title="Date"></i>\
-            <p>'+ getPosted(row.posted) +'</p>\
+            '+ getActivity1(row.posted) +'\
           </td>\
           <td>\
-            '+ getMeta(row.status, row.meta) +'\
+            '+ getActivity2(row.status, row.meta) +'\
           </td>\
           <td>\
-            <i '+ getAction1(row.status, row.title) +' class="fi fi-rs-share" title="Share"></i>\
-            <p>Share</p>\
+            '+ getActivity3(row.status, row.title) +'\
           </td>\
           <td>\
-            '+ getAction2(row.status) +'\
+            '+ getActivity4(row.status) +'\
           </td>\
           <td>\
-            '+ getAction3(row.status) +'\
+            '+ getActivity5(row.status, row.url) +'\
           </td>\
         </tr>\
       </table>\
@@ -70,102 +66,119 @@ function getBlogList (row, n) {
   </li>';
 }
 
-function getSubTooltip(status) {
-  const tooltip = ['','Source','Size','Episode','Duration'];
-  return tooltip[status];
+function getSubAttrib(status) {
+  const itemprop = ['','publisher','size','episode','duration'];
+  tooltip = ['','Source','Size','Episodes','Duration'];
+  return `itemprop="${itemprop[status]}" title="${tooltip[status]}"`;
 }
 
-function getBylineTooltip(status) {
-  const tooltip = ['','Editor','Cast','Cast','Channel'];
-  return tooltip[status];
+function getHeadline(e) {
+  const tooltip = ['','Read','Download','Download','Watch'];
+  return `<a itemprop="headline" href="${e.url}" target="_blank" title="${tooltip[e.status]}">${e.title}</a>`;
 }
 
-function getByline(tags) {
+function getBylineProp(status) {
+  
+  return itemprop[status];
+}
+
+function getBylineAttrib(status) {
+  const itemprop = ['','editor','actor','actor','creator'],
+  tooltip = ['','Editor','Cast','Cast','Channel'];
+  return `itemprop="${itemprop[status]}" title="${tooltip[status]}"`;
+}
+
+function getByline(tags) {  
   let buf = '';
   tags = tags.split(',');
   tags.map((e, i) => {
-    buf += '<a class="link">'+ e.trim() +'</a>';
+    buf += '<a itemprop="author" class="link">'+ e.trim() +'</a>';
   });
   return buf;
 }
 
-function getAnchorAttrib(status, url) {
-  const tooltip = ['','Read','Download','Download','Watch'];
-  return `href="${url}" target="_blank" title="${tooltip[status]}"`;
-}
-
 function getSummary(summary, url) {
-  const len = 160;
-  buf = '';
-  if (summary.length > len)
-    return `${summary.substring(0, len)}<a href="${url}" target="_blank">[...]</a>`;
+  const len = 160;  
+  if (summary.length > len) {
+    let buf = summary.substr(0, len);
+    return `${buf}<a href="${url}" target="_blank">[...]</a>`;
+  }
   else
-    return `${summary}`;
+    return summary;
 }
 
-function getPosted(date) {
+function getActivity1(posted) {
 	const months = ['','Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
-  let dateArray = date.split('-');
-  let m = parseInt(dateArray[1]);
-  let d = parseInt(dateArray[2]);
-  return `${months[m]} ${d}`;
+  let dateArray = posted.split('-'),
+  m = parseInt(dateArray[1]),
+  d = parseInt(dateArray[2]),
+  i = '<i class="fi fi-rs-clock" title="Date"></i>',
+  p = `<p><time itemprop="datePublished" datetime="${posted}">${months[m]} ${d}</time><p>`;
+  return i + p;
 }
 
-function getMeta(status, meta) {
-  let buf = '';
+function getActivity2(status, meta) {
+  let i = p = '';
   switch (status) {
     case  1:
-      buf = '<i class="fi fi-rs-interlining" title="Average Page Scrolls"></i>';
+      i = '<i class="fi fi-rs-interlining" title="Average Page Scrolls"></i>';
       break;
     case  4:
-      buf = '<i class="fi fi-rs-eye" title="Views"></i>';
+      i = '<i class="fi fi-rs-eye" title="Views"></i>';
       break;
     default:
-      buf = '<i class="fi fi-rs-star" title="Rating"></i>';
+      i = '<i class="fi fi-rs-star" title="Rating"></i>';
   }
-  return `${buf} <p>${meta}</p>`;
+  p = '<p>'+ meta +'</p>';
+  return i + p;
 }
 
-function getAction1(status, title) { 
-  const DOMAIN = window.location.hostname;
-  const STATUS = ['','news','movies','tvshows','youtube'];
-  title = title.replaceAll(' ','_');
-  return `onClick=prompt('','${DOMAIN}/${STATUS[status]}/${title}')`;
+function getActivity3(status, title) { 
+  title = title.replaceAll(' ','_');  
+  const DOMAIN = window.location.hostname,
+  SUBDIR = 'udara-tv/?req=',
+  STATUS = ['','news','movies','tvshows','youtube'];
+  let uri = `${DOMAIN}/${SUBDIR}${STATUS[status]}/${title}`,
+  clk = `onClick="prompt('', '${uri}')"`,
+  i = '<i class="fi fi-rs-share" title="Share"></i>',
+  p = '<p>Share</p';
+  return `<a ${clk}>${i + p}</a>`;
 }
 
-function getAction2(status) {
-  let buf = '';
+function getActivity4(status) {
+  let i = p = '';
   switch (status) {
     case  1:
-      buf = '<i class="fi fi-rs-bookmark" title="Bookmark"></i>\
-        <p>Bookmark</p>';
+      i = '<i class="fi fi-rs-bookmark" title="Bookmark"></i>';
+      p = '<p>Bookmark</p>';
       break;
     case  4:
-      buf = '<i class="fi fi-rs-bell" title="Subscribe"></i>\
-        <p>Subscribe</p>';
+      i = '<i class="fi fi-rs-bell" title="Subscribe"></i>';
+      p = '<p>Subscribe</p>';
       break;
     default:
-      buf = '<i class="fi fi-rs-thumbtack" title="Watchlist"></i>\
-        <p>Watchlist</p>';
+      i = '<i class="fi fi-rs-thumbtack" title="Watchlist"></i>';
+      p = '<p>Watchlist</p>';
   }
-  return buf;
+  return i + p;
 }
 
-function getAction3(status) {
-  let buf = '';
+function getActivity5(status, url) {
+  let i = p = '';
   switch (status) {
     case  1:
-      buf = '<i class="fi  fi-rs-interactive" title="Read"></i>\
-        <p>Read</p>';
+      i = '<i class="fi fi-rs-interactive" title="Read"></i>';
+      p = '<p>Read</p>';
       break;
     case  4:
-      buf = '<i class="fi fi-rs-play" title="Watch"></i>\
-        <p>Watch</p>';
+      i = '<i class="fi fi-rs-play" title="Watch"></i>';
+      p = '<p>Watch</p>';
       break;
     default:
-      buf = '<i class="fi fi-rs-download" title="Download"></i>\
-        <p>Download</p>';
+      i = '<i class="fi fi-rs-download" title="Download"></i>';
+      p = '<p>Download</p>';
   }
-  return buf;
+
+  return `<a itemprop="url" href="${url}" target="_blank">${i + p}</a>`;
 }
 

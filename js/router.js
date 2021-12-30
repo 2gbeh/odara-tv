@@ -5,9 +5,24 @@ function routeTo(path) {
 }
 
 function routeMatch (str, substr) {
+  substr = substr.replaceAll('%20', ' ');
+  substr = substr.replaceAll('_', ' ');
   var x = str.toLowerCase(), y = substr.toLowerCase();
   if (x.indexOf(y) > -1)
     return true;
+}
+
+function routeFocus (i) {
+  const header = document.querySelectorAll('header .left ul li a');
+  const nav = document.querySelectorAll('nav table tr td a');
+  //return 1;
+  for (let j = 0; j < header.length; j++) {
+    header[j].removeAttribute('class');
+    nav[j].removeAttribute('class');
+  }
+  //console.log(i, header[i], nav[i]);
+  header[i].setAttribute('class','focus');
+  nav[i].setAttribute('class','focus');
 }
 
 function routeSwitch(data) {
@@ -19,6 +34,7 @@ function routeSwitch(data) {
     if (i == 0) {// req=/
       blog = data;
     } else if (i > 0) { // req=/news
+      routeFocus(i);
       blog = data.filter((e) => e.status == i);
       if (p.length == 3) { // req=/news/:title
         subParam = p[2].trim();
