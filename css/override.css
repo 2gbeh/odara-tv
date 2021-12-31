@@ -1,0 +1,14 @@
+@charset "utf-8";
+/* CSS Document */
+.fabb {
+  display: inline-block;
+  /* display: none; */
+}
+main .card .thumbnail sup {
+  display: inline-block;
+  display: none;
+}
+main .pager {
+  display: inline-block;
+  display: none;
+}
