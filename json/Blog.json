@@ -35,7 +35,19 @@
       "url": "https://mangools.com/blog/learn-seo/",
       "status": 1,
       "date": "2021-12-27"
-    },  
+    },
+    {
+      "thumbnail": "tgb.jpeg",
+      "title": "The Girl Before - Season 1 (2021)",
+      "subtitle": "E1-4",
+      "tags": "Gugu Mbatha-Raw, Ben Hardy, David Oyelowo",
+      "posted": "2021-12-19",
+      "meta": "6.2/10",
+      "summary": "The story of Jane, who moves into an artistic, minimalist home with peculiar house rules. A shocking discovery about the prior tenant creates an unnerving atmosphere.",
+      "url": "https://o2tvseries.com/The-Girl-Before-w8/Season-01/index.html",
+      "status": 3,
+      "date": "2021-12-24"
+    },    
     {
       "thumbnail": "fswd.png",
       "title": "The complete Full Stack Web Developer road map for 2022",
@@ -85,90 +97,6 @@
       "date": "2021-12-24"    
     },
     {
-      "thumbnail": "rapi.jpeg",
-      "title": "Turn your API into a Startup. Build and Sell an API with RapidAPI",
-      "subtitle": "40:00",
-      "tags": "JavaScript Mastery",
-      "posted": "2021-07-09",
-      "meta": "173k",
-      "summary": "How to build and deploy your own fully-custom JavaScript API from scratch using Node and Express. Afterward, I'll also teach you how to sell it on a RapidAPI.",
-      "url": "https://m.youtube.com/watch?v=be9sHQ7xqo0",
-      "status": 4,
-      "date": "2021-12-29"    
-    },    
-    {
-      "thumbnail": "fguy.jpeg",
-      "title": "Free Guy (2021)",
-      "subtitle": "361MB",
-      "tags": "Ryan Reynolds, Lil Rel Howery, Jodie Commer, Joe Keery, Utkarsh Ambudkar, Taika Waititi",
-      "posted": "2015-08-13",
-      "meta": "7.1/10",
-      "summary": "When a bank teller discovers he's actually a non-player character (NPC) in an open-world virtual reality game, he decides to become the Hero of his own story.",
-      "url": "https://www.sabishare.com/file/pUvargixM89-free-guy-2021-netnaija-com-mp4",
-      "status": 2,
-      "date": "2021-12-27"
-    }, 
-    {
-      "thumbnail": "smhenry.jpeg",
-      "title": "How to make money as a social media influencer",
-      "subtitle": "Startups",
-      "tags": "Henry Williams",
-      "posted": "2021-05-17",
-      "meta": "20 APS",
-      "summary": "Could you be the next blogging or vlogging sensation? If you've got as knack for producing compelling content then this is the business opportunity for you.",
-      "url": "https://startups.co.uk/guides/how-to-make-money-as-an-online-influencer/",
-      "status": 1,
-      "date": "2021-12-29"
-    },    
-    {
-      "thumbnail": "aioc.jpeg",
-      "title": "Build and deploy MERN stack Progressive Web Apps using MongoDB, Express, React, Node.js",
-      "subtitle": "Medium",
-      "tags": "Leandro Ercoli",
-      "posted": "2021-05-03",
-      "meta": "5 M/R",
-      "summary": "A step-by-step guide to integrating Node.js, Express and React. Building an application to search for artworks at the Art Institute of Chicago via the site API.",
-      "url": "https://medium.com/geekculture/build-and-deploy-a-web-application-with-react-and-node-js-express-bce2c3cfec32",
-      "status": 1,
-      "date": "2021-12-29"
-    },    
-    {
-      "thumbnail": "smjade.jpeg",
-      "title": "Here's how many social media followers you need to make above $100,000 (~N40m)",
-      "subtitle": "CNBC",
-      "tags": "Jade Scipioni",
-      "posted": "2021-04-30",
-      "meta": "10 APS",
-      "summary": "Social media influencers can make big money on platforms such as TikTok, YouTube and Instagram. But it all depends greatly on followers and views. To calculate the estimates, Lickd.co used data from Influencers Marketting Hubs.",
-      "url": "https://www.cnbc.com/2021/04/30/how-much-money-you-can-make-off-social-media-following-calculator.html",
-      "status": 1,
-      "date": "2021-12-29"
-    },  
-    {
-      "thumbnail": "3wm2.jpeg",
-      "title": "Nigerian Founders-Turned-Investors are now running Syndicate Funds",
-      "subtitle": "TechCrunch",
-      "tags": "Tage Kene-Okafor",
-      "posted": "2021-03-02",
-      "meta": "10 APS",
-      "summary": "Future Africa Fund kicked-off in 2015 when Andela co-founders; Iyinoluwa Aboyeji and Nadayar Enegesi, wrote cheques to African startups as angel investors.",
-      "url": "https://techcrunch.com/2021/03/02/nigerian-founders-turn-investors-are-now-running-syndicate-funds/amp/",
-      "status": 1,
-      "date": "2021-12-24"    
-    },
-    {
-      "thumbnail": "tgb.jpeg",
-      "title": "The Girl Before - Season 1 (2021)",
-      "subtitle": "E1-4",
-      "tags": "Gugu Mbatha-Raw, Ben Hardy, David Oyelowo",
-      "posted": "2021-12-19",
-      "meta": "6.2/10",
-      "summary": "The story of Jane, who moves into an artistic, minimalist home with peculiar house rules. A shocking discovery about the prior tenant creates an unnerving atmosphere.",
-      "url": "https://o2tvseries.com/The-Girl-Before-w8/Season-01/index.html",
-      "status": 3,
-      "date": "2021-12-24"
-    },
-    {
       "thumbnail": "invas.jpeg",
       "title": "Invasion - Season 1 (2021)",
       "subtitle": "E1-10",
@@ -215,6 +143,90 @@
       "url": "https://o2tvseries.com/Squid-Game/Season-01/index.html",
       "status": 3,
       "date": "2021-12-29"
+    },      
+    {
+      "thumbnail": "fguy.jpeg",
+      "title": "Free Guy (2021)",
+      "subtitle": "361MB",
+      "tags": "Ryan Reynolds, Lil Rel Howery, Jodie Commer, Joe Keery, Utkarsh Ambudkar, Taika Waititi",
+      "posted": "2021-08-13",
+      "meta": "7.1/10",
+      "summary": "When a bank teller discovers he's actually a non-player character (NPC) in an open-world virtual reality game, he decides to become the Hero of his own story.",
+      "url": "https://www.sabishare.com/file/pUvargixM89-free-guy-2021-netnaija-com-mp4",
+      "status": 2,
+      "date": "2021-12-27"
+    }, 
+    {
+      "thumbnail": "rapi.jpeg",
+      "title": "Turn your API into a Startup. Build and Sell an API with RapidAPI",
+      "subtitle": "40:00",
+      "tags": "JavaScript Mastery",
+      "posted": "2021-07-09",
+      "meta": "173k",
+      "summary": "How to build and deploy your own fully-custom JavaScript API from scratch using Node and Express. Afterward, I'll also teach you how to sell it on a RapidAPI.",
+      "url": "https://m.youtube.com/watch?v=be9sHQ7xqo0",
+      "status": 4,
+      "date": "2021-12-29"    
+    },     
+    {
+      "thumbnail": "smhenry.jpeg",
+      "title": "How to make money as a social media influencer",
+      "subtitle": "Startups",
+      "tags": "Henry Williams",
+      "posted": "2021-05-17",
+      "meta": "20 APS",
+      "summary": "Could you be the next blogging or vlogging sensation? If you've got as knack for producing compelling content then this is the business opportunity for you.",
+      "url": "https://startups.co.uk/guides/how-to-make-money-as-an-online-influencer/",
+      "status": 1,
+      "date": "2021-12-29"
+    },    
+    {
+      "thumbnail": "aioc.jpeg",
+      "title": "Build and deploy MERN stack Progressive Web Apps using MongoDB, Express, React, Node.js",
+      "subtitle": "Medium",
+      "tags": "Leandro Ercoli",
+      "posted": "2021-05-03",
+      "meta": "5 M/R",
+      "summary": "A step-by-step guide to integrating Node.js, Express and React. Building an application to search for artworks at the Art Institute of Chicago via the site API.",
+      "url": "https://medium.com/geekculture/build-and-deploy-a-web-application-with-react-and-node-js-express-bce2c3cfec32",
+      "status": 1,
+      "date": "2021-12-29"
+    },    
+    {
+      "thumbnail": "smjade.jpeg",
+      "title": "Here's how many social media followers you need to make above $100,000 (~N40m)",
+      "subtitle": "CNBC",
+      "tags": "Jade Scipioni",
+      "posted": "2021-04-30",
+      "meta": "10 APS",
+      "summary": "Social media influencers can make big money on platforms such as TikTok, YouTube and Instagram. But it all depends greatly on followers and views. To calculate the estimates, Lickd.co used data from Influencers Marketting Hubs.",
+      "url": "https://www.cnbc.com/2021/04/30/how-much-money-you-can-make-off-social-media-following-calculator.html",
+      "status": 1,
+      "date": "2021-12-29"
+    },  
+    {
+      "thumbnail": "theone.jpeg",
+      "title": "The One - Season 1 (2021)",
+      "subtitle": "E1-8",
+      "tags": "Hannah Ware, Albano Jeronimo, Eric Kofi-Abrefa, Lois Chimimba, Pallavi Sharda, Stephen C. Moore",
+      "posted": "2021-03-12",
+      "meta": "5.4/10",
+      "summary": "Rebecca is the ambitious and impulsive founding CEO of MatchDNA, a company that can pair people with their perfect partner based solely on their DNA samples.",
+      "url": "https://o2tvseries.com/The-One/Season-01/index.html",
+      "status": 3,
+      "date": "2021-12-31"
+    },    
+    {
+      "thumbnail": "3wm2.jpeg",
+      "title": "Nigerian Founders-Turned-Investors are now running Syndicate Funds",
+      "subtitle": "TechCrunch",
+      "tags": "Tage Kene-Okafor",
+      "posted": "2021-03-02",
+      "meta": "10 APS",
+      "summary": "Future Africa Fund kicked-off in 2015 when Andela co-founders; Iyinoluwa Aboyeji and Nadayar Enegesi, wrote cheques to African startups as angel investors.",
+      "url": "https://techcrunch.com/2021/03/02/nigerian-founders-turn-investors-are-now-running-syndicate-funds/amp/",
+      "status": 1,
+      "date": "2021-12-24"    
     },
     {
       "thumbnail": "seo.jpeg",
@@ -241,10 +253,34 @@
       "date": "2021-12-28"
     },
     {
+      "thumbnail": "tenet.jpg",
+      "title": "TENET (2020)",
+      "subtitle": "438MB",
+      "tags": "John David Washington, Robert Pattinson, Elizabeth Debicki, Kenneth Branagh, Dimple Kapadia",
+      "posted": "2020-09-11",
+      "meta": "7.1/10",
+      "summary": "When a few objects that can be manipulated and used as futuristic weapons fall into the wrong hands, a CIA operative, known as The Protagonist, must save the world.",
+      "url": "https://www.sabishare.com/file/aLFQpJtRM43-tenet-2020-netnaija-com-mp4",
+      "status": 2,
+      "date": "2021-12-31"
+    }, 
+    {
+      "thumbnail": "devsfx.jpeg",
+      "title": "Devs - Season 1 (2020)",
+      "subtitle": "E1-8",
+      "tags": "Sonoya Mizuno, Karl Glusman, Nick Offerman, Zach Grenier, Alison Pill, Jin Ha, Cailee Spaeny, Stephen McKinley Henderson",
+      "posted": "2020-03-05",
+      "meta": "7.8/10",
+      "summary": "A computer engineer, suspects the CEO of Amaya, a computing firm, of being involved in her boyfriend's disappearance. As she sets out to investigate the truth.",
+      "url": "https://o2tvseries.com/Devs/Season-01/index.html",
+      "status": 3,
+      "date": "2021-12-31"
+    },         
+    {
       "thumbnail": "iamm.jpeg",
       "title": "I Am Mother (2019)",
       "subtitle": "302MB",
-      "tags": "Luke Hwaker, Michael Lloyd, Tahlia Sturzaker, Summer Lenton, Maddie Lenton",
+      "tags": "Luke Hawker, Michael Lloyd, Tahlia Sturzaker, Summer Lenton, Maddie Lenton",
       "posted": "2019-01-25",
       "meta": "7.4/10",
       "summary": "After humanity's extinction, a robot raises a human girl and loves her like a daughter. However, their bond is threatened when a stranger enters their lives.",
@@ -275,7 +311,19 @@
       "url": "https://fzmovies.net/movie-Replicas--hmp4.htm",
       "status": 2,
       "date": "2021-12-28"
-    },    
+    }, 
+    {
+      "thumbnail": "upg.jpeg",
+      "title": "Upgrade (2018)",
+      "subtitle": "176MB",
+      "tags": "Logan Marshall-Green, Melanie Vallejo, Betty Gabriel, Harrison Gilbertson, Simon Maiden, Benedict Hardie",
+      "posted": "2018-08-31",
+      "meta": "7.7/10",
+      "summary": "A technophobe suffers paralysis and loses his wife in a self-driving car accident. A tech billionaire offers him a chip that can restore in his body mobility as he sets out to get vengeance.",
+      "url": "https://www.sabishare.com/file/ZxWvkZWlo02-upgrade-2018-netnaija-com-mp4",
+      "status": 2,
+      "date": "2021-12-31"
+    },       
     {
       "thumbnail": "rpo2018.jpeg",
       "title": "Ready Player One (2018)",
@@ -527,6 +575,6 @@
       "url": "https://fzmovies.net/movie-I%20Robot--hmp4.htm",
       "status": 2,
       "date": "2021-12-27"
-    }                             
+    }  
   ]
 }
