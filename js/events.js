@@ -23,7 +23,7 @@ async function shareBlog (title, text, url) {
 
 function getBlog (data) {
   data = JSON.parse(data)['root'];
-  googleStructuredData(data);
+  googleSearchCarousel(data);
   const datalist = document.querySelector('header #hint'),
   card = document.querySelector('main #card'),
   pager = document.querySelector('main #pager');  
@@ -41,7 +41,7 @@ function getBlog (data) {
 }
 
 function getBlogList (row, n) {
-  return '<li itemscope itemtype="https://schema.org/CreativeWork">\
+  return '<li itemscope itemtype="https://schema.org/CreativeWork" id="'+ n +'">\
     <div itemprop="image" class="thumbnail" style="background-image: url(./img/'+ row.thumbnail +')">\
       <sup itemprop="identifier">#'+ n +'</sup>\
       <sub '+ getSubAttrib(row.status) + '>'+ row.subtitle +'</sub>\
@@ -197,7 +197,7 @@ function getActivity5(status, url) {
   return `<a itemprop="url" href="${url}" target="_blank">${i + p}</a>`;
 }
 
-function googleStructuredData(data) {
+function googleSearchCarousel(data) {
   const path = 'https://2gbeh.github.io/udara-tv/';
   var listItems = '', listItem = '', j = 0, e = {}, url = '', dir = '';
   for  (let i = 0; i < data.length; i++) {

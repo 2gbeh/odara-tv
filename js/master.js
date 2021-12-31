@@ -32,6 +32,7 @@ function isOnline() {return navigator.onLine;}
 function isJavaEnabled() {return navigator.javaEnabled();}
 function indexOfAlt (str, substr) {return str.toLowerCase().indexOf(substr.toLowerCase());}
 function newRequest (args) {location.href = args;}
+function extendHead (args) {document.querySelector('head').innerHTML += args;}
 function escRequest (str) 
 {
   return str.
@@ -577,8 +578,8 @@ function cloneSelector (selector) {
 }
 
 function darkMode (directory) {
-  const hr = new Date().getHours();  
-  var link = `<link type="text/css" href="${directory}" rel="stylesheet" />`;
+  const hr = new Date().getHours(),
+  link = `<link type="text/css" href="${directory}" rel="stylesheet" />`;
   if (hr <= 6 || hr >= 18) {
     document.querySelector('head').innerHTML += link;
 		return true;
