@@ -199,24 +199,29 @@ function getActivity5(status, url) {
 
 function googleStructuredData(data) {
   const path = 'https://2gbeh.github.io/udara-tv/';
-  var listItems = '', listItem = '', j = 0, e = {};
+  var listItems = '', listItem = '', j = 0, e = {}, url = '', dir = '';
   for  (let i = 0; i < data.length; i++) {
     if (data[i].status == 2) {
       j += 1;
       e = data[i];
+      url = e.title;
+      dir = e.tags.split(',')[0];
+
       listItem = '{"@type": "ListItem", ';
       listItem += '"position": "'+ j +'", ';
       listItem += '"item": {"@type": "Movie", ';
-      listItem += '"url": "'+ path +'?req=movies/'+ e.title.replaceAll(' ','_') +'", ';
+      listItem += '"url": "'+ path +'?req=movies/'+ url.replaceAll(' ','_') +'", ';
       listItem += '"name": "'+ e.title +'", ';
       listItem += '"image": "'+ path +'img/'+ e.thumbnail +'", ';
-      listItem += '"dateCreated": "'+ e.posted +'"';
+      listItem += '"dateCreated": "'+ e.posted +'", ';
+      listItem += '"director": {"@type": "Person", "name": "'+ dir.trim() +'"}';
       listItem += '}},';
       listItems += listItem;
     } 
     if (j == 10) break;
   }
   listItems = listItems.slice(0,-1);
+  
   var script = `<script type="application/ld+json">
     {
       "@context": "https://schema.org",
