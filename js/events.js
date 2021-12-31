@@ -156,7 +156,7 @@ function getActivity3(row) {
   PREFIX = ['','[READ]','[DOWNLOAD]','[DOWNLOAD]','[WATCH]'],
   URI = `${DOMAIN}/${SUBDIR}/?req=${STATUS[row.status]}/${PARAM}`,
   DATA = { title: 'Udara', text: `${PREFIX[row.status]} ${row.title}`, url: URI };  
-  let i = '<i class="fi fi-rs-share" title="Share"></i>', p = '<p>Share</p';
+  let i = '<i class="fi fi-rs-share" title="Share"></i>', p = '<p>Share</p>';
   return `<a onClick="shareBlog('${DATA.title}', '${DATA.text}', '${DATA.url}')">${i + p}</a>`;
 }
 
