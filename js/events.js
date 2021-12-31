@@ -6,14 +6,29 @@ async function fetchBlog (directory, callback) {
   callback(content);
 };  
 
-function getBlog (data) {
-  const datalist = document.querySelector('header #hint');
-  const card = document.querySelector('main #card');
-  const pager = document.querySelector('main #pager');
-  var blog = JSON.parse(data)['root'], blog = routeSwitch(blog);
-  //blog.reverse();
+async function shareBlog (title, text, url) {
+  // MUST be running on a server
+  // const data = {title: 'MDN', text: 'Learn web development on MDN!', url: 'https://developer.mozilla.org'}
+  const data = {title: title, text: text, url: url}
+  // console.log(data);
+  if (navigator.canShare) {
+    data.url = '?' + data.url.split('?')[1];
+    navigator.share(data)
+    .then((data) => console.log('File share successful!', data))
+    .catch((err) => console.log('File share unsuccessful!', err));
+  } else {
+    prompt('Copy to clipboard', data.url);
+  }
+};  
 
-  var n = 0, li = '', dl = '';
+function getBlog (data) {
+  data = JSON.parse(data)['root'];
+  googleStructuredData(data);
+  const datalist = document.querySelector('header #hint'),
+  card = document.querySelector('main #card'),
+  pager = document.querySelector('main #pager');  
+  var blog = routeSwitch(data), n = 0, li = '', dl = '';
+  // blog.reverse();
   blog.map(function(e, i) {
     n += 1;
     dl += `<option value="${e.title}" />`
@@ -93,9 +108,7 @@ function getBylineAttrib(status) {
 function getByline(tags) {  
   let buf = '';
   tags = tags.split(',');
-  tags.map((e, i) => {
-    buf += '<a itemprop="author" class="link">'+ e.trim() +'</a>';
-  });
+  tags.map((e) => buf += '<a itemprop="author" class="link">'+ e.trim() +'</a>');
   return buf;
 }
 
@@ -147,21 +160,6 @@ function getActivity3(row) {
   return `<a onClick="shareBlog('${DATA.title}', '${DATA.text}', '${DATA.url}')">${i + p}</a>`;
 }
 
-async function shareBlog (title, text, url) {
-  // MUST be running on a server
-  // const data = {title: 'MDN', text: 'Learn web development on MDN!', url: 'https://developer.mozilla.org'}
-  const data = {title: title, text: text, url: url}
-  // console.log(data);
-  if (navigator.canShare) {
-	  data.url = '?' + data.url.split('?')[1];
-    navigator.share(data)
-    .then((data) => console.log('File share successful!', data))
-    .catch((err) => console.log('File share unsuccessful!', err));
-  } else {
-    prompt('Copy to clipboard', data.url);
-  }
-};  
-
 function getActivity4(status) {
   let i = p = '';
   switch (status) {
@@ -199,3 +197,34 @@ function getActivity5(status, url) {
   return `<a itemprop="url" href="${url}" target="_blank">${i + p}</a>`;
 }
 
+function googleStructuredData(data) {
+  const path = 'https://2gbeh.github.io/udara-tv/';
+  var listItems = '', listItem = '', j = 0, e = {};
+  for  (let i = 0; i < data.length; i++) {
+    if (data[i].status == 2) {
+      j += 1;
+      e = data[i];
+      listItem = '{"@type": "ListItem", ';
+      listItem += '"position": "'+ j +'", ';
+      listItem += '"item": {"@type": "Movie", ';
+      listItem += '"url": "'+ path +'?req=movies/'+ e.title.replaceAll(' ','_') +'", ';
+      listItem += '"name": "'+ e.title +'", ';
+      listItem += '"image": "'+ path +'img/'+ e.thumbnail +'", ';
+      listItem += '"dateCreated": "'+ e.posted +'"';
+      listItem += '}},';
+      listItems += listItem;
+    } 
+    if (j == 10) break;
+  }
+  listItems = listItems.slice(0,-1);
+  var script = `<script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ItemList",
+      "itemListElement": [${listItems}]
+    }
+  </script>`;
+  //console.dir(script);
+  document.querySelector('head').innerHTML += script;
+	return script;
+}
