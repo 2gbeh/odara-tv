@@ -27,7 +27,7 @@ main .card .thumbnail {
   background-size: cover;
   border-bottom: solid thin #ddd;
   width: 100%;
-  height: 240px; 
+  height: 240px;
 }
 main .card .thumbnail sup,
 main .card .thumbnail sub {
@@ -37,7 +37,7 @@ main .card .thumbnail sub {
   padding: 2px 4px 3px;
   font-size: 10px;
   letter-spacing: 1px;
-  cursor: help;  
+  cursor: help;
 }
 main .card .thumbnail sup {
   top: 10px;
@@ -46,7 +46,7 @@ main .card .thumbnail sup {
 }
 main .card .thumbnail sub {
   bottom: 10px;
-  right: 10px;  
+  right: 10px;
 }
 
 main .card article {
@@ -82,43 +82,42 @@ main .card .byline a {
   cursor: default;
 }
 
-main .card .summary {  
+main .card .summary {
   color: #333;
   margin: 0 15px 5px;
   padding: 5px 0 0;
   text-align: justify;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   font-size: 16px;
   line-height: 22px;
 }
 main .card .summary a {
   color: #069;
   font-size: 12px;
-} 
+}
 main .card .summary a:hover {
   color: #e11;
-} 
+}
 
 main .card .activity {
   border-top: solid thin #eee;
   margin: 10px 5px 0;
   padding: 10px 0 0;
-  
 }
 main .card .activity table tr td {
   color: #444;
   min-width: 10px;
   max-width: 10px;
-  text-align: center;  
+  text-align: center;
 }
 main .card .activity table tr td:hover {
   color: #333;
 }
 main .card .activity a {
-  font-size: 12px; 
+  font-size: 12px;
 }
 main .card .activity i {
-  font-size: 18px;  
+  font-size: 18px;
   font-weight: normal;
   cursor: pointer;
 }
@@ -132,11 +131,9 @@ main .pager {
   margin: 20px 20px 0;
   text-align: right;
 }
-
 main .pager form {
   display: inline-block;
 }
-
 main .pager form input,
 main .pager form button {
   background-color: #fff;
@@ -145,7 +142,7 @@ main .pager form button {
   box-shadow: 0 4px 4px #ccc;
   margin: 0 1px;
   width: 50px;
-  height: 40px;  
+  height: 40px;
   text-align: center;
   font-weight: 400;
 }
@@ -157,7 +154,6 @@ main .pager form button:hover {
 }
 main .pager form button i {
   font-size: 16px;
-  line-height: 0; 
+  line-height: 0;
   vertical-align: bottom;
 }
-

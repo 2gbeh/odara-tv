@@ -12,12 +12,13 @@
 */
 
 body {
-	background-color: #f7f7f7;
+  background-color: #f7f7f7;
 }
 
-header, 
+header,
 .overlay-fill,
 nav,
+aside .tile .thumbnail sub a,
 footer address {
   background-color: #20232a;
 }
@@ -29,6 +30,7 @@ aside .action a {
   border-color: #20232a;
 }
 
+aside .tile .thumbnail sub a:hover,
 footer {
   background-color: #282c34;
 }
@@ -47,13 +49,17 @@ header .center form input:focus {
 header .left ul li a.focus,
 header .right a.focus,
 nav table tr td a.focus,
+aside .tile .thumbnail sub i,
 footer .nav ul li a {
   color: #60dbfb;
+}
+aside .tile .thumbnail sub {
+  box-shadow: 0 2px 0 #60dbfb;
 }
 
 main .card .byline a,
 aside .action a:hover {
-	background-color: #eafafe;
+  background-color: #eafafe;
 }
 header .svgg sub,
 header .left ul li a:hover,
@@ -63,3 +69,4 @@ footer .nav ul li a:hover,
 footer .nav p {
   color: #eafafe;
 }
+

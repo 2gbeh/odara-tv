@@ -19,6 +19,7 @@ main .card ul li,
 main .card .thumbnail,
 main .pager form input,
 main .pager form button,
+aside .tile table tr td,
 footer {
   background-color: #20232a;
 }
@@ -33,16 +34,24 @@ main .pager form button:hover {
   border-color: #20232a;
 }
 
+side .tile .activity a p {
+  color: #60dbfb;
+}
+
 main .card .headline a:hover,
 main .card .summary,
 main .card .activity table tr td,
+aside .tile h2,
+aside .tile .activity i,
+aside .tile .activity p,
 aside h2 {
   color: #eafafe;
   text-shadow: none;
 }
 
 main .card .thumbnail,
-main .card .activity {
+main .card .activity,
+aside .tile .thumbnail {
   border-color: #33373e;
 }
 
@@ -50,6 +59,7 @@ main .card .headline a,
 main .card .activity table tr td:hover,
 main .pager form input,
 main .pager form button,
+aside .tile .headline,
 aside p {
   color: #fff;
   text-shadow: none;
@@ -61,6 +71,7 @@ footer address {
 
 main .card ul li,
 main .pager form input,
-main .pager form button {  
+main .pager form button,
+aside .tile table tr td {  
   box-shadow: 0 4px 4px #111;
 }

@@ -12,7 +12,7 @@
   }
   main .card article {
     min-height: auto;
-  }  
+  }
 }
 
 @media only screen and (max-width: 683px) {
@@ -64,4 +64,11 @@
   aside h2 {
     font-size: 20px;
   }
+  aside .tile table tr td {
+    min-width: 260px;
+    max-width: 260px;
+  }
+  aside .tile .thumbnail {
+    height: 160px;
+  }  
 }

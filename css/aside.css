@@ -36,3 +36,105 @@ aside .action a {
 aside .action i {
   margin: 0 5px;
 }
+
+aside .tile {
+  margin-top: 40px;
+  text-align: center;
+  overflow: auto;
+  white-space: nowrap;
+}
+
+aside .tile table {
+  width: auto;
+  display: inline-block;
+}
+aside .tile table tr {
+  vertical-align: top;
+}
+aside .tile table tr td {
+  background-color: #fff;
+  box-shadow: 0 4px 4px #ccc;
+  margin: 0 5px;
+  min-width: 300px;
+  max-width: 300px;
+  text-align: left;
+  display: inline-block;
+  white-space: normal;
+}
+
+aside .tile .thumbnail {
+  position: relative;
+  background-color: #fff;
+  background-image: url("../thumbnail.png");
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
+  border-bottom: solid thin #ddd;
+  width: 100%;
+  height: 200px;
+}
+aside .tile .thumbnail sub {
+  position: absolute;
+  bottom: -20px;
+  right: 15px;
+  border-radius: 100%;
+  box-shadow: 0 2px 0 #222;
+}
+aside .tile .thumbnail sub a {
+  position: relative;
+  background-color: #555;
+  color: #fff;
+  border-radius: 100%;
+  width: 46px;
+  height: 46px;
+  display: block;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+aside .tile .thumbnail sub a:hover {
+  background-color: #333;
+}
+aside .tile .thumbnail sub i {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-shadow: none;
+  font-size: 14px;
+  line-height: 0; 
+}
+
+aside .tile article {
+  min-height: 120px;
+}
+
+aside .tile .activity {
+  margin: 10px 15px 5px;
+}
+aside .tile .activity var {
+  margin: 0 10px 0 0;
+}
+aside .tile .activity i,
+aside .tile .activity p {
+  color: #333;
+  font-size: 14px;
+}
+aside .tile .activity i {
+  vertical-align: middle;
+}
+aside .tile .activity p {
+  margin: 0;
+  margin-left: 4px;
+  display: inline-block;
+}
+
+aside .tile .headline {
+  margin: 0 15px 20px;
+  font-size: 20px;
+  color: #333;
+  text-align: justify;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 16px;
+  line-height: 22px;
+  display: inline-block;
+}
