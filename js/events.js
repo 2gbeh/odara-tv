@@ -24,6 +24,7 @@ async function shareBlog (title, text, url) {
 function getBlog (data) {
   data = JSON.parse(data)['root'];
   googleSearchCarousel(data);
+  //lastMileHook(data);
   const datalist = document.querySelector('header #hint'),
   card = document.querySelector('main #card'),
   pager = document.querySelector('main #pager');  
@@ -133,7 +134,7 @@ function getActivity1(posted) {
 }
 
 function getActivity2(status, meta) {
-  let i = p = '';
+  let i = p = '<p>'+ meta +'</p>';
   switch (status) {
     case  1:
       i = '<i class="fi fi-rs-interlining" title="Average Page Scrolls"></i>';
@@ -144,7 +145,6 @@ function getActivity2(status, meta) {
     default:
       i = '<i class="fi fi-rs-star" title="Rating"></i>';
   }
-  p = '<p>'+ meta +'</p>';
   return i + p;
 }
 
@@ -193,7 +193,6 @@ function getActivity5(status, url) {
       i = '<i class="fi fi-rs-download" title="Download"></i>';
       p = '<p>Download</p>';
   }
-
   return `<a itemprop="url" href="${url}" target="_blank">${i + p}</a>`;
 }
 
@@ -232,4 +231,24 @@ function googleSearchCarousel(data) {
   //console.dir(script);
   document.querySelector('head').innerHTML += script;
 	return script;
+}
+
+function lastMileHook (data) {
+  return 1;
+  const picker = [
+    1,16,19,2,13,21,22,24,25,26,
+    27,31,32,34,38,39,40,41,42,44,
+    47,48,4,11,12,18,23,43,6,20
+  ];  
+  var li = '', j = 1, p = 0;
+  data.map(function(e, i) {
+    p = i + 1;
+    if (picker.includes(p) /*e.status == 4*/)
+      li += getBlogList(e, p);
+    j++;
+  });
+  
+  var main = document.querySelector('main'),
+  outp = '<textarea>'+ li +'</textarea>';
+  main.innerHTML = outp + main.innerHTML;
 }
