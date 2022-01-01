@@ -64,9 +64,6 @@
   aside h2 {
     font-size: 20px;
   }
-  aside .tile {
-    margin-top: 20px;
-  }  
   aside .tile table tr td {
     min-width: 240px;
     max-width: 240px;
