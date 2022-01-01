@@ -33,6 +33,7 @@ function isJavaEnabled() {return navigator.javaEnabled();}
 function indexOfAlt (str, substr) {return str.toLowerCase().indexOf(substr.toLowerCase());}
 function newRequest (args) {location.href = args;}
 function extendHead (args) {document.querySelector('head').innerHTML += args;}
+function extendBody (args) {document.querySelector('body').innerHTML += args;}
 function escRequest (str) 
 {
   return str.

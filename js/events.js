@@ -43,7 +43,7 @@ function getBlog (data) {
 
 function getBlogList (row, n) {
   return '<li itemscope itemtype="https://schema.org/CreativeWork" id="'+ n +'">\
-    <div itemprop="image" class="thumbnail" style="background-image: url(./img/'+ row.thumbnail +')">\
+    <div itemprop="image" class="thumbnail" style="background-image: url(./img/'+ row.thumbnail +');">\
       <sup itemprop="identifier">#'+ n +'</sup>\
       <sub '+ getSubAttrib(row.status) + '>'+ row.subtitle +'</sub>\
     </div>\
@@ -197,10 +197,20 @@ function getActivity5(status, url) {
 }
 
 function googleSearchCarousel(data) {
-  const path = 'https://2gbeh.github.io/udara-tv/';
-  var listItems = '', listItem = '', j = 0, e = {}, url = '', dir = '';
+  const head = document.querySelector('head'),
+  tile = document.querySelector('aside #tile'),
+  path = 'https://2gbeh.github.io/udara-tv/',
+  STATUS = ['','News','Movies','TV Shows','YouTube'],
+  tooltip = ['','Read','Download','Download','Watch'],
+  fb = ['','fi fi-rs-interactive','fi fi-rs-download','fi fi-rs-download','fi fi-rs-play'],
+  fi = ['','fi fi-rs-browser','fi fi-rs-video-camera','fi fi-rs-film','fi fi-rs-play-alt'],
+  // pg = ['','?req=/news','?req=/movies','?req=/tvshows','youtube?req=/'],
+  pg = ['','news.html','movies.html','tvshows.html','youtube.html'];
+  var picked = [], s = 0, listItems = '', listItem = '', td = '', j = 0, e = {}, url = '', dir = '';
   for  (let i = 0; i < data.length; i++) {
-    if (data[i].status == 2) {
+    s = data[i].status;
+    if (! picked.includes(s)) {
+      picked.push(s);
       j += 1;
       e = data[i];
       url = e.title;
@@ -209,15 +219,43 @@ function googleSearchCarousel(data) {
       listItem = '{"@type": "ListItem", ';
       listItem += '"position": "'+ j +'", ';
       listItem += '"item": {"@type": "Movie", ';
-      listItem += '"url": "'+ path +'?req=movies/'+ url.replaceAll(' ','_') +'", ';
+      listItem += '"url": "'+ path +'?req=/'+ url.replaceAll(' ','_') +'", ';
       listItem += '"name": "'+ e.title +'", ';
       listItem += '"image": "'+ path +'img/'+ e.thumbnail +'", ';
       listItem += '"dateCreated": "'+ e.posted +'", ';
       listItem += '"director": {"@type": "Person", "name": "'+ dir.trim() +'"}';
       listItem += '}},';
       listItems += listItem;
+   
+      td += '<td itemscope itemtype="https://schema.org/CreativeWork">\
+        <div itemprop="image" class="thumbnail" style="background-image: url(./img/'+ e.thumbnail +');">\
+          <sub>\
+            <a itemprop="url" href="'+ e.url +'" target="_blank" title="'+ tooltip[e.status] +'">\
+              <i class="'+ fb[e.status] +'"></i>\
+            </a>\
+          </sub>\
+        </div>\
+        <article>\
+          <div class="activity">\
+            <var>\
+              <i class="fi fi-rs-clock"></i>\
+              <p><time itemprop="datePublished" datetime="'+ e.posted +'">Dec 19</time></p>\
+            </var>\
+            <var>\
+              <a href="'+ pg[e.status] +'">\
+                <i class="'+ fi[e.status] +'"></i>\
+                <p itemprop="genre" style="text-decoration: underline;">'+ STATUS[e.status] +'<p>\
+              </a>\
+            </var>\
+          </div>\
+          <div itemprop="headline" class="headline">\
+            '+ e.title +'\
+          </div>\
+        </article>\
+      </td>';
+
     } 
-    if (j == 10) break;
+    if (picked.length == 4) break;
   }
   listItems = listItems.slice(0,-1);
   
@@ -227,10 +265,11 @@ function googleSearchCarousel(data) {
       "@type": "ItemList",
       "itemListElement": [${listItems}]
     }
-  </script>`;
-  //console.dir(script);
-  document.querySelector('head').innerHTML += script;
-	return script;
+  </script>`;  
+  head.innerHTML += script;
+  tile.innerHTML = '<table border="0"><tr>'+ td +'</tr></table>';
+  //console.dir(script, td);
+	return [script, td];
 }
 
 function lastMileHook (data) {
