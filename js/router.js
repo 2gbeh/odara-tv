@@ -1,12 +1,11 @@
 "use strict";
 
 function routeTo(path) {
-  location.href = `?req=${path}`;
+  location.href = `${Context.req}${path}`;
 }
 
 function routeMatch (str, substr) {
-  substr = substr.replaceAll('%20', ' ');
-  substr = substr.replaceAll('_', ' ');
+  substr = UTILS.escTitle(substr);
   var x = str.toLowerCase(), y = substr.toLowerCase();
   if (x.indexOf(y) > -1)
     return true;
@@ -26,11 +25,10 @@ function routeFocus (i) {
 }
 
 function routeSwitch(data) {
-  const STATUS = ['','news','movies','tvshows','youtube'];
   var href = window.location.href, blog = [];
   if (href.indexOf('?') > 0) {
     var q = href.split('?'), p = q[1].split('/'), param = p[1].trim(), subParam = '';    
-    var i = STATUS.indexOf(param);
+    var i = Enums.path.indexOf(param);
     if (i == 0) {// req=/
       blog = data;
     } else if (i > 0) { // req=/news

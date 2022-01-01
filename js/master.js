@@ -30,6 +30,7 @@ function printer() {window.print();}
 function redirect (url) {location.assign(url);}
 function isOnline() {return navigator.onLine;}
 function isJavaEnabled() {return navigator.javaEnabled();}
+function isLocalhost() {return window.location.hostname === '127.0.0.1';}
 function indexOfAlt (str, substr) {return str.toLowerCase().indexOf(substr.toLowerCase());}
 function newRequest (args) {location.href = args;}
 function extendHead (args) {document.querySelector('head').innerHTML += args;}
@@ -473,27 +474,55 @@ function toTitleCase (str)
 	}
 	return buf.join(' ');
 }
+function ago_f (args = '2011-11-14') {
+	if (args.length == 10) {
+		/* 2021-08-31 <=> 3 months ago */
+		var arr = args.split('-');
+		var yyyy = parseInt(arr[0]);
+		var mm = parseInt(arr[1]);
+		var dd = parseInt(arr[2]);
+		
+		var d = new Date(), today = false, dif = 0, buf = '';
+		dif = d.getFullYear() - yyyy;
+		if (dif < 1) {
+			dif = (d.getMonth() + 1) - mm;
+			if (dif < 1) {
+				dif = d.getDate() - dd;
+				buf = dif > 1? dif + ' days ': dif + ' day ';
+				today = true; 
+			}
+			else {
+				buf = dif > 1? dif + ' months ': dif + ' month ';
+			}
+		}
+		else {
+			buf = dif > 1? dif + ' years ': dif + ' year ';
+		}
+		buf = today == true? 'today': buf += 'ago';
+		return buf;
+	}
+}
 
 // CALENDAR
-function Calendar()
+function Calendar(dt = 'now')
 {
-	// var cal = new Calendar();
+	// const cal = new Calendar('2015-03-25T12:00:00');
 	this.DAYS = DAYS = ['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'];
 	this.MONTHS = MONTHS = ['','January','February','March','April','May','June','July','August','September','October','November','December'];
 	
-	this.date 				= date = new Date(); // Fri Nov 06 2020 21:04:22 GMT+0100 (West Africa Standard Time)
+	this.date 				= date = dt == 'now'? new Date(): new Date(dt); // Fri Nov 06 2020 21:04:22 GMT+0100 (West Africa Standard Time)
 	this.year 				= year = date.getFullYear(); // 1992
 	this.year_short 	= year_short = year.toString().slice(-2); // *92
 	this.month 				= month = date.getMonth() + 1; //  1 - 12
 	this.month_digit	= month_digit = digit_f(month); // 01 - 12
 	this.month_long 	= month_long = MONTHS[month]; // January - December	
-	this.month_short 	= month_short = short_f(month_long); // Jan - Dec	
+	this.month_short 	= month_short = abbr_f(month_long); // Jan - Dec	
 	this.day 					= day = date.getDate(); // 1 - 31
 	this.day_digit 		= day_digit = digit_f(day); // 01 - 31
 	this.day_nth 			= day_nth = nth_f(day); // *st, *nd, *rd, *th
 	this.dow 					= dow = date.getDay(); // 0 - 6
 	this.dow_long 		= dow_long = DAYS[dow]; // Sunday - Saturday
-	this.dow_short 		= dow_short = short_f(dow_long); // Sun - Sat
+	this.dow_short 		= dow_short = abbr_f(dow_long); // Sun - Sat
 	this.hrs 					= hrs = date.getHours(); // 0 - 23
 	this.hrs_digit		= hrs_digit = digit_f(hrs); // 00 - 23	
 	this.hrs_xii			= hrs_xii = xii_f(hrs); // 12 HOURS
@@ -509,10 +538,12 @@ function Calendar()
 
 	this.date_long = dow_long +', '+ month_long +' '+ day +', '+ year;
 	this.date_short = dow_short +', '+ month_short +' '+ day +', '+ year;
+	this.date_shorter = month_short +' '+ day;
 	this.date_w = day_digit +'/'+ month_digit +'/'+ year;
 	this.time_w = hrs_xii +':'+ mins_digit +' '+ ante;
 	this.date_f = year +'-'+ month_digit +'-'+ day_digit;	
 	this.time_f = hrs_digit +':'+ mins_digit +':'+ secs_digit;
+	this.ago_f = ago_f(this.date_f);
 	this.datetime = this.date_f +' '+ this.time_f;
 	this.timestamp = this.date_f +'T'+ this.time_f;	
 }
@@ -547,6 +578,24 @@ function isDateTime(dt) {
 	if (yyyy.length == 4 && mm.length == 2 && dd.length == 2)
     if (hh.length == 2 && ii.length == 2 && ss.length == 2)
 		  return true;
+}
+function getDateTime() {    
+    const date = new Date();
+    var yyyy = mm = dd = hrs = mins = secs = '';
+    yyyy = date.getFullYear();
+    mm = date.getMonth() + 1;
+    mm = mm < 10? `0${mm}`: mm;
+    dd = date.getDate();
+    dd = dd < 10? `0${dd}`: dd;
+
+    hrs = date.getHours();
+    hrs = hrs < 10? `0${hrs}`: hrs;
+    mins = date.getMinutes();
+    mins = mins < 10? `0${mins}`: mins;
+    secs = date.getSeconds();
+    secs = secs < 10? `0${secs}`: secs;
+    
+    return `${yyyy}-${mm}-${dd} ${hrs}:${mins}:${secs}`;
 }
 
 // MISC

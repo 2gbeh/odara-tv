@@ -23,8 +23,8 @@ async function shareBlog (title, text, url) {
 
 function getBlog (data) {
   data = JSON.parse(data)['root'];
-  googleSearchCarousel(data);
-  //lastMileHook(data);
+  asideTile(data);
+  lastMileHook(data);
   const datalist = document.querySelector('header #hint'),
   card = document.querySelector('main #card'),
   pager = document.querySelector('main #pager');  
@@ -51,11 +51,11 @@ function getBlogList (row, n) {
       <div class="headline">\
         '+ getHeadline(row) +'\
       </div>\
-      <div '+ getBylineAttrib(row.status) +' class="byline">\
-        '+ getByline(row.tags) +'\
+      <div class="byline">\
+        '+ getByline(row) +'\
       </div>\
       <div itemprop="abstract" class="summary">\
-        '+ getSummary(row.summary, row.url) +'\
+        '+ getSummary(row) +'\
       </div>\
     </article>\
     <div class="activity">\
@@ -65,7 +65,7 @@ function getBlogList (row, n) {
             '+ getActivity1(row.posted) +'\
           </td>\
           <td>\
-            '+ getActivity2(row.status, row.meta) +'\
+            '+ getActivity2(row) +'\
           </td>\
           <td>\
             '+ getActivity3(row) +'\
@@ -74,7 +74,7 @@ function getBlogList (row, n) {
             '+ getActivity4(row.status) +'\
           </td>\
           <td>\
-            '+ getActivity5(row.status, row.url) +'\
+            '+ getActivity5(row) +'\
           </td>\
         </tr>\
       </table>\
@@ -83,155 +83,122 @@ function getBlogList (row, n) {
 }
 
 function getSubAttrib(status) {
-  const itemprop = ['','publisher','size','episode','duration'];
-  tooltip = ['','Source','Size','Episodes','Duration'];
-  return `itemprop="${itemprop[status]}" title="${tooltip[status]}"`;
+  const Itemprop = Enums.subProp, Tooltip = Enums.subTip;
+  var res = `itemprop="${Itemprop[status]}" title="${Tooltip[status]}"`;
+  //cli(res);
+  return res;
 }
 
 function getHeadline(row) {
-  const tooltip = ['','Read','Download','Download','Watch'],
-  href = `href="${row.url}" target="_blank"`,
-  title = `title="${tooltip[row.status]}"`;
-  return `<a itemprop="headline" ${href} ${title}>${row.title}</a>`;
+  const Tooltip = Enums.act5Tip;
+  var href = `href="${row.url}" target="_blank"`,
+  title = `title="${Tooltip[row.status]}"`,
+  res = `<a itemprop="headline" ${href} ${title}>${row.title}</a>`;
+  //cli(res);
+  return res;
 }
 
-function getBylineProp(status) {
-  
-  return itemprop[status];
+function getByline(row) {  
+  const Itemprop = Enums.bylProp, Tooltip = Enums.bylTip;
+  var res = '';
+  tags = row.tags.split(',');
+  tags.map((e) => res += `<a itemprop="${Itemprop[row.status]}" title="${Tooltip[row.status]}">${e.trim()}</a>`);
+  //cli(res);
+  return res;
 }
 
-function getBylineAttrib(status) {
-  const itemprop = ['','editor','actor','actor','creator'],
-  tooltip = ['','Editor','Cast','Cast','Channel'];
-  return `itemprop="${itemprop[status]}" title="${tooltip[status]}"`;
-}
-
-function getByline(tags) {  
-  let buf = '';
-  tags = tags.split(',');
-  tags.map((e) => buf += '<a itemprop="author" class="link">'+ e.trim() +'</a>');
-  return buf;
-}
-
-function getSummary(summary, url) {
-  const len = 160;  
-  if (summary.length > len) {
-    let buf = summary.substr(0, len);
-    return `${buf}<a href="${url}" target="_blank">[...]</a>`;
-  }
-  else
-    return summary;
+function getSummary(row) {
+  var res = row.summary, limit = 160;
+  if (res.length > limit)
+    res = `${row.summary.substr(0, limit)}<a href="${row.url}" target="_blank">[...]</a>`;
+  //cli(res);
+  return res;    
 }
 
 function getActivity1(posted) {
-	const months = ['','Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
-  let dateArray = posted.split('-'),
-  m = parseInt(dateArray[1]),
-  d = parseInt(dateArray[2]),
+  var t = `<time itemprop="datePublished" datetime="${posted}">${UTILS.shortDate(posted)}</time>`,
   i = '<i class="fi fi-rs-clock" title="Date"></i>',
-  p = `<p><time itemprop="datePublished" datetime="${posted}">${months[m]} ${d}</time><p>`;
-  return i + p;
+  p = `<p title="${posted}">${t}<p>`,
+  res = i + p;
+  //cli(res);
+  return res;  
 }
 
-function getActivity2(status, meta) {
-  let i = p = '<p>'+ meta +'</p>';
-  switch (status) {
-    case  1:
-      i = '<i class="fi fi-rs-interlining" title="Average Page Scrolls"></i>';
-      break;
-    case  4:
-      i = '<i class="fi fi-rs-eye" title="Views"></i>';
-      break;
-    default:
-      i = '<i class="fi fi-rs-star" title="Rating"></i>';
-  }
-  return i + p;
+function getActivity2(row) {
+  const Icon = Enums.act2Ico, Tooltip = Enums.act2Tip;
+  var i = `<i class="${Icon[row.status]}" title="${Tooltip[row.status]}"></i>`,
+  p = `<p>${row.meta}</p>`,
+  res = i + p;
+  //cli(res);
+  return res;
 }
 
 function getActivity3(row) { 
-  const PARAM  = row.title.replaceAll(' ','_'),
-  DOMAIN = window.location.hostname,
-  SUBDIR = 'udara-tv',
-  STATUS = ['','news','movies','tvshows','youtube'],
-  PREFIX = ['','[READ]','[DOWNLOAD]','[DOWNLOAD]','[WATCH]'],
-  URI = `${DOMAIN}/${SUBDIR}/?req=${STATUS[row.status]}/${PARAM}`,
-  DATA = { title: 'Udara', text: `${PREFIX[row.status]} ${row.title}`, url: URI };  
-  let i = '<i class="fi fi-rs-share" title="Share"></i>', p = '<p>Share</p>';
-  return `<a onClick="shareBlog('${DATA.title}', '${DATA.text}', '${DATA.url}')">${i + p}</a>`;
+  const Path = Enums.path, Prefix = Enums.act3Pfx,
+  param  = UTILS.urlTitle(row.title),
+  url = `${Context.root}${Context.req}${Path[row.status]}/${param}`,
+  data = { title: `${Context.appname}`, text: `${Prefix[row.status]} ${row.title}`, url: url };  
+  
+  var i = '<i class="fi fi-rs-share" title="Share"></i>', 
+  p = '<p>Share</p>',
+  res = `<a onClick="shareBlog('${data.title}', '${data.text}', '${data.url}')">${i}${p}</a>`;
+  //cli(res);
+  return res;
 }
 
 function getActivity4(status) {
-  let i = p = '';
-  switch (status) {
-    case  1:
-      i = '<i class="fi fi-rs-bookmark" title="Bookmark"></i>';
-      p = '<p>Bookmark</p>';
-      break;
-    case  4:
-      i = '<i class="fi fi-rs-bell" title="Subscribe"></i>';
-      p = '<p>Subscribe</p>';
-      break;
-    default:
-      i = '<i class="fi fi-rs-thumbtack" title="Watchlist"></i>';
-      p = '<p>Watchlist</p>';
-  }
-  return i + p;
+  const Icon = Enums.act4Ico, Tooltip = Enums.act4Tip;
+  var i = `<i class="${Icon[status]}" title="${Tooltip[status]}"></i>`,
+  p = `<p>${Tooltip[status]}</p>`,
+  res = i + p;
+  //cli(res);
+  return res;
 }
 
-function getActivity5(status, url) {
-  let i = p = '';
-  switch (status) {
-    case  1:
-      i = '<i class="fi fi-rs-interactive" title="Read"></i>';
-      p = '<p>Read</p>';
-      break;
-    case  4:
-      i = '<i class="fi fi-rs-play" title="Watch"></i>';
-      p = '<p>Watch</p>';
-      break;
-    default:
-      i = '<i class="fi fi-rs-download" title="Download"></i>';
-      p = '<p>Download</p>';
-  }
-  return `<a itemprop="url" href="${url}" target="_blank">${i + p}</a>`;
+function getActivity5(row) {
+  const Icon = Enums.act5Ico, Tooltip = Enums.act5Tip;
+  var i = `<i class="${Icon[row.status]}" title="${Tooltip[row.status]}"></i>`,
+  p = `<p>${Tooltip[row.status]}</p>`,
+  res = `<a itemprop="url" href="${row.url}" target="_blank">${i}${p}</a>`;
+  //cli(res);
+  return res;
 }
 
-function googleSearchCarousel(data) {
+function asideTile(data) {
   const head = document.querySelector('head'),
   tile = document.querySelector('aside #tile'),
-  path = 'https://2gbeh.github.io/udara-tv/',
-  STATUS = ['','News','Movies','TV Shows','YouTube'],
-  tooltip = ['','Read','Download','Download','Watch'],
-  fb = ['','fi fi-rs-interactive','fi fi-rs-download','fi fi-rs-download','fi fi-rs-play'],
-  fi = ['','fi fi-rs-browser','fi fi-rs-video-camera','fi fi-rs-film','fi fi-rs-play-alt'],
-  // pg = ['','?req=/news','?req=/movies','?req=/tvshows','youtube?req=/'],
-  pg = ['','news.html','movies.html','tvshows.html','youtube.html'];
-  var picked = [], s = 0, listItems = '', listItem = '', td = '', j = 0, e = {}, url = '', dir = '';
+  Status = Enums.status,
+  Tooltip = Enums.act5Tip,
+  Fab = Enums.act5Ico,
+  Icon = Enums.navIco,
+  Path = Enums.path;  
+  
+  var picked = [], listItems = '', listItem = '', td = '';
+  var j = 0, e = {}, href = '';
   for  (let i = 0; i < data.length; i++) {
-    s = data[i].status;
-    if (! picked.includes(s)) {
-      picked.push(s);
+    e = data[i];
+    if (! picked.includes(e.status)) {
+      picked.push(e.status);
+      
       j += 1;
-      e = data[i];
-      url = e.title;
-      dir = e.tags.split(',')[0];
-
       listItem = '{"@type": "ListItem", ';
       listItem += '"position": "'+ j +'", ';
       listItem += '"item": {"@type": "Movie", ';
-      listItem += '"url": "'+ path +'?req=/'+ url.replaceAll(' ','_') +'", ';
+      listItem += '"url": "'+ Context.root + Context.req + UTILS.urlTitle(e.title) +'", ';
       listItem += '"name": "'+ e.title +'", ';
-      listItem += '"image": "'+ path +'img/'+ e.thumbnail +'", ';
+      listItem += '"image": "'+ Context.root +'img/'+ e.thumbnail +'", ';
       listItem += '"dateCreated": "'+ e.posted +'", ';
-      listItem += '"director": {"@type": "Person", "name": "'+ dir.trim() +'"}';
+      listItem += '"director": {"@type": "Person", "name": "'+ UTILS.bylineCpt(e.tags) +'"}';
       listItem += '}},';
       listItems += listItem;
    
+      href = Enums.pages[e.status];
+      href = Context.req + Path[e.status];
       td += '<td itemscope itemtype="https://schema.org/CreativeWork">\
         <div itemprop="image" class="thumbnail" style="background-image: url(./img/'+ e.thumbnail +');">\
           <sub>\
-            <a itemprop="url" href="'+ e.url +'" target="_blank" title="'+ tooltip[e.status] +'">\
-              <i class="'+ fb[e.status] +'"></i>\
+            <a itemprop="url" href="'+ e.url +'" target="_blank" title="'+ Tooltip[e.status] +'">\
+              <i class="'+ Fab[e.status] +'"></i>\
             </a>\
           </sub>\
         </div>\
@@ -239,12 +206,12 @@ function googleSearchCarousel(data) {
           <div class="activity">\
             <var>\
               <i class="fi fi-rs-clock"></i>\
-              <p><time itemprop="datePublished" datetime="'+ e.posted +'">Dec 19</time></p>\
+              <p><time itemprop="datePublished" datetime="'+ e.posted +'">'+ UTILS.shortDate(e.posted) +'</time></p>\
             </var>\
             <var>\
-              <a href="'+ pg[e.status] +'">\
-                <i class="'+ fi[e.status] +'"></i>\
-                <p itemprop="genre" style="text-decoration: underline;">'+ STATUS[e.status] +'<p>\
+              <a href="'+ href +'">\
+                <i class="'+ Icon[e.status] +'"></i>\
+                <p itemprop="genre" style="text-decoration: underline;">'+ Status[e.status] +'<p>\
               </a>\
             </var>\
           </div>\
@@ -259,17 +226,16 @@ function googleSearchCarousel(data) {
   }
   listItems = listItems.slice(0,-1);
   
-  var script = `<script type="application/ld+json">
+  head.innerHTML += `<script type="application/ld+json">
     {
       "@context": "https://schema.org",
       "@type": "ItemList",
       "itemListElement": [${listItems}]
     }
-  </script>`;  
-  head.innerHTML += script;
+  </script>`; 
   tile.innerHTML = '<table border="0"><tr>'+ td +'</tr></table>';
-  //console.dir(script, td);
-	return [script, td];
+  //console.dir(listItems, td);
+	return [listItems, td];
 }
 
 function lastMileHook (data) {
