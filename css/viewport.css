@@ -65,8 +65,8 @@
     font-size: 20px;
   }
   aside .tile table tr td {
-    min-width: 260px;
-    max-width: 260px;
+    min-width: 240px;
+    max-width: 240px;
   }
   aside .tile .thumbnail {
     height: 160px;
