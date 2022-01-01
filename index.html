@@ -53,7 +53,7 @@
   <link type="text/css" href="./css/viewport.css" rel="stylesheet" />
   <!-- JS LIBRARY -->  
   <script type="text/javascript" src="./js/master.js"></script>
-  <!-- <script type="text/javascript" src="./js/bom.js"></script> -->
+  <script type="text/javascript" src="./js/config.js"></script>
   <script type="text/javascript" src="./js/router.js"></script>
   <script type="text/javascript" src="./js/events.js"></script>  
   <!-- Open Graph -->
@@ -162,29 +162,29 @@
             </h1>
             <ul>
               <li>
-                <a onClick="routeTo('/')" title="Home" class="focus">
+                <a onClick="routeTo('')" title="Home" class="focus">
                   <i class="fi fi-rs-home"></i>
                 </a>
               </li>      
               <li>
-                <a onClick="routeTo('/news')" title="News">
+                <a onClick="routeTo('news')" title="News">
                   <i class="fi fi-rs-browser"></i>
                 </a>
               </li>
               <li>
-                <a onClick="routeTo('/movies')" title="Movies">
+                <a onClick="routeTo('movies')" title="Movies">
                   <!-- <i class="fi fi-rs-film"></i> -->
                   <i class="fi fi-rs-video-camera"></i>
                 </a>
               </li>
               <li>
-                <a onClick="routeTo('/tvshows')" title="TV Shows">
+                <a onClick="routeTo('tvshows')" title="TV Shows">
                   <!-- <i class="fi fi-rs-gallery"></i> -->
                   <i class="fi fi-rs-film"></i>
                 </a>
               </li>
               <li class="important">
-                <a onClick="routeTo('/youtube')" title="YouTube">
+                <a onClick="routeTo('youtube')" title="YouTube">
                   <i class="fi fi-rs-play-alt"></i>
                   <sup>&nbsp;</sup>
                 </a>
@@ -193,7 +193,7 @@
           </td>
           <td class="center">
             <form onSubmit="return false" method="post" action="" autocomplete="off">
-              <input onChange="routeTo(`/${this.value}`)" type="search" name="k" placeholder="Search..." list="hint" required />
+              <input onChange="routeTo(this.value)" type="search" name="k" placeholder="Search..." list="hint" required />
               <datalist id="hint">
                 <option value="News" />
                 <option value="Movies" />
@@ -220,31 +220,31 @@
     <table border="0">
       <tr>
         <td>
-          <a onClick="routeTo('/')" title="Home" class="focus">
+          <a onClick="routeTo('')" title="Home" class="focus">
             <i class="fi fi-rs-home"></i>
             <p>Home</p>
           </a>
         </td>      
         <td>
-          <a onClick="routeTo('/news')" title="News">
+          <a onClick="routeTo('news')" title="News">
             <i class="fi fi-rs-browser"></i>
             <p>News</p>
           </a>
         </td>
         <td>
-          <a onClick="routeTo('/movies')" title="Movies">
+          <a onClick="routeTo('movies')" title="Movies">
             <i class="fi fi-rs-video-camera"></i>
             <p>Movies</p>
           </a>
         </td>
         <td>
-          <a onClick="routeTo('/tvshows')" title="TV Shows">
+          <a onClick="routeTo('tvshows')" title="TV Shows">
             <i class="fi fi-rs-film"></i>            
             <p>TV Shows</p>
           </a>
         </td>
         <td class="important">
-          <a onClick="routeTo('/youtube')" title="YouTube">
+          <a onClick="routeTo('youtube')" title="YouTube">
             <i class="fi fi-rs-play-alt"></i>
             <p>YouTube</p>
             <sup>&nbsp;</sup>
