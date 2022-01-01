@@ -2,6 +2,7 @@
 /* CSS Document */
 main {
   margin: 40px 40px 20px;
+  min-height: auto;
 }
 
 main .card ul {
