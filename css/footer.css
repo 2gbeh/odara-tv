@@ -12,7 +12,7 @@ footer .connect {
 }
 footer .connect h2 {
   margin: 20px 0;
-  font-size: 18px;
+  font-size: 20px;
 }
 footer .connect a {
   margin: 0 20px;
@@ -30,6 +30,7 @@ footer .nav ul li {
 footer .nav ul li a {
   color: #ccc;
   text-decoration: underline;
+  font-size: 14px;
   display: block;
 }
 footer .nav ul li a:hover {
@@ -39,57 +40,32 @@ footer .nav ul li a:hover {
 footer .nav p {
   color: #eee;
   margin: 20px 10px;
+  font-size: 14px;
   line-height: 25px;
+}
+footer .nav figure,
+footer .nav figcaption,
+footer .nav img {
+ font-size: 14px; 
+}
+footer .nav figcaption {
+  display: inline-block;
+}
+footer .nav img {
+  margin: 0 0 0 2px;
+  color: #88c043;
+  width: 20px;
+  font-weight: bold;
+  vertical-align: middle;
 }
 
 footer address {
   background-color: #222;
-  padding: 20px;
-  font-size: 12px;
+  padding: 20px;  
   display: block;
 }
-
-
-
-
-
-
-/* 
-footer .nav {
-  padding: 40px 0 20px;
+footer address,
+footer address a,
+footer address cite{
+  font-size: 14px;
 }
-footer .nav h1 {
-  margin: 10px 0 0;
-  font-size: 16px;
-}
-footer .nav p {
-  color: #eee;
-  margin: 10px;
-}
-footer .nav ul {
-  margin: 20px 0;
-}
-footer .nav ul li {
-  margin: 0 10px;
-}
-footer .nav ul li a {
-  text-decoration: underline;
-  display: block;
-}
-
-footer .connect {
-  padding-bottom: 40px;
-}
-footer .connect a {
-  margin: 0 20px;
-}
-footer .connect a i {
-  font-size: 32px;
-}
-footer address {
-  background-color: #333;
-  color: #fff;
-  padding: 20px;
-  font-size: 12px;
-  display: block;
-} */

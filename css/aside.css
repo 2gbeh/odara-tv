@@ -1,12 +1,5 @@
 @charset "utf-8";
 /* CSS Document */
-ain {
-  min-height: 100px;
-}
-ain ul {
-  display: none;
-}
-
 aside {
   color: #333;
   padding: 100px 10px;
@@ -31,10 +24,11 @@ aside .action a {
   background-color: #222;
   color: #fff;
   border-bottom: 1px solid #333;
-  margin-top: 10px;
+  margin-top: 15px;
   padding: 15px 20px;
   text-transform: uppercase;
   text-shadow: none;
+  font-family: inherit;
   font-weight: 600;
   font-size: 12px;
   letter-spacing: 1px;

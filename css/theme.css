@@ -16,6 +16,7 @@ body {
 }
 
 header, 
+.overlay-fill,
 nav,
 footer address {
   background-color: #20232a;

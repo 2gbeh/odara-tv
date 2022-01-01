@@ -29,22 +29,9 @@ main .card .thumbnail {
   width: 100%;
   height: 240px; 
 }
-main .card .thumbnail sup {
-  position: absolute;
-  top: 10px;
-  left: 10px;
-  background-color: #222;
-  color: #eee;
-  padding: 2px 4px 3px;
-  font-size: 10px;
-  letter-spacing: 1px;
-  cursor: help;
-  display: none;
-}
+main .card .thumbnail sup,
 main .card .thumbnail sub {
   position: absolute;
-  bottom: 10px;
-  right: 10px;  
   background-color: #222;
   color: #eee;
   padding: 2px 4px 3px;
@@ -52,13 +39,24 @@ main .card .thumbnail sub {
   letter-spacing: 1px;
   cursor: help;  
 }
+main .card .thumbnail sup {
+  top: 10px;
+  left: 10px;
+  display: none;
+}
+main .card .thumbnail sub {
+  bottom: 10px;
+  right: 10px;  
+}
 
 main .card article {
   min-height: 200px;
   min-height: auto;
 }
+
 main .card .headline {
   margin: 10px 15px 0;
+  font-size: 20px;
 }
 main .card .headline a {
   color: #333;
@@ -73,6 +71,7 @@ main .card .headline a:hover {
 
 main .card .byline {
   margin: 5px 10px 0;
+  font-size: 12px;
 }
 main .card .byline a {
   background-color: #eee;
@@ -115,24 +114,18 @@ main .card .activity table tr td {
 main .card .activity table tr td:hover {
   color: #333;
 }
-
+main .card .activity a {
+  font-size: 12px; 
+}
 main .card .activity i {
   font-size: 18px;  
   font-weight: normal;
   cursor: pointer;
 }
-
 main .card .activity p {
   margin: 5px 0 10px;
   font-size: 12px;
   cursor: default;
-}
-
-ain {
-  min-height: 100px;
-}
-ain ul {
-  display: none;
 }
 
 main .pager {
