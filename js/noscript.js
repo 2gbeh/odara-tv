@@ -19,10 +19,10 @@ async function shareBlog (title, text, url) {
   url = 'https://2gbeh.github.io/udara-tv/' + dir;
 
   const data = {title: title, text: text, url: url};
-  document.querySelector('input[type=button]').value = `${data.url}`;
   // console.log(data);
   if (navigator.canShare) {
-    data.url = '?' + data.url.split('?')[1];
+    // remove repeat url after ? (smart)
+    //data.url = '?' + data.url.split('?')[1];
     navigator.share(data)
     .then((data) => console.log('File share successful!', data))
     .catch((err) => console.log('File share unsuccessful!', err));
@@ -30,10 +30,3 @@ async function shareBlog (title, text, url) {
     prompt('Copy to clipboard', data.url);
   }
 };
-
-var href = window.location.href,
-  noreq = href.split('?')[0],
-  nohash = noreq.split('#')[0],
-  dir = nohash.split('/').pop(),
-  url = 'https://2gbeh.github.io/udara-tv/' + dir;
-  document.querySelector('input[type=button]').value = `${url}`;
