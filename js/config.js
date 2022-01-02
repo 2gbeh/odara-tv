@@ -15,6 +15,12 @@ const Context = {
   caption: 'Tech News, Movies and TV Shows',
   summary: 'Now available on Udara TV. Download, Add to Watchlist. Improve your experience with personalized content from our curators.',
   req: '?req=/',
+  dir_blog: apache()? 'img/blog/': 'img/',
+  dir_kite: apache()? 'img/kite/': 'img/kite/',
+  dir_user: apache()? 'img/user/': 'img/user/',
+  db_blog: './json/Blog.json',
+  db_kite: './json/Kite.json',
+  db_user: './json/User.json',
 }
 
 const Enums = {
@@ -70,5 +76,17 @@ function Utils()
     cpt = arr[0].trim();
     return cpt; 
   };
+
+  this.wordWrap = function(article, limit = 70) {
+    var res = article, limit = limit - 3;
+    if (res.length > limit)
+      res = `${article.substr(0, limit)}...`;
+    return res;
+  };  
+
+  this.googleSearch = function(k) {    
+    var attr = `href="https://google.com/search?q=${k.trim()}" target="_blank"`;
+    return attr;
+  };    
 }
 const UTILS = new Utils();

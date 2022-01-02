@@ -82,7 +82,7 @@ function getBlogList (row, n) {
   </li>';
   // advert placement
   if (n % 4 == 0) {
-    li +=  KITES.get();
+    li +=  KITE.get();
   }
   //cli(li);
   return li;

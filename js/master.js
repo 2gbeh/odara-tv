@@ -32,9 +32,12 @@ function isOnline() {return navigator.onLine;}
 function isJavaEnabled() {return navigator.javaEnabled();}
 function isLocalhost() {return window.location.hostname === '127.0.0.1';}
 function indexOfAlt (str, substr) {return str.toLowerCase().indexOf(substr.toLowerCase());}
-function newRequest (args) {location.href = args;}
 function extendHead (args) {document.querySelector('head').innerHTML += args;}
 function extendBody (args) {document.querySelector('body').innerHTML += args;}
+function googleSearch (k) {return `href="https://google.com/search?q=${k.trim()}" target="_blank"`;} 
+
+// REQUESTS
+function newRequest (args) {location.href = args;}
 function escRequest (str) 
 {
   return str.
@@ -77,7 +80,7 @@ function getRequest (key)
 		return arr[1];
 	}
 }
-function ajxRequest (url, query, callback)
+function ajaxRequest (url, query, callback)
 {
 	var request = url+'?'+query;
 	var xhttp = window.XMLHttpRequest? new XMLHttpRequest(): new ActiveXObject('Microsoft.XMLHTTP');
@@ -87,6 +90,17 @@ function ajxRequest (url, query, callback)
 	};
 	xhttp.open('GET', request, true);
 	xhttp.send();
+}
+function fileRequest() {
+  //file:///C:/wamp64/www/atari/blog.html
+  //file:///C:/wamp64/www/atari/blog.html#end
+  //file:///C:/wamp64/www/atari/blog.html?req=/#end
+  var href = window.location.href,
+  noreq = href.split('?')[0],
+  nohash = noreq.split('#')[0],
+  dir = nohash.split('/').pop();
+  //console.log(subdir);
+  return dir;
 }
 
 // DOM
@@ -634,4 +648,14 @@ function darkMode (directory) {
     document.querySelector('head').innerHTML += link;
 		return true;
 	}
+}
+
+function lightMode (directory) {
+  const hr = new Date().getHours(),
+  oldHead = document.querySelector('head').innerHTML,
+	newHead = oldHead.replace(directory, '');
+  if (hr >= 7 && hr <= 17) {
+    document.querySelector('head').innerHTML = newHead;
+    return true;
+  }
 }
