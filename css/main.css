@@ -53,6 +53,7 @@ main .card .thumbnail sub {
 }
 
 main .card ul li.kite {
+  margin-top: 10px;
   background-color: transparent;
   min-width: 310px;
   max-width: 310px;  
