@@ -85,7 +85,7 @@ aside .tile .thumbnail {
 }
 aside .tile .thumbnail sub {
   position: absolute;
-  bottom: -20px;
+  bottom: -25px;
   right: 15px;
   border-radius: 100%;
   box-shadow: 0 1px 0 #222;
