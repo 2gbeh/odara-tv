@@ -35,7 +35,7 @@
   <link type="text/css" href="./css/footer.css" rel="stylesheet" />
   <link type="text/css" href="./css/template.css" rel="stylesheet" />
   <link type="text/css" href="./css/theme.css" rel="stylesheet" />  
-  <link type="text/css" href="./css/moonlite.css" rel="styleshee" />  
+  <link type="text/css" href="./css/moonlite.css" rel="stylesheet" />  
   <link type="text/css" href="./css/viewport.css" rel="stylesheet" />
   <link type="text/css" href="./css/override.css" rel="stylesheet" /> 
   <!-- Open Graph -->
@@ -65,31 +65,6 @@
   <meta property="article:published_time" content="2021-11-15T00:00:00+00:00" />
   <meta property="article:author" content="Tugbeh Emmanuel" />    
   <title>Udara TV</title>
-  <script type="text/javascript">
-    function darkModeHook(directory = './css/moonlite.css') {
-      const hr = new Date().getHours(),
-      link = `<link type="text/css" href="${directory}" rel="stylesheet" />`;
-      if (hr <= 6 || hr >= 18) {
-        document.querySelector('head').innerHTML += link;
-        document.querySelector('aside #svgg img').src = 'typeface.png';
-        return true;
-      }
-    }
-    async function shareBlog (title, text, url) {
-      // MUST be running on a server
-      // const data = {title: 'MDN', text: 'Learn web development on MDN!', url: 'https://developer.mozilla.org'}
-      const data = {title: title, text: text, url: url}
-      // console.log(data);
-      if (navigator.canShare) {
-        data.url = '?' + data.url.split('?')[1];
-        navigator.share(data)
-        .then((data) => console.log('File share successful!', data))
-        .catch((err) => console.log('File share unsuccessful!', err));
-      } else {
-        prompt('Copy to clipboard', data.url);
-      }
-    };  
-  </script>  
   <!-- Google Search Logo -->
   <script type="application/ld+json">
   {
@@ -221,7 +196,15 @@
   <main>
     <section class="card" id="card">
       <ul>
-<li itemscope itemtype="https://schema.org/CreativeWork" id="5">    <div itemprop="image" class="thumbnail" style="background-image: url(./img/dlas.jpg);">      <sup itemprop="identifier">#5</sup>      <sub itemprop="duration" title="Duration">16:58</sub>    </div>    <article>      <div class="headline">        <a itemprop="headline" href="https://m.youtube.com/watch?v=XRd6Ddn4ZSY" target="_blank" title="Watch">How to Design like a Scientist</a>      </div>      <div class="byline">        <a href="https://google.com/search?q=Awwwards" target="_blank" itemprop="creator" title="Channel">Awwwards</a>      </div>      <div itemprop="abstract" class="summary">        Netflix Product Designer, Navin Iyengar reveals how engineers apply experimental thinking and A/B testing in product development - live at Awwwards Conf. San Fr<a>...</a>      </div>    </article>    <div class="activity">      <table border="0" width="100%">        <tr>          <td>            <i class="fi fi-rs-clock" title="Date"></i><p title="2018-08-10"><time itemprop="datePublished" datetime="2018-08-10">Aug 10</time><p>          </td>          <td>            <i class="fi fi-rs-eye" title="Views"></i><p>267.1k</p>          </td>          <td>            <a onClick="shareBlog('Udara TV', '[WATCH] How to Design like a Scientist', 'http://127.0.0.1:5500/?req=/youtube/How_to_Design_like_a_Scientist')"><i class="fi fi-rs-share" title="Share"></i><p>Share</p></a>          </td>          <td>            <i class="fi fi-rs-bell" title="Subscribe"></i><p>Subscribe</p>          </td>          <td>            <a itemprop="url" href="https://m.youtube.com/watch?v=XRd6Ddn4ZSY" target="_blank"><i class="fi fi-rs-play" title="Watch"></i><p>Watch</p></a>          </td>        </tr>      </table>    </div>  </li>
+<li itemscope itemtype="https://schema.org/CreativeWork" id="5">    
+<div itemprop="image" class="thumbnail" style="background-image: url(./img/dlas.jpg);">      
+<sup itemprop="identifier">#5</sup>      <sub itemprop="duration" title="Duration">16:58</sub>    
+</div>    <article>      <div class="headline">        <a itemprop="headline" href="https://m.youtube.com/watch?v=XRd6Ddn4ZSY" target="_blank" title="Watch">How to Design like a Scientist</a>      </div>      <div class="byline">       
+ <a href="https://google.com/search?q=Awwwards" target="_blank" itemprop="creator" title="Channel">Awwwards</a>      </div>      
+ <div itemprop="abstract" class="summary">        Netflix Product Designer, Navin Iyengar reveals how engineers apply experimental thinking and A/B testing in product development - live at Awwwards Conf. San Fr<a>...</a>      
+ </div>    </article>    <div class="activity">      <table border="0" width="100%">        <tr>          <td>            
+ <i class="fi fi-rs-clock" title="Date"></i><p title="2018-08-10"><time itemprop="datePublished" datetime="2018-08-10">Aug 10</time><p>          </td>          <td>           
+  <i class="fi fi-rs-eye" title="Views"></i><p>267.1k</p>          </td>          <td>            <a onClick="shareBlog('Udara TV', '[WATCH] How to Design like a Scientist', 'http://127.0.0.1:5500/?req=/youtube/How_to_Design_like_a_Scientist')"><i class="fi fi-rs-share" title="Share"></i><p>Share</p></a>          </td>          <td>            <i class="fi fi-rs-bell" title="Subscribe"></i><p>Subscribe</p>          </td>          <td>            <a itemprop="url" href="https://m.youtube.com/watch?v=XRd6Ddn4ZSY" target="_blank"><i class="fi fi-rs-play" title="Watch"></i><p>Watch</p></a>          </td>        </tr>      </table>    </div>  </li>
       </ul>
     </section>
 
@@ -244,7 +227,7 @@
     <section class="header">
       <h1 class="svgg" id="svgg">
         <a href="home.html" title="Home">
-          <img src="./typeface-b.png" alt="udara" />
+          <img src="./typeface.png" alt="udara" />
         </a>
       </h1>
       <h2>Tech News, Movies &amp; TV Shows</h2>    
@@ -302,7 +285,11 @@
           <a href="#">Terms of Service</a>
         </li>                                
       </ul>
-      <p>[HTTP 507] All download files are currently out-sourced from third party servers.</p>      
+      <p>[HTTP 507] All download files are currently out-sourced from third party servers.</p>
+      <figure>
+        <figcaption>Powered by</figcaption>
+        <img src="./node.png" alt="Node.js" />
+      </figure>
     </div>
 
     <address>  
@@ -314,10 +301,9 @@
     </address>
   </footer>
 
-<script type="text/javascript">  
-  darkModeHook();
-</script>  
+<script type="text/javascript" src="./js/noscript.js"></script>
 <script type="text/javascript">      
+  lightMode();
   if ('serviceWorker' in navigator) {
     navigator.serviceWorker.register('./service-worker.js', {scope: './'})
     .then(function(registration) {console.log('Service worker registered', registration);})
