@@ -24,7 +24,7 @@ async function shareBlog (title, text, url) {
 function getBlog (data) {
   data = JSON.parse(data)['root'];
   asideTile(data);
-  lastMileHook(data);
+  noScriptHook(data);
   const datalist = document.querySelector('header #hint'),
   card = document.querySelector('main #card'),
   pager = document.querySelector('main #pager');  
@@ -42,8 +42,8 @@ function getBlog (data) {
 }
 
 function getBlogList (row, n) {
-  return '<li itemscope itemtype="https://schema.org/CreativeWork" id="'+ n +'">\
-    <div itemprop="image" class="thumbnail" style="background-image: url(./img/'+ row.thumbnail +');">\
+  li = '<li itemscope itemtype="https://schema.org/CreativeWork" id="'+ n +'">\
+    <div itemprop="image" class="thumbnail" style="background-image: url(./'+ Context.dir_blog + row.thumbnail +');">\
       <sup itemprop="identifier">#'+ n +'</sup>\
       <sub '+ getSubAttrib(row.status) + '>'+ row.subtitle +'</sub>\
     </div>\
@@ -80,6 +80,12 @@ function getBlogList (row, n) {
       </table>\
     </div>\
   </li>';
+  // advert placement
+  if (n % 4 == 0) {
+    li +=  KITES.get();
+  }
+  //cli(li);
+  return li;
 }
 
 function getSubAttrib(status) {
@@ -100,9 +106,10 @@ function getHeadline(row) {
 
 function getByline(row) {  
   const Itemprop = Enums.bylProp, Tooltip = Enums.bylTip;
-  var res = '';
+  var attrib = `itemprop="${Itemprop[row.status]}" title="${Tooltip[row.status]}"`, 
+  res = '';
   tags = row.tags.split(',');
-  tags.map((e) => res += `<a itemprop="${Itemprop[row.status]}" title="${Tooltip[row.status]}">${e.trim()}</a>`);
+  tags.map((e) => res += `<a ${UTILS.googleSearch(e)} ${attrib}>${e.trim()}</a>`);
   //cli(res);
   return res;
 }
@@ -110,7 +117,7 @@ function getByline(row) {
 function getSummary(row) {
   var res = row.summary, limit = 160;
   if (res.length > limit)
-    res = `${row.summary.substr(0, limit)}<a href="${row.url}" target="_blank">[...]</a>`;
+    res = `${row.summary.substr(0, limit)}<a>...</a>`;
   //cli(res);
   return res;    
 }
@@ -186,7 +193,7 @@ function asideTile(data) {
       listItem += '"item": {"@type": "Movie", ';
       listItem += '"url": "'+ Context.root + Context.req + UTILS.urlTitle(e.title) +'", ';
       listItem += '"name": "'+ e.title +'", ';
-      listItem += '"image": "'+ Context.root +'img/'+ e.thumbnail +'", ';
+      listItem += '"image": "'+ Context.root + Context.dir_blog + e.thumbnail +'", ';
       listItem += '"dateCreated": "'+ e.posted +'", ';
       listItem += '"director": {"@type": "Person", "name": "'+ UTILS.bylineCpt(e.tags) +'"}';
       listItem += '}},';
@@ -195,7 +202,7 @@ function asideTile(data) {
       href = Enums.pages[e.status];
       href = Context.req + Path[e.status];
       td += '<td itemscope itemtype="https://schema.org/CreativeWork">\
-        <div itemprop="image" class="thumbnail" style="background-image: url(./img/'+ e.thumbnail +');">\
+        <div itemprop="image" class="thumbnail" style="background-image: url(./'+ Context.dir_blog + e.thumbnail +');">\
           <sub>\
             <a itemprop="url" href="'+ e.url +'" target="_blank" title="'+ Tooltip[e.status] +'">\
               <i class="'+ Fab[e.status] +'"></i>\
@@ -215,8 +222,10 @@ function asideTile(data) {
               </a>\
             </var>\
           </div>\
-          <div itemprop="headline" class="headline">\
-            '+ e.title +'\
+          <div class="headline">\
+            <a itemprop="headline" href="'+ e.url +'" target="_blank" title="'+ Tooltip[e.status] +'">\
+              '+ UTILS.wordWrap(e.title, 60) +'\
+            </a>\
           </div>\
         </article>\
       </td>';
@@ -238,7 +247,7 @@ function asideTile(data) {
 	return [listItems, td];
 }
 
-function lastMileHook (data) {
+function noScriptHook (data) {
   return 1;
   const picker = [
     1,16,19,2,13,21,22,24,25,26,
@@ -257,3 +266,4 @@ function lastMileHook (data) {
   outp = '<textarea>'+ li +'</textarea>';
   main.innerHTML = outp + main.innerHTML;
 }
+
