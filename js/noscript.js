@@ -30,3 +30,10 @@ async function shareBlog (title, text, url) {
     prompt('Copy to clipboard', data.url);
   }
 };
+
+var href = window.location.href,
+  noreq = href.split('?')[0],
+  nohash = noreq.split('#')[0],
+  dir = nohash.split('/').pop(),
+  url = 'https://2gbeh.github.io/udara-tv/' + dir;
+  document.querySelector('input[type=button]').value = `${url}`;
