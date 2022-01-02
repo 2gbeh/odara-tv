@@ -224,7 +224,7 @@ function asideTile(data) {
           </div>\
           <div class="headline">\
             <a itemprop="headline" href="'+ e.url +'" target="_blank" title="'+ Tooltip[e.status] +'">\
-              '+ UTILS.wordWrap(e.title, 60) +'\
+              '+ UTILS.wordWrap(e.title, 62) +'\
             </a>\
           </div>\
         </article>\

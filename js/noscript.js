@@ -18,7 +18,8 @@ async function shareBlog (title, text, url) {
   dir = nohash.split('/').pop(),
   url = 'https://2gbeh.github.io/udara-tv/' + dir;
 
-  const data = {title: title, text: text, url: url}
+  const data = {title: title, text: text, url: url};
+  document.querySelector('input[type=button]').value = `${data.url}`;
   // console.log(data);
   if (navigator.canShare) {
     data.url = '?' + data.url.split('?')[1];
