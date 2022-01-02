@@ -33,7 +33,7 @@ aside .action a {
   text-transform: uppercase;
   text-shadow: none;
   font-family: inherit;
-  font-weight: 600;
+  font-weight: bold;
   font-size: 12px;
   letter-spacing: 1px;
 }
@@ -43,7 +43,7 @@ aside .action i {
 
 aside .tile {
   margin: 40px 0 0;
-  padding-bottom: 10px;
+  padding-bottom: 0;
   text-align: center;
   overflow: auto;
   white-space: nowrap;
@@ -68,6 +68,8 @@ aside .tile table tr td {
   text-align: left;
   display: inline-block;
   white-space: normal;
+  -webkit-transition: all 0.1s;
+  transition: all 0.1s;
 }
 
 aside .tile .thumbnail {
@@ -90,14 +92,13 @@ aside .tile .thumbnail sub {
 }
 aside .tile .thumbnail sub a {
   position: relative;
-  background-color: #555;
+  background-color: #0093dd;
+  ackground-color: #ff2d20;
   color: #fff;
   border-radius: 100%;
   width: 46px;
   height: 46px;
   display: block;
-  -webkit-transition: all 0.2s;
-  transition: all 0.2s;
 }
 aside .tile .thumbnail sub a:hover {
   background-color: #333;
@@ -143,7 +144,8 @@ aside .tile .headline a {
   font-size: 20px;
   color: #333;
   text-align: justify;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  /* font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif; */
+  font-family: "gill_sans_c";
   font-size: 16px;
   line-height: 22px;
   display: inline-block;

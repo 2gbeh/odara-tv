@@ -18,7 +18,6 @@ body {
 header,
 .overlay-fill,
 nav,
-aside .tile .thumbnail sub a,
 footer address {
   background-color: #20232a;
 }
@@ -31,7 +30,6 @@ aside .action a {
   border-color: #20232a;
 }
 
-aside .tile .thumbnail sub a:hover,
 footer {
   background-color: #282c34;
 }

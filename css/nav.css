@@ -4,7 +4,7 @@ nav {
   background-color: #333;
   color: #fff;
   margin: 0;
-  padding: 0 0 5px 0;
+  padding: 3px 0 5px 0;
   display: none;
 }
 
@@ -43,7 +43,6 @@ nav table tr td.important sup {
   position: absolute;
   top: -3px;
   right: 20px;
-  z-index: 99;
   background-color: #e11;
   border-radius: 100%;
   width: 10px;

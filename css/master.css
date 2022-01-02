@@ -119,8 +119,8 @@ form textarea,
 form button {
   background-color: inherit;
   font-size: inherit;
-  -webkit-transition: all 0.2s;
-  transition: all 0.2s;
+  -webkit-transition: all 0.1s;
+  transition: all 0.1s;
 }
 form input[readonly],
 form select[readonly],
@@ -234,8 +234,8 @@ figure {
   line-height: 0.5;
   display: inline-block;
   cursor: pointer;
-  -webkit-transition: all 0.2s;
-  transition: all 0.2s;
+  -webkit-transition: all 0.1s;
+  transition: all 0.1s;
 }
 .navicon:hover {
   color: #eee;
@@ -612,8 +612,8 @@ VIEWPORT
   width: 60px;
   height: 60px;  
   display: block;
-  -webkit-transition: all 0.2s;
-  transition: all 0.2s;  
+  -webkit-transition: all 0.1s;
+  transition: all 0.1s;  
 }
 .fabb a:hover {
   background-color: #fff;

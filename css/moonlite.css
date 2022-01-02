@@ -32,12 +32,6 @@ main .pager form button:hover {
   background-color: #60dbfb;
   border-color: #20232a;
 }
-aside .tile .thumbnail sub i {
-  color: #60dbfb;
-}
-aside .tile .thumbnail sub {
-  box-shadow: 0 1px 0 #60dbfb;
-}
 
 main .card .headline a:hover,
 main .card .summary,
