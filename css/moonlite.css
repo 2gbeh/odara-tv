@@ -16,7 +16,6 @@ body {
 }
 
 main .card ul li,
-main .card .thumbnail,
 main .pager form input,
 main .pager form button,
 aside .tile table tr td,
@@ -33,9 +32,11 @@ main .pager form button:hover {
   background-color: #60dbfb;
   border-color: #20232a;
 }
-
-side .tile .activity a p {
+aside .tile .thumbnail sub i {
   color: #60dbfb;
+}
+aside .tile .thumbnail sub {
+  box-shadow: 0 1px 0 #60dbfb;
 }
 
 main .card .headline a:hover,
@@ -59,7 +60,7 @@ main .card .headline a,
 main .card .activity table tr td:hover,
 main .pager form input,
 main .pager form button,
-aside .tile .headline,
+aside .tile .headline a,
 aside p {
   color: #fff;
   text-shadow: none;

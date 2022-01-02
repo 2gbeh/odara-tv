@@ -23,7 +23,8 @@ footer address {
   background-color: #20232a;
 }
 .fabb a,
-aside .action a {
+aside .action a,
+aside .tile .headline a {
   color: #20232a;
 }
 aside .action a {
@@ -49,12 +50,8 @@ header .center form input:focus {
 header .left ul li a.focus,
 header .right a.focus,
 nav table tr td a.focus,
-aside .tile .thumbnail sub i,
 footer .nav ul li a {
   color: #60dbfb;
-}
-aside .tile .thumbnail sub {
-  box-shadow: 0 2px 0 #60dbfb;
 }
 
 main .card .byline a,

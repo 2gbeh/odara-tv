@@ -59,7 +59,7 @@
     text-align: center;
   }
   aside {
-    padding: 50px 10px;
+    padding: 50px 0;
   }
   aside h2 {
     font-size: 20px;
@@ -70,5 +70,5 @@
   }
   aside .tile .thumbnail {
     height: 160px;
-  }  
+  }
 }
