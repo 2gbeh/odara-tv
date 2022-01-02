@@ -3,7 +3,7 @@
     {
       "thumbnail": "abcmeta.jpeg",
       "title": "The Metaverse is shaping up as the Next Landmark for Internet Technology",
-      "subtitle": "ABC.net",
+      "subtitle": "ABC",
       "tags": "Dong Xing",
       "posted": "2021-12-25",
       "meta": "10 APS",
@@ -56,7 +56,7 @@
       "posted": "2021-12-19",
       "meta": "42.3k",      
       "summary": "A software engineer with practical knowledge of frontend, backend, database, payment APIs, cross-platform mobile app development and cloud-based services.",
-      "url": "https://m.youtube.com/watch?v=SgVXmtMUjbl",
+      "url": "https://m.youtube.com/watch?v=SgVXmtMUjbI",
       "status": 4,
       "date": "2021-12-27"
     },    
@@ -254,7 +254,7 @@
     },
     {
       "thumbnail": "tenet.jpg",
-      "title": "TENET (2020)",
+      "title": "Tenet (2020)",
       "subtitle": "438MB",
       "tags": "John David Washington, Robert Pattinson, Elizabeth Debicki, Kenneth Branagh, Dimple Kapadia",
       "posted": "2020-09-11",
@@ -324,6 +324,18 @@
       "status": 2,
       "date": "2021-12-31"
     },       
+    {
+      "thumbnail": "dlas.jpg",
+      "title": "How to Design like a Scientist",
+      "subtitle": "16:58",
+      "tags": "Awwwards",
+      "posted": "2018-08-10",
+      "meta": "267.1k",
+      "summary": "Netflix Product Designer, Navin Iyengar reveals how engineers apply experimental thinking and A/B testing in product development - live at Awwwards Conf. San Fran.",
+      "url": "https://m.youtube.com/watch?v=XRd6Ddn4ZSY",
+      "status": 4,
+      "date": "2022-01-02"
+    },    
     {
       "thumbnail": "rpo2018.jpeg",
       "title": "Ready Player One (2018)",
