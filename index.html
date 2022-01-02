@@ -275,23 +275,26 @@
   </main>
 
   <aside>
-    <h1 class="svgg" id="svgg">
-      <a href="index.html" title="Home">
-        <img src="./typeface-b.png" alt="udara" />
-        <!-- <sub>.tv</sub> -->
-      </a>
-    </h1>
-    <h2>Tech News, Movies &amp; TV Shows</h2>    
-    <p>Improve your experience with personalized content from our curators</p>
-    <div class="action">
-      <a href="">
-        <!-- Okay, let's go! -->
-        Okay, sign me the f**k up!
-      </a>
-    </div>
-    <div class="tile" id="tile">
+    <section class="header">
+      <h1 class="svgg" id="svgg">
+        <a href="index.html" title="Home">
+          <img src="./typeface-b.png" alt="udara" />
+          <!-- <sub>.tv</sub> -->
+        </a>
+      </h1>
+      <h2>Tech News, Movies &amp; TV Shows</h2>    
+      <p>Improve your experience with personalized content from our curators</p>
+      <div class="action">
+        <a href="">
+          <!-- Okay, let's go! -->
+          Okay, sign me the f**k up!
+        </a>
+      </div>
+    </section>
+    
+    <section class="tile" id="tile">
       <!-- <table border="0"><tr><td> .aside.html </td></tr></table> -->
-    </div>
+    </section>
   </aside> 
 
   <footer id="end">
@@ -351,7 +354,7 @@
     document.querySelector('aside #svgg img').src = 'typeface.png';
   }
 
-  fetchBlog('./json/Blog.json', getBlog);
+  fetchBlog(Context.db_blog, getBlog);
   
   window.onscroll = () => stickyFab('#fabb');
 </script> 
