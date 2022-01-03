@@ -1,5 +1,3 @@
-// TODO global variables (shared props*)
-
 // Arrow Function (one-liner)
 const cli = args => console.log(args);
 const apache = () => window.location.hostname === '127.0.0.1';
@@ -15,13 +13,13 @@ const Context = {
   caption: 'Tech News, Movies and TV Shows',
   summary: 'Now available on Udara TV. Download, Add to Watchlist. Improve your experience with personalized content from our curators.',
   req: '?req=/',
-  dir_blog: apache()? 'img/blog/': 'img/',
-  dir_kite: apache()? 'img/kite/': 'img/kite/',
-  dir_user: apache()? 'img/user/': 'img/user/',
+  dir_blog: apache()? 'img-blog/': 'img',
+  dir_kite: apache()? 'img-kite/': 'img/kite/',
+  dir_user: apache()? 'img-user/': 'img/user/',
   db_blog: './json/Blog.json',
   db_kite: './json/Kite.json',
   db_user: './json/User.json',
-}
+};
 
 const Enums = {
   status: ['','News','Movies','TV Shows','YouTube'],
@@ -45,7 +43,31 @@ const Enums = {
 
   act5Ico: ['','fi fi-rs-interactive','fi fi-rs-download','fi fi-rs-download','fi fi-rs-play'],
   act5Tip: ['','Read','Download','Download','Watch'],
-}
+};
+
+// Async Function
+async function fetchData(directory, callback) {
+  // MUST be running on a server
+  let fileSystem = await fetch(directory);
+  let content = await fileSystem.text();
+  callback(content);
+};  
+
+async function shareData (title, text, url) {
+  // MUST be running on a server
+  // const data = {title: 'MDN', text: 'Learn web development on MDN!', url: 'https://developer.mozilla.org'}
+  const data = {title: title, text: text, url: url}
+  // console.log(data);
+  if (navigator.canShare) {
+    // remove repeat url after ? (smart)
+    data.url = '?' + data.url.split('?')[1];
+    navigator.share(data)
+    .then((data) => console.log('File share successful!', data))
+    .catch((err) => console.log('File share unsuccessful!', err));
+  } else {
+    prompt(data.text, data.url);
+  }
+};  
 
 // Constructor Function (class)
 function Utils()
@@ -90,3 +112,4 @@ function Utils()
   };    
 }
 const UTILS = new Utils();
+

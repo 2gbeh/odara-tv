@@ -9,7 +9,7 @@ function lightMode(directory = './css/moonlite.css') {
   }
 }
 
-async function shareBlog (title, text, url) {
+async function shareData (title, text, url) {
   // MUST be running on a server
   
   var href = window.location.href,
@@ -27,6 +27,6 @@ async function shareBlog (title, text, url) {
     .then((data) => console.log('File share successful!', data))
     .catch((err) => console.log('File share unsuccessful!', err));
   } else {
-    prompt('Copy to clipboard', data.url);
+    prompt(data.text, data.url);
   }
 };

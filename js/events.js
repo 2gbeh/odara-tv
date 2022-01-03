@@ -1,40 +1,17 @@
-// JavaScript Document
-async function fetchBlog (directory, callback) {
-  // MUST be running on a server
-  let fileSystem = await fetch(directory);
-  let content = await fileSystem.text();
-  callback(content);
-};  
-
-async function shareBlog (title, text, url) {
-  // MUST be running on a server
-  // const data = {title: 'MDN', text: 'Learn web development on MDN!', url: 'https://developer.mozilla.org'}
-  const data = {title: title, text: text, url: url}
-  // console.log(data);
-  if (navigator.canShare) {
-	// remove repeat url after ? (smart)
-    data.url = '?' + data.url.split('?')[1];
-    navigator.share(data)
-    .then((data) => console.log('File share successful!', data))
-    .catch((err) => console.log('File share unsuccessful!', err));
-  } else {
-    prompt('Copy to clipboard', data.url);
-  }
-};  
-
-function getBlog (data) {
+// Blog Controller
+function getBlogs (data) {
   data = JSON.parse(data)['root'];
   asideTile(data);
   noScriptHook(data);
   const datalist = document.querySelector('header #hint'),
   card = document.querySelector('main #card'),
   pager = document.querySelector('main #pager');  
-  var blog = routeSwitch(data), n = 0, li = '', dl = '';
+  var blog = routeSwitch(data), li = '', dl = '', n = 1;
   // blog.reverse();
   blog.map(function(e, i) {
-    n += 1;
     dl += `<option value="${e.title}" />`
-    li += getBlogList(e, n);
+    li += getBlog(e, i, n);
+    n++;
   });
 
   datalist.innerHTML = dl;
@@ -42,10 +19,10 @@ function getBlog (data) {
   if (n <= 25) pager.style.display = 'none';
 }
 
-function getBlogList (row, n) {
-  li = '<li itemscope itemtype="https://schema.org/CreativeWork" id="'+ n +'">\
+function getBlog (row, id, sn) {
+  li = '<li itemscope itemtype="https://schema.org/CreativeWork" id="b'+ id +'">\
     <div itemprop="image" class="thumbnail" style="background-image: url(./'+ Context.dir_blog + row.thumbnail +');">\
-      <sup itemprop="identifier">#'+ n +'</sup>\
+      <sup itemprop="identifier">#'+ sn +'</sup>\
       <sub '+ getSubAttrib(row.status) + '>'+ row.subtitle +'</sub>\
     </div>\
     <article>\
@@ -82,8 +59,9 @@ function getBlogList (row, n) {
     </div>\
   </li>';
   // advert placement
-  if (n % 4 == 0) {
-    li +=  KITE.get();
+  if (sn % 4 == 0) {
+    li +=  newKite.getKite();
+    //cli(newKite.id)
   }
   //cli(li);
   return li;
@@ -149,7 +127,7 @@ function getActivity3(row) {
   
   var i = '<i class="fi fi-rs-share" title="Share"></i>', 
   p = '<p>Share</p>',
-  res = `<a onClick="shareBlog('${data.title}', '${data.text}', '${data.url}')">${i}${p}</a>`;
+  res = `<a onClick="shareData('${data.title}', '${data.text}', '${data.url}')">${i}${p}</a>`;
   //cli(res);
   return res;
 }
@@ -255,16 +233,19 @@ function noScriptHook (data) {
     27,31,32,34,38,39,40,41,42,44,
     47,48,4,11,12,18,23,43,6,20
   ];  
-  var li = '', j = 1, p = 0;
+  var li = '', p = 0, n = 1;
   data.map(function(e, i) {
     p = i + 1;
-    if (picker.includes(p) /*e.status == 4*/)
-      li += getBlogList(e, p);
-    j++;
+    if (picker.includes(p) /*e.status == 4*/) {
+      li += getBlog(e, i, n);
+      n++;
+    }
   });
   
   var main = document.querySelector('main'),
   outp = '<textarea>'+ li +'</textarea>';
   main.innerHTML = outp + main.innerHTML;
 }
+
+
 

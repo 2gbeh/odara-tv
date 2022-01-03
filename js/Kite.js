@@ -1,75 +1,272 @@
-// Class
-function Kite()
-{
-  this.get = function(i = -1){
-    const data = this.data,
-    r = Math.floor(Math.random() * data.length),
-    e = i < 0? data[r]: data[i - 1],
-    res = '<li class="kite">\
-        <a href="'+ e.url +'" target="_blank" title="Visit Advertiser">\
-          <div class="thumbnail" style="background-image: url(./'+ Context.dir_kite + e.img +');">\
-            <sub>AD</sub>\
-          </div>\
-        </a>\
-      </li>';
-    return res;
-  };
+// Kite Controller
+class Kite {
 
-  this.data = [
-    {
-      "img": "yung6ix.jpeg",
-      "org": null,
-      "who": null,
-      "tel": null,
-      "url": "https://tooxclusive.com",
-      "status": 0,
-      "date": "2022-01-02"      
-    },
-    {
-      "img": "naijaloaded.jpg",
-      "org": null,
-      "who": null,
-      "tel": null,
-      "url": "https://naijaloaded.com",
-      "status": 0,
-      "date": "2022-01-02"      
-    },
-    {
-      "img": "smartaccess.png",
-      "org": null,
-      "who": null,
-      "tel": null,
-      "url": "https://wa.me/2347063270979",
-      "status": 0,
-      "date": "2022-01-02"      
-    },
-    {
-      "img": "apexloaded.png",
-      "org": null,
-      "who": null,
-      "tel": null,
-      "url": "https://wa.me/2348169960927",
-      "status": 0,
-      "date": "2022-01-02"      
-    },
-    {
-      "img": "codedruns.jpeg",
-      "org": null,
-      "who": null,
-      "tel": null,
-      "url": "https://codedruns.com",
-      "status": 0,
-      "date": "2022-01-02"      
-    },  
-    {
-      "img": "namecheap.png",
-      "org": null,
-      "who": null,
-      "tel": null,
-      "url": "https://namecheap.com",
-      "status": 0,
-      "date": "2022-01-02"      
-    }      
-  ];
+  constructor(data = null) {
+    this.data = data !== null? data: this.getData();
+    this.size = this.data.length;
+    this.id = -1;
+  }
+
+  getKites () {
+    const kites = document.querySelector('main #kites');
+    var li = '', n = 1;    
+    this.data.map(function(e, i) {
+      li += this.strKite(e, i, n);
+      n++;
+    }, this);
+    kites.innerHTML = `<ul data-numrows=${n}>${li}</ul>`;
+  }
+
+  getKite (id = -1) {
+    const i = id < 0? Math.floor(Math.random() * this.size): id,
+    e = this.data[i], 
+    n = 1,
+    li = this.strKite(e, i, n);
+    this.id = i;
+    return li;
+  }
+
+  strKite (row, id, sn) {
+    var li = '<li class="kite" id="k'+ id +'">\
+      <a href="'+ row.url +'" target="_blank" title="Visit Advertiser">\
+        <div class="thumbnail" style="background-image: url(./'+ Context.dir_kite + row.img +');">\
+          <sup>#'+ sn +'</sup>\
+          <sub>AD</sub>\
+        </div>\
+      </a>\
+    </li>';
+    return li;
+  }
+
+  getData() {
+    return [
+      {
+        "img": "kesh.jpeg",
+        "org": null,
+        "who": null,
+        "tel": null,
+        "url": "tel:+23470022555374",
+        "status": 0,
+        "date": "2022-01-03"
+      },  
+      {
+        "img": "smartaccess.png",
+        "org": null,
+        "who": null,
+        "tel": null,
+        "url": "https://wa.me/2347063270979",
+        "status": 0,
+        "date": "2022-01-02"      
+      },
+      {
+        "img": "apexloaded.png",
+        "org": null,
+        "who": null,
+        "tel": null,
+        "url": "https://wa.me/2348169960927",
+        "status": 0,
+        "date": "2022-01-02"      
+      },
+      {
+        "img": "namecheap.png",
+        "org": null,
+        "who": null,
+        "tel": null,
+        "url": "https://namecheap.com",
+        "status": 0,
+        "date": "2022-01-02"      
+      },
+      {
+        "img": "aqskill.png",
+        "org": null,
+        "who": null,
+        "tel": null,
+        "url": "https://aqskill.com",
+        "status": 0,
+        "date": "2022-01-03"
+      }, 
+      {
+        "img": "paxful.png",
+        "org": null,
+        "who": null,
+        "tel": null,
+        "url": "https://paxful.com",
+        "status": 0,
+        "date": "2022-01-03"
+      },          
+      {
+        "img": "asidehost.jpg",
+        "org": null,
+        "who": null,
+        "tel": null,
+        "url": "https://asidehost.com",
+        "status": 0,
+        "date": "2022-01-03"      
+      },
+      {
+        "img": "cyberpolice.jpg",
+        "org": null,
+        "who": null,
+        "tel": null,
+        "url": "https://wa.me/2347065017110",
+        "status": 0,
+        "date": "2022-01-03"      
+      },
+      {
+        "img": "datacamp.png",
+        "org": null,
+        "who": null,
+        "tel": null,
+        "url": "https://datacamp.com",
+        "status": 0,
+        "date": "2022-01-03"      
+      },
+      {
+        "img": "edotechpark1.jpg",
+        "org": null,
+        "who": null,
+        "tel": null,
+        "url": "https://edotechpark.com",
+        "status": 0,
+        "date": "2022-01-03"
+      }, 
+      {
+        "img": "edotechpark2.jpg",
+        "org": null,
+        "who": null,
+        "tel": null,
+        "url": "https://edotechpark.com",
+        "status": 0,
+        "date": "2022-01-03"
+      },          
+      {
+        "img": "futureacademy.jpg",
+        "org": null,
+        "who": null,
+        "tel": null,
+        "url": "https://futureacademy.africa",
+        "status": 0,
+        "date": "2022-01-03"      
+      },
+      {
+        "img": "googleux.png",
+        "org": null,
+        "who": null,
+        "tel": null,
+        "url": "https://coursera.org/professional-certificates/google-ux-design",
+        "status": 0,
+        "date": "2022-01-03"      
+      },
+      {
+        "img": "gtbapp.png",
+        "org": null,
+        "who": null,
+        "tel": null,
+        "url": "https://gtbank.com/personal-banking/ways-to-bank/mobile-app",
+        "status": 0,
+        "date": "2022-01-03"      
+      },
+      {
+        "img": "madecorp.jpg",
+        "org": null,
+        "who": null,
+        "tel": null,
+        "url": "https://wa.me/2348165406369",
+        "status": 0,
+        "date": "2022-01-03"
+      },          
+      {
+        "img": "octave.png",
+        "org": null,
+        "who": null,
+        "tel": null,
+        "url": "https://octaveanalytics.com",
+        "status": 0,
+        "date": "2022-01-03"      
+      },
+      {
+        "img": "quickshop.jpg",
+        "org": null,
+        "who": null,
+        "tel": null,
+        "url": "tel:+2348122057982",
+        "status": 0,
+        "date": "2022-01-03"      
+      },
+      {
+        "img": "ubaleo.jpg",
+        "org": null,
+        "who": null,
+        "tel": null,
+        "url": "https://ubagroup.com/nigeria/personal-banking/digital-banking/chat-with-leo/",
+        "status": 0,
+        "date": "2022-01-03"
+      },
+      {
+        "img": "whogohost1.png",
+        "org": null,
+        "who": null,
+        "tel": null,
+        "url": "https://whogohost.ng",
+        "status": 0,
+        "date": "2022-01-03"
+      }, 
+      {
+        "img": "whogohost2.png",
+        "org": null,
+        "who": null,
+        "tel": null,
+        "url": "https://whogohost.ng",
+        "status": 0,
+        "date": "2022-01-03"
+      },
+      {
+        "img": "worldremit.png",
+        "org": null,
+        "who": null,
+        "tel": null,
+        "url": "https://worldremit.com",
+        "status": 0,
+        "date": "2022-01-03"
+      },        
+      {
+        "img": "kulvix.jpg",
+        "org": null,
+        "who": null,
+        "tel": null,
+        "url": "https://wa.me/2348100201257",
+        "status": 0,
+        "date": "2022-01-03"
+      },
+      {
+        "img": "24thexp.jpg",
+        "org": null,
+        "who": null,
+        "tel": null,
+        "url": "https://wa.me/2348058480134",
+        "status": 0,
+        "date": "2022-01-03"
+      },
+      {
+        "img": "diamondada.jpg",
+        "org": null,
+        "who": null,
+        "tel": null,
+        "url": "https://accessbankplc.com",
+        "status": 0,
+        "date": "2022-01-03"
+      },
+      {
+        "img": "skillsrave.jpg",
+        "org": null,
+        "who": null,
+        "tel": null,
+        "url": "https://wa.me/2348033129445",
+        "status": 0,
+        "date": "2022-01-03"
+      }        
+    ];
+  }
 }
-const KITE = new Kite();
+
+let newKite = new Kite();
