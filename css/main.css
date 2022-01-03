@@ -53,7 +53,8 @@ main .card .thumbnail sub {
 }
 
 main .card ul li.kite {
-  margin-top: 10px;
+  margin-top: 20px;
+  margin-bottom: 20px;
   background-color: transparent;
   min-width: 310px;
   max-width: 310px;  
@@ -72,7 +73,7 @@ main .card article {
 }
 
 main .card .headline {
-  margin: 10px 14px 0;
+  margin: 10px 15px 0;
   font-size: 20px;
 }
 main .card .headline a {
@@ -88,7 +89,7 @@ main .card .headline a:hover {
 }
 
 main .card .byline {
-  margin: 5px 15px 0;
+  margin: 5px 14px 0;
   font-size: 12px;
 }
 main .card .byline a {
