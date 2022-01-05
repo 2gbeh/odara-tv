@@ -13,7 +13,7 @@ const Context = {
   caption: 'Tech News, Movies and TV Shows',
   summary: 'Now available on Udara TV. Download, Add to Watchlist. Improve your experience with personalized content from our curators.',
   req: '?req=/',
-  dir_blog: apache()? 'img-blog/': 'img',
+  dir_blog: apache()? 'img-blog/': 'img/',
   dir_kite: apache()? 'img-kite/': 'img/kite/',
   dir_user: apache()? 'img-user/': 'img/user/',
   db_blog: './json/Blog.json',
