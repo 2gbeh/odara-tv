@@ -41,6 +41,15 @@ class Kite {
   getData() {
     return [
       {
+        "img": "kite.jpg",
+        "org": null,
+        "who": null,
+        "tel": null,
+        "url": "https://wa.me/2348169960927",
+        "status": 0,
+        "date": "2022-01-07"
+      },       
+      {
         "img": "kesh.jpeg",
         "org": null,
         "who": null,
