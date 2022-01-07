@@ -16,7 +16,7 @@ async function shareData (title, text, url) {
   noreq = href.split('?')[0],
   nohash = noreq.split('#')[0],
   dir = nohash.split('/').pop(),
-  url = 'https://2gbeh.github.io/udara-tv/' + dir;
+  url = 'https://2gbeh.github.io/odara-tv/' + dir;
 
   const data = {title: title, text: text, url: url};
   // console.log(data);
