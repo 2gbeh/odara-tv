@@ -221,6 +221,15 @@ class Kite {
         "date": "2022-01-03"
       },
       {
+        "img": "whogohost3.jpg",
+        "org": null,
+        "who": null,
+        "tel": null,
+        "url": "https://whogohost.ng",
+        "status": 0,
+        "date": "2022-01-07"
+      },      
+      {
         "img": "worldremit.png",
         "org": null,
         "who": null,
@@ -264,7 +273,34 @@ class Kite {
         "url": "https://wa.me/2348033129445",
         "status": 0,
         "date": "2022-01-03"
-      }        
+      },
+      {
+        "img": "9jacodekids.jpg",
+        "org": null,
+        "who": null,
+        "tel": null,
+        "url": "https://wa.me/2348033129445",
+        "status": 0,
+        "date": "2022-01-07"
+      },
+      {
+        "img": "ecobank.png",
+        "org": null,
+        "who": null,
+        "tel": null,
+        "url": "https://ecobank.com",
+        "status": 0,
+        "date": "2022-01-03"
+      },
+      {
+        "img": "onusvti.jpeg",
+        "org": null,
+        "who": null,
+        "tel": null,
+        "url": "https://wa.me/2348180495451",
+        "status": 0,
+        "date": "2022-01-07"
+      }      
     ];
   }
 }
