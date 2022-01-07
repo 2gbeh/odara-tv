@@ -74,7 +74,7 @@ aside .tile table tr td {
 
 aside .tile .thumbnail {
   position: relative;
-  background-color: #fff;
+  background-color: transparent;
   background-image: url("../thumbnail.png");
   background-repeat: no-repeat;
   background-position: top center;
