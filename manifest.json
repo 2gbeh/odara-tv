@@ -1,13 +1,17 @@
 {
+  "$schema": "https://json.schemastore.org/web-manifest-combined.json",
   "name": "Odara TV",
-  "short_name": "Odara",  
+  "short_name": "Odara TV",  
   "description": "Tech News, Movies and TV Shows",  
+  "categories": ["technology", "tech", "sci-fi", "news", "movies", "tv shows", "tv series", "youtube"],
   "background_color": "#60dbfb",
   "theme_color": "#20232a",
   "start_url": "index.html",
   "scope": "/",  
   "display": "standalone",
   "orientation": "portrait",
+  "dir": "rtl",
+  "lang": "en-US",
   "icons": [
     {
       "src": "/apple-touch-icon.png",
@@ -59,22 +63,26 @@
     {
       "src": "/ui/screenshot1.png",
       "type": "image/png",
-      "sizes": "320x669"
+      "sizes": "320x669",
+      "label": "Tech News"
     },
     {
       "src": "/ui/screenshot2.png",
       "type": "image/png",
-      "sizes": "320x659"
+      "sizes": "320x659",
+      "label": "Tech Movies"
     },
     {
       "src": "/ui/screenshot3.png",
       "type": "image/png",
-      "sizes": "320x642"
+      "sizes": "320x642",
+      "label": "Tech TV Shows"
     },
     {
       "src": "/ui/screenshot4.png",
       "type": "image/png",
-      "sizes": "320x643"
+      "sizes": "320x643",
+      "label": "Tech YouTube Videos"
     }
   ]
 }
