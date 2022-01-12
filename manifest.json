@@ -61,25 +61,25 @@
   ],  
   "screenshots": [
     {
-      "src": "/ui/screenshot1.png",
+      "src": "/ui/1-news.png",
       "type": "image/png",
       "sizes": "320x669",
       "label": "Tech News"
     },
     {
-      "src": "/ui/screenshot2.png",
+      "src": "/ui/2-movies.png",
       "type": "image/png",
       "sizes": "320x659",
       "label": "Tech Movies"
     },
     {
-      "src": "/ui/screenshot3.png",
+      "src": "/ui/3-tv-shows.png",
       "type": "image/png",
       "sizes": "320x642",
       "label": "Tech TV Shows"
     },
     {
-      "src": "/ui/screenshot4.png",
+      "src": "/ui/4-youtube.png",
       "type": "image/png",
       "sizes": "320x643",
       "label": "Tech YouTube Videos"
