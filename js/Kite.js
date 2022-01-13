@@ -309,7 +309,25 @@ class Kite {
         "url": "https://wa.me/2348180495451",
         "status": 0,
         "date": "2022-01-07"
-      }      
+      },
+      {
+        "img": "jobberman.png",
+        "org": null,
+        "who": null,
+        "tel": null,
+        "url": "https://jobberman.com",
+        "status": 0,
+        "date": "2022-01-13"      
+      },
+      {
+        "img": "lastingdynamics.png",
+        "org": null,
+        "who": null,
+        "tel": null,
+        "url": "https://lastingdynamics.com",
+        "status": 0,
+        "date": "2022-01-13"      
+      } 
     ];
   }
 }
