@@ -1,6 +1,42 @@
 {
   "root": [
     {
+      "thumbnail": "iftc.jpeg",
+      "title": "In from the Cold - Season 1 (2022)",
+      "subtitle": "E1-8",
+      "tags": "Margarita Levieva, Ivanna Sakhno, Cillian O'Sullivan, Lydia Fleming, Charles Brice, Alyona Khmelnitskaya",
+      "posted": "2022-01-28",
+      "meta": "0.0/10",
+      "summary": "Exposed as an ex-Russian spy, an American single mom must juggle family life and unique shape-shifting skills in a battle against an insidious enemy.",
+      "url": "https://www.netflix.com/ng/title/81123055",
+      "status": 3,
+      "date": "2022-01-15"
+    },    
+    {
+      "thumbnail": "arc81.jpeg",
+      "title": "Archive 81 - Season 1 (2022)",
+      "subtitle": "E1-8",
+      "tags": "Mamoudou Athie, Dina Shihabi, Matt McGorry, Martin Donovan",
+      "posted": "2022-01-14",
+      "meta": "9.4/10",
+      "summary": "An archivist takes a job restoring damaged videotapes and gets pulled into a mystery involving the missing director and a demonic cult.",
+      "url": "https://o2tvseries.com/Archive-81/Season-01/index.html",
+      "status": 3,
+      "date": "2022-01-15"
+    },    
+    {
+      "thumbnail": "pmk.jpeg",
+      "title": "Peacemaker - Season 1 (2022)",
+      "subtitle": "E1-8",
+      "tags": "John Cena, Freddie Stroma, Jennifer Holland, Steve Agee, Danielle Brooks, Chukwudi Iwuji",
+      "posted": "2022-01-13",
+      "meta": "8.9/10",
+      "summary": "A man fights for peace at any cost, no matter how many people he has to kill to get it.",
+      "url": "https://o2tvseries.com/Peacemaker/Season-01/index.html",
+      "status": 3,
+      "date": "2022-01-15"
+    },  
+    {
       "thumbnail": "abcmeta.jpeg",
       "title": "The Metaverse is shaping up as the Next Landmark for Internet Technology",
       "subtitle": "ABC",
@@ -107,6 +143,18 @@
       "url": "https://o2tvseries.com/dfhsdklfhsl564/Season-06/index.html",
       "status": 3,
       "date": "2022-01-13"
+    },
+    {
+      "thumbnail": "eter.jpeg",
+      "title": "Eternals (2021)",
+      "subtitle": "285MB",
+      "tags": "Richard Madden, Angelina Jolie, Don Lee, Barry Keoghan, Salma Hayek, Germma Chan, Lauren Ridloff, Kumail Nanjiani, Lia McHugh",
+      "posted": "2021-11-05",
+      "meta": "5.5/10",
+      "summary": "The Eternals, a race of immortal beings with superhuman powers who have secretly lived on Earth for thousands of years, reunite to battle the evil Deviants.",
+      "url": "https://www.sabishare.com/file/aCWqrAphP70-eternals-2021-netnaija-com-mp4",
+      "status": 2,
+      "date": "2022-01-14"
     },     
     {
       "thumbnail": "invas.jpeg",
@@ -287,7 +335,7 @@
       "url": "https://o2tvseries.com/Devs/Season-01/index.html",
       "status": 3,
       "date": "2021-12-31"
-    }, 
+    },
     {
       "thumbnail": "mibi.jpeg",
       "title": "Men in Black - International (2019)",
@@ -299,7 +347,7 @@
       "url": "https://www.sabishare.com/file/uHcuvsBMV64-men-in-black-international-2019-netnaija-com-mp4",
       "status": 2,
       "date": "2022-01-09"
-    },        
+    },    
     {
       "thumbnail": "iamm.jpeg",
       "title": "I Am Mother (2019)",
