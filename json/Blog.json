@@ -1,5 +1,5 @@
 {
-  "root": [
+  "root": [     
     {
       "thumbnail": "iftc.jpeg",
       "title": "In from the Cold - Season 1 (2022)",
@@ -301,7 +301,7 @@
       "date": "2021-12-24"    
     },
     {
-      "thumbnail": "supint.jpeg",
+      "thumbnail": "supintel.jpeg",
       "title": "Superintelligence (2020)",
       "subtitle": "280MB",
       "tags": "Melissa McCarthy, Bobby Cannavale, Ben Falcone, James Corden, Jean Smart, Michael Beach, Brian Tyree Henry, Sarah Baker, Sam Richardson",
@@ -336,6 +336,18 @@
       "status": 3,
       "date": "2021-12-31"
     },
+    {
+      "thumbnail": "inteluk.jpeg",
+      "title": "Intelligence UK - Season 1 (2020)",
+      "subtitle": "E1-6",
+      "tags": "David Schwimmer, Nick Mohammed, Gana Bayarsaikhan, Jane Stanness, Sylvestra Le Touzel",
+      "posted": "2020-02-21",
+      "meta": "5.4/10",
+      "summary": "At the U.K.'s labyrinthine Government Communications HQ, an arrogant, maverick NSA liaison arrives from the U.S. to join a bureaucracy of cybersecurity misfits.",
+      "url": "https://o2tvseries.com/Intelligence-UK/Season-01/index.html",
+      "status": 3,
+      "date": "2022-01-15"
+    },     
     {
       "thumbnail": "mibi.jpeg",
       "title": "Men in Black - International (2019)",
@@ -528,6 +540,18 @@
       "status": 3,
       "date": "2021-12-27"
     },
+    {
+      "thumbnail": "intel.jpeg",
+      "title": "Intelligence - Season 1 (2014)",
+      "subtitle": "E1-13",
+      "tags": "Josh Holloway, Meghan Ory, Michael Rady, P.J. Byrne, John Billingsley, Marg Helgenberger, Thomas Arana",
+      "posted": "2014-03-31",
+      "meta": "5.4/10",
+      "summary": "Gabriel is a government agent with a microchip implanted in his brain that gives him the ability to access global intelligence files in order to protect the U.S.",
+      "url": "https://o2tvseries.com/Intelligence-8/Season-01/index.html",
+      "status": 3,
+      "date": "2022-01-15"
+    },      
     {
       "thumbnail": "roboc.jpeg",
       "title": "RoboCop (2014)",
