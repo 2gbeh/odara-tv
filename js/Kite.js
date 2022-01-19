@@ -41,7 +41,7 @@ class Kite {
   getData() {
     return [
       {
-        "img": "kite.jpg",
+        "img": "kite0.jpg",
         "org": null,
         "who": null,
         "tel": null,
