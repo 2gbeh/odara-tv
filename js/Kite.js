@@ -48,7 +48,7 @@ class Kite {
         "url": "https://wa.me/2348169960927",
         "status": 0,
         "date": "2022-01-07"
-      },       
+      },    
       {
         "img": "kesh.jpeg",
         "org": null,
@@ -311,6 +311,24 @@ class Kite {
         "date": "2022-01-07"
       },
       {
+        "img": "kube1.png",
+        "org": null,
+        "who": null,
+        "tel": null,
+        "url": "https://kube.academy",
+        "status": 0,
+        "date": "2022-01-08"
+      },
+      {
+        "img": "kube2.png",
+        "org": null,
+        "who": null,
+        "tel": null,
+        "url": "https://kube.academy",
+        "status": 0,
+        "date": "2022-01-08"
+      },
+      {
         "img": "jobberman.png",
         "org": null,
         "who": null,
@@ -327,7 +345,124 @@ class Kite {
         "url": "https://lastingdynamics.com",
         "status": 0,
         "date": "2022-01-13"      
-      } 
+      },
+      {
+        "img": "mitedu.png",
+        "org": null,
+        "who": null,
+        "tel": null,
+        "url": "https://professional.mit.edu/digital-plus-programs",
+        "status": 0,
+        "date": "2022-01-19"
+      },
+      {
+        "img": "biuedu.png",
+        "org": null,
+        "who": null,
+        "tel": null,
+        "url": "https://biu.edu.ng/admissions",
+        "status": 0,
+        "date": "2022-01-19"
+      },
+      {
+        "img": "binance.png",
+        "org": null,
+        "who": null,
+        "tel": null,
+        "url": "https://binance.com",
+        "status": 0,
+        "date": "2022-01-19"
+      },
+      {
+        "img": "presloaded.png",
+        "org": null,
+        "who": null,
+        "tel": null,
+        "url": "https://wa.me/2349072202582",
+        "status": 0,
+        "date": "2022-01-19"
+      },
+      {
+        "img": "novoresume.png",
+        "org": null,
+        "who": null,
+        "tel": null,
+        "url": "https://novoresume.com",
+        "status": 0,
+        "date": "2022-01-19"
+      },
+      {
+        "img": "kuda.png",
+        "org": null,
+        "who": null,
+        "tel": null,
+        "url": "https://kuda.com",
+        "status": 0,
+        "date": "2022-01-19"
+      },
+      {
+        "img": "brendan.png",
+        "org": null,
+        "who": null,
+        "tel": null,
+        "url": "https://wa.me/2348133846289",
+        "status": 0,
+        "date": "2022-01-19"
+      },
+      {
+        "img": "ngxgroup.png",
+        "org": null,
+        "who": null,
+        "tel": null,
+        "url": "https://ngxgroup.com",
+        "status": 0,
+        "date": "2022-01-19"
+      },
+      {
+        "img": "codered.png",
+        "org": null,
+        "who": null,
+        "tel": null,
+        "url": "https://codered.eccouncil.org",
+        "status": 0,
+        "date": "2022-01-19"
+      },
+      {
+        "img": "dstvudemy.png",
+        "org": null,
+        "who": null,
+        "tel": null,
+        "url": "https://multichoice.com",
+        "status": 0,
+        "date": "2022-01-19"
+      },
+      {
+        "img": "decagon.png",
+        "org": null,
+        "who": null,
+        "tel": null,
+        "url": "https://decagon.institute",
+        "status": 0,
+        "date": "2022-01-19"
+      },
+      {
+        "img": "msbm1.png",
+        "org": null,
+        "who": null,
+        "tel": null,
+        "url": "https://msbm.edu.ng",
+        "status": 0,
+        "date": "2022-01-19"
+      },
+      {
+        "img": "msbm2.png",
+        "org": null,
+        "who": null,
+        "tel": null,
+        "url": "https://msbm.edu.ng",
+        "status": 0,
+        "date": "2022-01-19"
+      }      
     ];
   }
 }

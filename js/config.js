@@ -1,6 +1,6 @@
 // Arrow Function (one-liner)
 const cli = args => console.log(args);
-const apache = () => window.location.hostname === '127.0.0.1';
+const apache = () => window.location.hostname === '127.0.0.1' || window.location.hostname === 'localhost';
 
 // Object Literal (state only)
 const Context = {
