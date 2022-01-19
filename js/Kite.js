@@ -48,7 +48,16 @@ class Kite {
         "url": "https://wa.me/2348169960927",
         "status": 0,
         "date": "2022-01-07"
-      },    
+      }, 
+      {
+        "img": "arma.png",
+        "org": null,
+        "who": null,
+        "tel": null,
+        "url": "https://wa.me/2348169960927",
+        "status": 0,
+        "date": "2022-01-19"
+      },        
       {
         "img": "kesh.jpeg",
         "org": null,
@@ -293,6 +302,15 @@ class Kite {
         "date": "2022-01-07"
       },
       {
+        "img": "9jacodekids2.png",
+        "org": null,
+        "who": null,
+        "tel": null,
+        "url": "https://wa.me/2348033129445",
+        "status": 0,
+        "date": "2022-01-19"
+      },      
+      {
         "img": "ecobank.png",
         "org": null,
         "who": null,
@@ -337,6 +355,15 @@ class Kite {
         "status": 0,
         "date": "2022-01-13"      
       },
+      {
+        "img": "jobberman2.png",
+        "org": null,
+        "who": null,
+        "tel": null,
+        "url": "https://jobberman.com",
+        "status": 0,
+        "date": "2022-01-19"      
+      },      
       {
         "img": "lastingdynamics.png",
         "org": null,
@@ -462,7 +489,88 @@ class Kite {
         "url": "https://msbm.edu.ng",
         "status": 0,
         "date": "2022-01-19"
-      }      
+      },   
+      {
+        "img": "investa.jpg",
+        "org": null,
+        "who": null,
+        "tel": null,
+        "url": "https://investa.ng/interns",
+        "status": 0,
+        "date": "2022-01-19"
+      },   
+      {
+        "img": "festman.jpg",
+        "org": null,
+        "who": null,
+        "tel": null,
+        "url": "https://festman.io/dataschool",
+        "status": 0,
+        "date": "2022-01-19"
+      },
+      {
+        "img": "payd1.png",
+        "org": null,
+        "who": null,
+        "tel": null,
+        "url": "https://payd.ae",
+        "status": 0,
+        "date": "2022-01-19"
+      },
+      {
+        "img": "payd2.png",
+        "org": null,
+        "who": null,
+        "tel": null,
+        "url": "https://payd.ae",
+        "status": 0,
+        "date": "2022-01-19"
+      },
+      {
+        "img": "5kacademy.jpg",
+        "org": null,
+        "who": null,
+        "tel": null,
+        "url": "https://wa.me/2348169960927",
+        "status": 0,
+        "date": "2022-01-19"
+      },
+      {
+        "img": "arvr.png",
+        "org": null,
+        "who": null,
+        "tel": null,
+        "url": "https://interaction-design.org",
+        "status": 0,
+        "date": "2022-01-19"
+      },
+      {
+        "img": "gigm1.png",
+        "org": null,
+        "who": null,
+        "tel": null,
+        "url": "https://gigm.com",
+        "status": 0,
+        "date": "2022-01-19"
+      },  
+      {
+        "img": "gigm2.png",
+        "org": null,
+        "who": null,
+        "tel": null,
+        "url": "https://gigm.com",
+        "status": 0,
+        "date": "2022-01-19"
+      }, 
+      {
+        "img": "fashionweekend.png",
+        "org": null,
+        "who": null,
+        "tel": null,
+        "url": "https://fashionweekend.gtbank.com",
+        "status": 0,
+        "date": "2022-01-19"
+      },                        
     ];
   }
 }
