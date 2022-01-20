@@ -107,7 +107,7 @@
       "url": "https://m.youtube.com/watch?v=SgVXmtMUjbI",
       "status": 4,
       "date": "2021-12-27"
-    },    
+    },            
     {
       "thumbnail": "isa.jpeg",
       "title": "Meet Iyinoluwa Samuel Aboyeji, Co-Founder of Andela and Flutterwave",
@@ -156,6 +156,18 @@
       "status": 3,
       "date": "2022-01-13"
     },
+    {
+      "thumbnail": "ps5.jpg",
+      "title": "How Sony PlayStation 5 was built",
+      "subtitle": "15:03",
+      "tags": "WIRED",
+      "posted": "2021-11-19",
+      "meta": "703.6k",      
+      "summary": "Mark Cerny, Lead System Architect of the PlayStation 5, breaks down all that went into the creation of Sony's latest next-gen video game console.",
+      "url": "https://m.youtube.com/watch?v=cJkx-OLgLzo",
+      "status": 4,
+      "date": "2022-01-20"
+    },     
     {
       "thumbnail": "yj.jpeg",
       "title": "Yellowjackets - Season 1 (2021)",
@@ -420,6 +432,30 @@
       "status": 2,
       "date": "2021-12-31"
     }, 
+    {
+      "thumbnail": "davido.png",
+      "title": "Inside Davido's $1.5m Mansion in Banana Island, Lagos",
+      "subtitle": "12:54",
+      "tags": "Tayo Aina",
+      "posted": "2020-06-15",
+      "meta": "1.7m",      
+      "summary": "A grand tour of one of the most expensive real estate properties in Lagos, Nigeria, owned by one of the biggest Musical artists in Africa.",
+      "url": "https://m.youtube.com/watch?v=03T1vwCOTo4",
+      "status": 4,
+      "date": "2022-01-20"
+    },    
+    {
+      "thumbnail": "xboxx.png",
+      "title": "The Technology Behind Xbox Series X",
+      "subtitle": "6:15",
+      "tags": "Xbox",
+      "posted": "2020-04-07",
+      "meta": "134k",      
+      "summary": "The fastest, most powerful Xbox. Ever. Jason Ronald, Xbox Series X’s Director of Program Manager, breaks down the technology Xbox.",
+      "url": "https://m.youtube.com/watch?v=WM9uEejFrVo",
+      "status": 4,
+      "date": "2022-01-20"
+    },
     {
       "thumbnail": "devsfx.jpeg",
       "title": "Devs - Season 1 (2020)",
