@@ -54,6 +54,9 @@
   main .card .thumbnail {
     height: 280px;
   }
+  main .card article {
+    padding: 0 10px;
+  }   
   main .pager {
     margin: 20px 0 0;
     text-align: center;
