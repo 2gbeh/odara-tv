@@ -73,7 +73,7 @@ main .card article {
 }
 
 main .card .headline {
-  margin: 10px 15px 0;
+  margin: 10px 0 0;
   font-size: 20px;
 }
 main .card .headline a {
@@ -89,7 +89,7 @@ main .card .headline a:hover {
 }
 
 main .card .byline {
-  margin: 5px 14px 0;
+  margin: 5px 0 0;
   font-size: 12px;
 }
 main .card .byline a {
@@ -103,7 +103,7 @@ main .card .byline a {
 
 main .card .summary {
   color: #333;
-  margin: 0 15px 5px;
+  margin: 0 0 5px;
   padding: 5px 0 0;
   text-align: justify;
   /* font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif; */
