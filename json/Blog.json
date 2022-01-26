@@ -1,5 +1,29 @@
 {
-  "root": [     
+  "root": [ 
+    {
+      "thumbnail": "trigpt.jpg",
+      "title": "Trigger Point - Season 1 (2022)",
+      "subtitle": "E1-6",
+      "tags": "Adrian Lester, Vicky McClure, Mark Stanley, Cal MacAninch, Manjinder Virk, ",
+      "posted": "2022-01-23",
+      "meta": "6.6/10",
+      "summary": "As the bombing campaign intensifies in London, Explosives Officers (Expo 1 & 2) attempt to solve the mystery of who is behind the terrifying attacks.",
+      "url": "https://o2tvseries.com/Trigger-Point/Season-01/index.html",
+      "status": 3,
+      "date": "2022-01-26"
+    },    
+    {
+      "thumbnail": "bill6.jpg",
+      "title": "Billions - Season 6 (2022)",
+      "subtitle": "E1-12",
+      "tags": "Corey Stoll, Daniel Breaker, Paul Giamatti, Maggie Siff, David Costabile, Asia Kate Dillon, Condola Rashad",
+      "posted": "2022-01-23",
+      "meta": "8.7/10",
+      "summary": "A sincere but ruthless US attorney, engages in an egoistic battle with hedge fund kingpin as they try to outdo each other in the competitive financial market.",
+      "url": "https://o2tvseries.com/Billions-8/Season-06/index.html",
+      "status": 3,
+      "date": "2022-01-26"
+    },     
     {
       "thumbnail": "iftc.jpeg",
       "title": "In from the Cold - Season 1 (2022)",
@@ -431,7 +455,7 @@
       "url": "https://www.sabishare.com/file/aLFQpJtRM43-tenet-2020-netnaija-com-mp4",
       "status": 2,
       "date": "2021-12-31"
-    }, 
+    },     
     {
       "thumbnail": "davido.png",
       "title": "Inside Davido's $1.5m Mansion in Banana Island, Lagos",
@@ -444,6 +468,18 @@
       "status": 4,
       "date": "2022-01-20"
     },    
+    {
+      "thumbnail": "bill5.jpg",
+      "title": "Billions - Season 5 (2020)",
+      "subtitle": "E1-12",
+      "tags": "Damian Lewis, Malin Akerman, Paul Giamatti, Maggie Siff, David Costabile, Asia Kate Dillon, Condola Rashad",
+      "posted": "2020-05-03",
+      "meta": "8.7/10",
+      "summary": "A sincere but ruthless US attorney, engages in an egoistic battle with hedge fund kingpin as they try to outdo each other in the competitive financial market.",
+      "url": "https://o2tvseries.com/Billions-8/Season-05/index.html",
+      "status": 3,
+      "date": "2022-01-26"
+    },       
     {
       "thumbnail": "xboxx.png",
       "title": "The Technology Behind Xbox Series X",
@@ -479,7 +515,19 @@
       "url": "https://o2tvseries.com/Intelligence-UK/Season-01/index.html",
       "status": 3,
       "date": "2022-01-15"
-    },     
+    }, 
+    {
+      "thumbnail": "thediss.jpeg",
+      "title": "The Dissident (2020)",
+      "subtitle": "312MB",
+      "tags": "Jamal Khashoggi",
+      "posted": "2020-01-24",
+      "meta": "8.5/10",
+      "summary": "When Washington Post journalist Jamal Khashoggi disappears, his fiancée and dissidents around the world are left to piece together the clues to a brutal murder and expose a global cover-up perpetrated by the very country he loved.",
+      "url": "https://fzmovies.net/movie-The%20Dissident--hmp4.htm",
+      "status": 2,
+      "date": "2022-01-26"
+    },        
     {
       "thumbnail": "mibi.jpeg",
       "title": "Men in Black - International (2019)",
@@ -564,6 +612,30 @@
       "status": 2,
       "date": "2021-12-27"
     },
+    {
+      "thumbnail": "thecomm.jpg",
+      "title": "The Commuter (2018)",
+      "subtitle": "279MB",
+      "tags": "Liam Neeson, Patrick Wilson, Elizabeth McGovern, Florence Pugh, Jonathan Banks, Rolland Moller",
+      "posted": "2018-01-24",
+      "meta": "5.8/10",
+      "summary": "Michael is an insurance agent, gets recruited by a mysterious woman for a strange task that soon evolves into a fight for his life.",
+      "url": "https://fzmovies.net/movie-The%20Commuter--hmp4.htm",
+      "status": 2,
+      "date": "2022-01-26"
+    },     
+    {
+      "thumbnail": "mfelt.jpg",
+      "title": "Mark Felt - The Man Who Brought Down the White House (2017)",
+      "subtitle": "275MB",
+      "tags": "Liam Neeson, Martin Csokas, Diane Lane, Kate Walsh, Josh Lucas, Maika Monroe, Tony Goldwyn, Bruce Greenwood, Tom Sizemore, Brian d'Arcy James",
+      "posted": "2017-09-29",
+      "meta": "5.0/10",
+      "summary": "FBI agent, Mark Felt adopts the code name 'Deep Throat' and leaks information to reporters, leading them to uncover the Watergate scandal.",
+      "url": "https://fzmovies.net/movie-Mark%20Felt%20-%20The%20Man%20Who%20Brought%20Down%20the%20White%20House--hmp4.htm",
+      "status": 2,
+      "date": "2022-01-26"
+    },    
     {
       "thumbnail": "whtm.jpeg",
       "title": "What Happend to Monday (2017)",
@@ -792,6 +864,18 @@
       "status": 2,
       "date": "2021-12-27"
     },
+    {
+      "thumbnail": "avatar.jpeg",
+      "title": "Avatar (2009)",
+      "subtitle": "476MB",
+      "tags": "Sam Worthington, Zoe Saldana, Sigourney Weaver, Stephen Lang, Joel David Moore, Michelle Rodriguez, CCH Pounder, Laz Alonso, Wes Studi, Peter Mensah",
+      "posted": "2009-12-17",
+      "meta": "8.1/10",
+      "summary": "Jake, who is paraplegic, replaces his twin on the Na'vi inhabited Pandora for a corporate mission. After the natives accept him as one of their own, he must decide where his loyalties lie.",
+      "url": "https://fzmovies.net/movie-Avatar--hmp4.htm",
+      "status": 2,
+      "date": "2022-01-26"
+    },    
     {
       "thumbnail": "eye.jpeg",
       "title": "Eagle Eye (2008)",
