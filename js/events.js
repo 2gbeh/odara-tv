@@ -222,8 +222,9 @@ function asideTile(data) {
     }
   </script>`; 
   tile.innerHTML = '<table border="0"><tr>'+ td +'</tr></table>';
+  //textAreaHook(td);
   //console.dir(listItems, td);
-	return [listItems, td];
+	//return [listItems, td];
 }
 
 function noScriptHook (data) {
@@ -236,16 +237,29 @@ function noScriptHook (data) {
   var li = '', p = 0, n = 1;
   data.map(function(e, i) {
     p = i + 1;
-    if (picker.includes(p) /*e.status == 4*/) {
+    //if (picker.includes(p)) {
+    //if (e.status > 0) {
+    //if (e.status == 4) {
+    if (e.thumbnail.indexOf('bill5') > -1) {
       li += getBlog(e, i, n);
       n++;
     }
   });
-  
-  var main = document.querySelector('main'),
-  outp = '<textarea>'+ li +'</textarea>';
-  main.innerHTML = outp + main.innerHTML;
+  textAreaHook(li);
 }
 
+function textAreaHook (value) {  
+  const main = document.querySelector('main');
+  let = css = 'style="width:100%;height:25em;font-size:12px;"';
+  var value_f = value, embed = '';;
+  
+  value_f = value_f.replace(/img-blog/g,'img');
+  value_f = value_f.replace(/img-kite/g,'img/kite');
+  value_f = value_f.replace('?req=/news','news.html');
+  value_f = value_f.replace('?req=/movies','movies.html');
+  value_f = value_f.replace('?req=/tvshows','tvshows.html');
+  value_f = value_f.replace('?req=/youtube','youtube.html');
 
-
+  embed = `<textarea ${css}>${value_f}</textarea>`;
+  main.innerHTML = embed + main.innerHTML;
+}
