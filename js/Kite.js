@@ -571,6 +571,24 @@ class Kite {
         "status": 0,
         "date": "2022-01-19"
       },                        
+      {
+        "img": "domestika.png",
+        "org": null,
+        "who": null,
+        "tel": null,
+        "url": "https://domestika.org",
+        "status": 0,
+        "date": "2022-01-26"
+      }, 
+      {
+        "img": "codenga.png",
+        "org": null,
+        "who": null,
+        "tel": null,
+        "url": "https://codenga.com",
+        "status": 0,
+        "date": "2022-01-26"
+      },                        
     ];
   }
 }
