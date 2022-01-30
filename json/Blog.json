@@ -1,6 +1,18 @@
 {
   "root": [ 
     {
+      "thumbnail": "iftc.jpeg",
+      "title": "In from the Cold - Season 1 (2022)",
+      "subtitle": "E1-8",
+      "tags": "Margarita Levieva, Ivanna Sakhno, Cillian O'Sullivan, Lydia Fleming, Charles Brice, Alyona Khmelnitskaya",
+      "posted": "2022-01-28",
+      "meta": "5.7/10",
+      "summary": "Exposed as an ex-Russian spy, an American single mom must juggle family life and unique shape-shifting skills in a battle against an insidious enemy.",
+      "url": "https://o2tvseries.com/In-from-the-Cold/Season-01/index.html",
+      "status": 3,
+      "date": "2022-01-15"
+    },     
+    {
       "thumbnail": "trigpt.jpg",
       "title": "Trigger Point - Season 1 (2022)",
       "subtitle": "E1-6",
@@ -23,19 +35,7 @@
       "url": "https://o2tvseries.com/Billions-8/Season-06/index.html",
       "status": 3,
       "date": "2022-01-26"
-    },     
-    {
-      "thumbnail": "iftc.jpeg",
-      "title": "In from the Cold - Season 1 (2022)",
-      "subtitle": "E1-8",
-      "tags": "Margarita Levieva, Ivanna Sakhno, Cillian O'Sullivan, Lydia Fleming, Charles Brice, Alyona Khmelnitskaya",
-      "posted": "2022-01-28",
-      "meta": "5.7/10",
-      "summary": "Exposed as an ex-Russian spy, an American single mom must juggle family life and unique shape-shifting skills in a battle against an insidious enemy.",
-      "url": "https://o2tvseries.com/In-from-the-Cold/Season-01/index.html",
-      "status": 3,
-      "date": "2022-01-15"
-    },    
+    },       
     {
       "thumbnail": "arc81.jpeg",
       "title": "Archive 81 - Season 1 (2022)",
