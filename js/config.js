@@ -83,14 +83,15 @@ function Utils()
   };	
 
   this.urlTitle = function(title) {
-    title = title.replaceAll(' ', '_');
-    return title;
+    return title.replaceAll('&apos;', '%27').
+    replaceAll(' ', '_');
   };  
 
   this.escTitle = function(title) {
-    title = title.replaceAll('%20', ' ');
-    title = title.replaceAll('_', ' ');
-    return title;
+    return title.replaceAll('%20', ' ').
+    replaceAll('%27', '\'s').
+    replaceAll('_', ' ');
+    
   };
 
   this.bylineCpt = function(tags) {

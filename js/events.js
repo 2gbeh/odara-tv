@@ -121,9 +121,9 @@ function getActivity2(row) {
 
 function getActivity3(row) { 
   const Path = Enums.path, Prefix = Enums.act3Pfx,
-  param  = UTILS.urlTitle(row.title),
-  url = `${Context.root}${Context.req}${Path[row.status]}/${param}`,
-  data = { title: `${Context.appname}`, text: `${Prefix[row.status]} ${row.title}`, url: url };  
+  text  = `${Prefix[row.status]} ${row.title.replaceAll('&apos;','%27')}`,
+  url = `${Context.root}${Context.req}${Path[row.status]}/${UTILS.urlTitle(row.title)}`,
+  data = { title: `${Context.appname}`, text: text, url: url };  
   
   var i = '<i class="fi fi-rs-share" title="Share"></i>', 
   p = '<p>Share</p>',
@@ -240,7 +240,7 @@ function noScriptHook (data) {
     //if (picker.includes(p)) {
     //if (e.status > 0) {
     //if (e.status == 4) {
-    if (e.thumbnail.indexOf('bill5') > -1) {
+    if (e.thumbnail.indexOf('wework') > -1) {
       li += getBlog(e, i, n);
       n++;
     }
@@ -251,7 +251,7 @@ function noScriptHook (data) {
 function textAreaHook (value) {  
   const main = document.querySelector('main');
   let = css = 'style="width:100%;height:25em;font-size:12px;"';
-  var value_f = value, embed = '';;
+  var value_f = value, embed = '';
   
   value_f = value_f.replace(/img-blog/g,'img');
   value_f = value_f.replace(/img-kite/g,'img/kite');
