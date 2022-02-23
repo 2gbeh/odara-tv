@@ -1,6 +1,42 @@
 {
   "root": [   
     {
+      "thumbnail": "teg1.jpg",
+      "title": "The Endgame - Season 1 (2022)",
+      "subtitle": "E1-6",
+      "tags": "Morena Baccarin, Ryan Michelle Bathe, Noah Bean, Costa Ronin, Jordan Johnson-Hinds, Kamal A. Bolden",
+      "posted": "2022-02-21",
+      "meta": "5.8/10",
+      "summary": "Elena Federova, a criminal mastermind orchestrates 7 simultaneous NYC Bank heists; relentless FBI agent Val Turner, vows to take her down but soon begins to question her own sense of justice.",
+      "url": "https://o2tvseries.com/The-Endgame/Season-01/index.html",
+      "status": 3,
+      "date": "2022-02-23"
+    }, 
+    {
+      "thumbnail": "bowl.jpg",
+      "title": "Pepsi Super Bowl LVI Halftime Show",
+      "subtitle": "14:40",
+      "tags": "NFL",
+      "posted": "2022-02-13",
+      "meta": "62m",      
+      "summary": "Watch Hip Hop legends; Dr. Dre, Snoop Dogg, Eminem, Mary J. Blige and Kendrick Lamar, jam toe-to-toe at the 56th Pepsi Super Bowl halftime show.",
+      "url": "https://m.youtube.com/watch?v=gdsUKphmB3Y",
+      "status": 4,
+      "date": "2022-02-23"
+    },   
+    {
+      "thumbnail": "susp.jpg",
+      "title": "Suspicion - Season 1 (2022)",
+      "subtitle": "E1-8",
+      "tags": "Uma Thurman, Noah Emmerich, Angel Coulby, Elyes Gabel, Elizabeth Henstridge, Kunal Nayyar, Georgina Campbell, Tom Rhys Harries, Lydia West",
+      "posted": "2022-02-04",
+      "meta": "5.9/10",
+      "summary": "When 4 strangers are suspected of kidnapping the son of a prominent US media mogul; they must band together to prove their innocence but the truth may not be what it seems.",
+      "url": "https://o2tvseries.com/Suspicion/Season-01/index.html",
+      "status": 3,
+      "date": "2022-02-23"
+    }, 
+    {
       "thumbnail": "iftc.jpeg",
       "title": "In from the Cold - Season 1 (2022)",
       "subtitle": "E1-8",
@@ -323,7 +359,19 @@
       "url": "https://o2tvseries.com/Foundation/Season-01/index.html",
       "status": 3,
       "date": "2021-12-29"
-    },    
+    }, 
+    {
+      "thumbnail": "okop.jpg",
+      "title": "Our Kind of People - Season 1 (2021)",
+      "subtitle": "E1-12",
+      "tags": "Joe Morton, Yaya DaCosta, Alana Bright, Nadine Ellis, Morris Chestnut, L. Scott Caldwell, Lance Gross, Debbi Morgan, Jeff Hephner, Rhyon Nicole Brown",
+      "posted": "2021-09-21",
+      "meta": "4.3/10",
+      "summary": "Strong-willled single mom, Angela Vaughn moves to Oak Bluffs on Martha's Vineyard to reclaim and restore her family's legacy but soon discovers a dark secret that will shake up the community forever.",
+      "url": "https://o2tvseries.com/Our-Kind-of-People/Season-01/index.html",
+      "status": 3,
+      "date": "2022-02-23"
+    },        
     {
       "thumbnail": "squid.jpeg",
       "title": "Squid Game - Season 1 (2021)",
