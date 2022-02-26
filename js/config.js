@@ -5,7 +5,7 @@ const apache = () => window.location.hostname === '127.0.0.1' || window.location
 // Object Literal (state only)
 const Context = {
   domain: window.location.hostname,
-  server: apache()? 'atari': 'odara-tv',
+  server: apache()? 'odara': 'odara-tv',
   root: apache()? 'http://127.0.0.1:5500/': 'https://2gbeh.github.io/odara-tv/',
   appname: 'Odara TV',
   alias: 'Odara',
