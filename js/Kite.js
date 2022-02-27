@@ -589,6 +589,42 @@ class Kite {
         "status": 0,
         "date": "2022-01-26"
       },                        
+      {
+        "img": "alx.png",
+        "org": null,
+        "who": null,
+        "tel": null,
+        "url": "https://alxafrica.com",
+        "status": 0,
+        "date": "2022-02-27"
+      }, 
+      {
+        "img": "mscloud.png",
+        "org": null,
+        "who": null,
+        "tel": null,
+        "url": "https://cloudsociety.microsoft.com",
+        "status": 0,
+        "date": "2022-02-27"
+      },                        
+      {
+        "img": "fairmoney.png",
+        "org": null,
+        "who": null,
+        "tel": null,
+        "url": "https://fairmoney.io",
+        "status": 0,
+        "date": "2022-02-27"
+      }, 
+      {
+        "img": "verticalteams.png",
+        "org": null,
+        "who": null,
+        "tel": null,
+        "url": "https://verticalteams.net",
+        "status": 0,
+        "date": "2022-02-27"
+      },                        
     ];
   }
 }
