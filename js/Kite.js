@@ -625,6 +625,24 @@ class Kite {
         "status": 0,
         "date": "2022-02-27"
       },                        
+      {
+        "img": "datacamp2.png",
+        "org": null,
+        "who": null,
+        "tel": null,
+        "url": "https://datacamp.com",
+        "status": 0,
+        "date": "2022-03-03"
+      }, 
+      {
+        "img": "cwryse.png",
+        "org": null,
+        "who": null,
+        "tel": null,
+        "url": "https://cowrywise.com",
+        "status": 0,
+        "date": "2022-03-03"
+      },                        
     ];
   }
 }
