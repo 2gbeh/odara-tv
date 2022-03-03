@@ -1,6 +1,18 @@
 {
   "root": [      
     {
+      "thumbnail": "tdrop.jpg",
+      "title": "The Dropout - Season 1 (2022)",
+      "subtitle": "E1-8",
+      "tags": "Amanda Seyfried, Naveen Andrews, Bill Irwin, Utkarsh Ambudkar, James Hiroyuki Liao, Laurie Metcalf, Michael Ironside, Nicky Endres",
+      "posted": "2022-03-03",
+      "meta": "8.1/10",
+      "summary": "Ambition gone terribly wrong as Elizabeth Holmes invents healthcare product that puts millions of patients at risk, and loses everything in the blink of an eye.",
+      "url": "https://o2tvseries.com/The-Dropout/Season-01/index.html",
+      "status": 3,
+      "date": "2022-03-03"
+    },     
+    {
       "thumbnail": "teg1.jpg",
       "title": "The Endgame - Season 1 (2022)",
       "subtitle": "E1-6",
