@@ -642,7 +642,16 @@ class Kite {
         "url": "https://cowrywise.com",
         "status": 0,
         "date": "2022-03-03"
-      },                        
+      },   
+      {
+        "img": "pirple.png",
+        "org": null,
+        "who": null,
+        "tel": null,
+        "url": "https://pirple.com",
+        "status": 0,
+        "date": "2022-03-09"
+      },                              
     ];
   }
 }
