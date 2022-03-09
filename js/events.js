@@ -103,7 +103,7 @@ function getSummary(row) {
 
 function getActivity1(posted) {
   var t = `<time itemprop="datePublished" datetime="${posted}">${UTILS.shortDate(posted)}</time>`,
-  i = '<i class="fi fi-rs-clock" title="Date"></i>',
+  i = `<i class="fi fi-rs-clock" title="${posted}"></i>`,
   p = `<p title="${posted}">${t}<p>`,
   res = i + p;
   //cli(res);
