@@ -1,6 +1,18 @@
 {
   "root": [       
     {
+      "thumbnail": "ipcress.jpeg",
+      "title": "The IPCRESS File - Season 1 (2022)",
+      "subtitle": "E1-6",
+      "tags": "Joe Cole, Lucy Boynton, Tom Hollander, Bashy",
+      "posted": "2022-03-06",
+      "meta": "7.0/10",
+      "summary": "When a Nuclear Scientist goes missing, ex-con turned spy, Harry Palmer must go on an undercover mission to prevent threat sensitive information from falling into the wrong hands.",
+      "url": "https://o2tvseries.com/The-Ipcress-File/Season-01/index.html",
+      "status": 3,
+      "date": "2022-03-14"
+    }, 
+    {
       "thumbnail": "tdrop.jpg",
       "title": "The Dropout - Season 1 (2022)",
       "subtitle": "E1-8",
