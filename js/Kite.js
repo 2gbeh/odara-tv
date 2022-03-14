@@ -652,6 +652,15 @@ class Kite {
         "status": 0,
         "date": "2022-03-09"
       },                              
+      {
+        "img": "findycode.png",
+        "org": null,
+        "who": null,
+        "tel": null,
+        "url": "https://global.findy-code.io",
+        "status": 0,
+        "date": "2022-03-14"
+      },                              
     ];
   }
 }
