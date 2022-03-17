@@ -660,7 +660,16 @@ class Kite {
         "url": "https://global.findy-code.io",
         "status": 0,
         "date": "2022-03-14"
-      },                              
+      },
+      {
+        "img": "renaissance.png",
+        "org": null,
+        "who": null,
+        "tel": null,
+        "url": "https://renaissance.ng/fellowship",
+        "status": 0,
+        "date": "2022-03-14"
+      },
     ];
   }
 }
