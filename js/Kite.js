@@ -670,6 +670,15 @@ class Kite {
         "status": 0,
         "date": "2022-03-14"
       },
+      {
+        "img": "bsbi.png",
+        "org": null,
+        "who": null,
+        "tel": null,
+        "url": "https://web.berlinsbi.com",
+        "status": 0,
+        "date": "2022-03-24"
+      },
     ];
   }
 }
