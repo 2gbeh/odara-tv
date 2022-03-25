@@ -1,5 +1,5 @@
 {
-  "root": [       
+  "root": [   
     {
       "thumbnail": "tadamp.jpg",
       "title": "The Adam Project (2022)",
@@ -109,6 +109,30 @@
       "date": "2022-03-25"
     },     
     {
+      "thumbnail": "marryme.png",
+      "title": "Marry Me (2022)",
+      "subtitle": "332MB",
+      "tags": "Jennifer Lopez, Owen Wilson, Maluma, John Bradley, Chloe Coleman, Sarah Silverman, Utkarsh Ambudkar",
+      "posted": "2022-02-11",
+      "meta": "7.1/10",
+      "summary": "Pop Superstar plans to get married during a stage performance but learns about her fiance's cheating ways and marries a total stranger in the crowd instead.",
+      "url": "https://www.sabishare.com/file/oOPFJvKSJ30-marry-me-2022-netnaija-com-mp4",
+      "status": 2,
+      "date": "2022-03-25"
+    },       
+    {
+      "thumbnail": "iwyb.jpg",
+      "title": "I Want You Back (2022)",
+      "subtitle": "240MB",
+      "tags": "Charlie Day, Jenny Slate, Scott Eastwood, Gina Rodriguez, Manny Jacinto, Pete Davidson, ",
+      "posted": "2022-02-11",
+      "meta": "6.9/10",
+      "summary": "Peter and Emma realize they were both dumped on the same date. Their commiseration turns into a mission when they see each of their ex-partners have moved on.",
+      "url": "https://www.sabishare.com/file/LwRDZtzTf21-i-want-you-back-2022-netnaija-com-mp4",
+      "status": 2,
+      "date": "2022-03-25"
+    },       
+    {
       "thumbnail": "kimi.jpeg",
       "title": "Kimi (2022)",
       "subtitle": "180MB",
@@ -132,6 +156,18 @@
       "status": 3,
       "date": "2022-02-23"
     }, 
+    {
+      "thumbnail": "tpbay.jpg",
+      "title": "What Happened To The Pirate Bay Founders",
+      "subtitle": "11:15",
+      "tags": "Logically Answered",
+      "posted": "2022-01-28",
+      "meta": "3.34m",      
+      "summary": "As the go-to place to get pirated software, games, and movies; copyright holders have been trying to shut down The Pirate Bay and put the founders behind bars.",
+      "url": "https://m.youtube.com/watch?v=BR_v5xl4Jnw",
+      "status": 4,
+      "date": "2022-03-25"
+    },      
     {
       "thumbnail": "iftc.jpeg",
       "title": "In from the Cold - Season 1 (2022)",
@@ -349,6 +385,18 @@
       "date": "2022-01-13"
     },
     {
+      "thumbnail": "hogucci.jpg",
+      "title": "House of Gucci (2021)",
+      "subtitle": "401MB",
+      "tags": "Jared Leto, Lady Gaga, Adam Driver, Al Pacino, Salma Hayek, Jeremy Irons",
+      "posted": "2021-11-26",
+      "meta": "7.0/10",
+      "summary": "When Patrizia Reggiani marries into the Gucci family, her ambition begins to unravel the family legacy and triggers a spiral of betrayal, revenge and murder.",
+      "url": "https://www.sabishare.com/file/putPafaRj45-house-of-gucci-2021-netnaija-com-mp4",
+      "status": 2,
+      "date": "2022-03-25"
+    },       
+    {
       "thumbnail": "ps5.jpg",
       "title": "How Sony PlayStation 5 was built",
       "subtitle": "15:03",
@@ -431,6 +479,18 @@
       "url": "https://o2tvseries.com/Invasion/Season-01/index.html",
       "status": 3,
       "date": "2021-12-29"
+    },    
+    {
+      "thumbnail": "wikileaks.jpg",
+      "title": "The CIA&apos;s plot to stop Julian Assange of WikiLeaks",
+      "subtitle": "20:16",
+      "tags": "Jake Tran",
+      "posted": "2021-10-21",
+      "meta": "3.92m",      
+      "summary": "Inside the CIA's secret war plans against WikiLeaks. In 2017, as Julian Assange began his fifth year holed up in Ecuador’s embassy in London...",
+      "url": "https://m.youtube.com/watch?v=3fq83qbjPCM",
+      "status": 4,
+      "date": "2022-03-25"
     },    
     {
       "thumbnail": "venom.jpeg",
@@ -636,6 +696,18 @@
       "status": 4,
       "date": "2021-12-24"    
     },
+    {
+      "thumbnail": "bliss.jpeg",
+      "title": "Bliss (2021)",
+      "subtitle": "332MB",
+      "tags": "Owen Wilson, Salma Hayek, Nesta Cooper, Bill Nye, Jorge Lendeborg, Madeline Zima",
+      "posted": "2021-02-05",
+      "meta": "3.4/10",
+      "summary": "An unfulfilled man and a mysterious woman believe they are living in a simulated reality, but when their world begins to change, they must decide what's truly real.",
+      "url": "https://fzmovies.net/movie-Bliss--hmp4.htm",
+      "status": 2,
+      "date": "2022-03-25"
+    },    
     {
       "thumbnail": "supintel.jpeg",
       "title": "Superintelligence (2020)",
