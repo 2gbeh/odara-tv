@@ -679,6 +679,24 @@ class Kite {
         "status": 0,
         "date": "2022-03-24"
       },
+      {
+        "img": "yellowcard.png",
+        "org": null,
+        "who": null,
+        "tel": null,
+        "url": "https://yellowcard.io",
+        "status": 0,
+        "date": "2022-03-28"
+      },
+      {
+        "img": "bundle.png",
+        "org": null,
+        "who": null,
+        "tel": null,
+        "url": "https://bundle.africa",
+        "status": 0,
+        "date": "2022-03-28"
+      },
     ];
   }
 }
