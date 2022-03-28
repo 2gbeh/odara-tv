@@ -1,6 +1,18 @@
 {
   "root": [   
     {
+      "thumbnail": "halo.jpeg",
+      "title": "Halo - Season 1 (2022)",
+      "subtitle": "E1-9",
+      "tags": "Pablo Schreiber, Jen Taylor, Yerin Ha, Shabana Azmi, Natascha McElhone, Danny Sapani, Bokeem Woodbine",
+      "posted": "2022-03-24",
+      "meta": "7.1/10",
+      "summary": "Set in the 26th century, Master Chief 'John', leader of cybernetically enhanced super-soldiers (UNSC Spartan), defends humanity from itself and The Covenant.",
+      "url": "https://o2tvseries.com/Halo/Season-01/index.html",
+      "status": 3,
+      "date": "2022-03-28"
+    },   
+    {
       "thumbnail": "tadamp.jpg",
       "title": "The Adam Project (2022)",
       "subtitle": "316MB",
