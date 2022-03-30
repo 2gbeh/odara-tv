@@ -1,5 +1,5 @@
 {
-  "root": [   
+  "root": [         
     {
       "thumbnail": "halo.jpeg",
       "title": "Halo - Season 1 (2022)",
@@ -73,6 +73,18 @@
       "date": "2022-03-17"
     },     
     {
+      "thumbnail": "duolingo.png",
+      "title": "How I built a $2.79 billion app called Duolingo",
+      "subtitle": "15:42",
+      "tags": "CNBC Make It",
+      "posted": "2022-02-26",
+      "meta": "262.4k",      
+      "summary": "By the time Luis von Ahn turned 24, he was already a millionaire and I'm willing to bet you’re one of the millions of people who use his technology everyday.",
+      "url": "https://m.youtube.com/watch?v=ri-tzZcGYk0",
+      "status": 4,
+      "date": "2022-03-30"
+    },          
+    {
       "thumbnail": "teg1.jpg",
       "title": "The Endgame - Season 1 (2022)",
       "subtitle": "E1-6",
@@ -144,6 +156,18 @@
       "status": 2,
       "date": "2022-03-25"
     },       
+    {
+      "thumbnail": "dotn.jpeg",
+      "title": "Death on the Nile (2022)",
+      "subtitle": "273MB",
+      "tags": "Kenneth Branagh, Armie Hammer, Emma Mackey, Gal Gadot, Tom Batman, Sophie Okonedo, Ali Fazal, Letitia Wright, Russell Brand, Rose Leslie",
+      "posted": "2022-02-11",
+      "meta": "6.3/10",
+      "summary": "An Egyptian vacation aboard a glamorous river steamer turns into a terrifying search for a murderer when a couple's idyllic honeymoon is tragically cut short.",
+      "url": "https://www.sabishare.com/file/qqGGEtWLJ23-death-on-the-nile-2022-netnaija-com-mp4",
+      "status": 2,
+      "date": "2022-03-30"
+    },
     {
       "thumbnail": "kimi.jpeg",
       "title": "Kimi (2022)",
@@ -880,7 +904,7 @@
       "thumbnail": "fifa19.jpeg",
       "title": "EA Sports FIFA 19 World Tour",
       "subtitle": "05:36",
-      "tags": "EA SPORTS FIFA",
+      "tags": "EA Sports FIFA",
       "posted": "2018-11-16",
       "meta": "3.5m",      
       "summary": "Bang that confetti bruv! Watch Marcus Rashford and Jesse Lingard take on Stormzy and Michael Dapaah in the new EA Sports FIFA 19 No-Rules, Kick-off mode.",
@@ -948,6 +972,18 @@
       "status": 2,
       "date": "2022-01-26"
     },     
+    {
+      "thumbnail": "motoe.jpeg",
+      "title": "Murder on the Orient Express (2017)",
+      "subtitle": "229MB",
+      "tags": "Kenneth Branagh, Johnny Depp, Daisy Ridley, Michelle Pfeiffer, Tom Batman, Willem Dafoe, Penelope Cruz, Josh Gad, Judi Dench",
+      "posted": "2017-11-10",
+      "meta": "5.9/10",
+      "summary": "Following a murder on a train, a detective investigates and find the culprit amongst the passengers aboard, and also learns the true identity of the victim.",
+      "url": "https://www.sabishare.com/file/wdokiFhaC74-murder-on-the-orient-express-2017-hc-netnaija-com-mp4",
+      "status": 2,
+      "date": "2022-03-30"
+    },      
     {
       "thumbnail": "mfelt.jpg",
       "title": "Mark Felt - The Man Who Brought Down the White House (2017)",
