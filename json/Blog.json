@@ -1,5 +1,5 @@
 {
-  "root": [         
+  "root": [           
     {
       "thumbnail": "halo.jpeg",
       "title": "Halo - Season 1 (2022)",
@@ -12,6 +12,18 @@
       "status": 3,
       "date": "2022-03-28"
     },   
+    {
+      "thumbnail": "tcont.jpg",
+      "title": "The Contractor (2022)",
+      "subtitle": "219MB",
+      "tags": "Chris Pine, Gillian Jacobs, Ben Foster, Eddie Marsan, Kiefer Sutherland",
+      "posted": "2022-03-18",
+      "meta": "5.0/10",
+      "summary": "Involuntarily discharged from the Army, a special forces sergeant lands a contract with a private underground military force. When his very first assignment goes awry, the elite soldier finds himself hunted and on the run, caught in a dangerous conspiracy and fighting to stay alive long enough to get home and uncover the true motives of those who betrayed him.",
+      "url": "https://www.sabishare.com/file/hNGiXGwXZ78-the-contractor-2022-netnaija-com-mp4",
+      "status": 2,
+      "date": "2022-04-04"
+    },     
     {
       "thumbnail": "tadamp.jpg",
       "title": "The Adam Project (2022)",
