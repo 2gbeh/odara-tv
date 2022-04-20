@@ -69,7 +69,7 @@ ul {
   margin: 0;
   list-style-type: none;
 }
-ul li {
+ul > li {
   display: inline-block;
   vertical-align: top;
 }
@@ -117,6 +117,7 @@ form input,
 form select,
 form textarea,
 form button {
+  outline: none;
   background-color: inherit;
   font-size: inherit;
   -webkit-transition: all 0.1s;
@@ -130,14 +131,15 @@ form textarea[readonly] {
 form input:focus,
 form select:focus,
 form textarea:focus {
-  background-color: #ffc;
-  outline: none;
+  background-color: #fafafa;
 }
 address,
+cite,
 span,
 var,
 i,
 u {
+  text-decoration: none;
   font-style: normal;
   display: inline-block;
 }
@@ -152,7 +154,8 @@ footer {
 }
 header {
   padding: 0 20px;
-  min-height: 60px;}
+  min-height: 60px;
+}
 main {
   min-height: 683px;
 }
@@ -168,6 +171,19 @@ figure {
 }
 
 /* PREDEFINED */
+[bd-1] {
+  border: 1px solid red;
+}
+[bd-2] {
+  border: 1px solid green;
+}
+[bd-3] {
+  border: 1px solid blue;
+}
+[bd-4] {
+  border: 1px solid orange;
+}
+
 .h1 {
   font-size: 32px;
 }
@@ -247,20 +263,20 @@ figure {
 }
 .container-sm {
   margin: 0 auto;
-  width: 455px;
+  width: 320px;
 }
 .container-md {
   margin: 0 auto;
-  width: 683px;
+  width: 640px;
 }
 .container-lg {
   margin: 0 auto;
-  width: 1366px;
+  width: 1280px;
 }
 
 .wrap {
   margin: 0 auto;
-  width: 1366px;
+  width: 1024px;
 }
 .nowrap {
   white-space: nowrap;
@@ -347,6 +363,18 @@ figure {
   background-position: top center;
   background-attachment: scroll;
   background-size: cover;
+}
+.thumbnail-alt {
+  background-image: url("../default.png");
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-attachment: scroll;
+  background-size: cover;
+  border: 1px solid #ccc;
+  border-radius: 100%;
+  margin: 0;
+  padding: 0;
+  display: inline-block;
 }
 .slider {
   -webkit-transition-property: background-image;
@@ -596,11 +624,11 @@ VIEWPORT
   }  
 */
 
-.fabb {    
+.fabb {
   position: fixed;
   bottom: 25px;
   right: 25px;
-  z-index: 99;  
+  z-index: 99;
   border-radius: 100%;
   box-shadow: 0 2px 0 #222;
 }
@@ -610,10 +638,10 @@ VIEWPORT
   color: #fff;
   border-radius: 100%;
   width: 60px;
-  height: 60px;  
+  height: 60px;
   display: block;
   -webkit-transition: all 0.1s;
-  transition: all 0.1s;  
+  transition: all 0.1s;
 }
 .fabb a:hover {
   background-color: #fff;
@@ -651,3 +679,47 @@ VIEWPORT
     font-size: 30px;
   }  
 */
+
+/* .fi {
+  color: #777;
+  margin-right: 5px;
+  font-size: 14px;
+  position: relative;
+  bottom: -2px;
+} */
+
+.bi {
+  border-radius: 20px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  text-align: center;
+  font-size: 12px;
+  font-weight: normal;
+  display: inline-block;
+  position: relative;
+  bottom: -1px;
+}
+.bi-visible {
+  background-color: #eee;
+  color: #555;
+  margin-left: 5px;
+  padding-left: 6px;
+  padding-right: 6px;
+  min-width: 25px;
+}
+.bi-hidden {
+  visibility: hidden;
+}
+
+/* ****************************************************** */
+
+@media only screen and (max-width: 960px) {
+  .container,
+  .container-sm,
+  .container-md,
+  .container-lg,
+  .wrapper,
+  .wrap {
+    width: 100%;
+  }
+}
