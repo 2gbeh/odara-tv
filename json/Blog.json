@@ -1,5 +1,17 @@
 {
-  "root": [           
+  "root": [ 
+    {
+      "thumbnail": "chivalry.png",
+      "title": "Chivalry - Season 1 (2022)",
+      "subtitle": "E1-6",
+      "tags": "Steve Coogan, Sarah Solemani, Wanda Sykes, Sienna Miller, Adjani Salmon, Kaylen Luke",
+      "posted": "2022-04-21",
+      "meta": "5.6/10",
+      "summary": "A successful producer and a woke writer/director are brought closer by a creeping feeling that they are just pawns in the studio's agenda for a Saudi buyout.",
+      "url": "https://o2tvseries.com/Chivalry/Season-01/index.html",
+      "status": 3,
+      "date": "2022-04-27"
+    },   
     {
       "thumbnail": "topea.jpg",
       "title": "Calendly - The $3b scheduling platform founded by Tope Awotona",
@@ -13,6 +25,42 @@
       "date": "2022-04-15"
     },  
     {
+      "thumbnail": "ambul.jpg",
+      "title": "Ambulance (2022)",
+      "subtitle": "471MB",
+      "tags": "Eiza Gonzalez, Jake Gyllenhaal, Keir O'Donnell, Garret Dillahunt, Moses Ingram, Y. Abdul-Mateen II",
+      "posted": "2022-04-08",
+      "meta": "6.0/10",
+      "summary": "Needing money to cover his wife's medical bills, a decorated veteran teams up with his adoptive brother to steal $32 million from a Los Angeles bank.",
+      "url": "https://www.sabishare.com/file/JCYCCOjRk79-ambulance-2022-netnaija-com-mp4",
+      "status": 2,
+      "date": "2022-04-27"
+    },    
+    {
+      "thumbnail": "slowh.jpg",
+      "title": "Slow Horses - Season 1 (2022)",
+      "subtitle": "E1-12",
+      "tags": "Kristin Scott Thomas, Jack Lowden, Gary Oldman, Saskia Reeves, Antonio Aakeel, Brian Vernel",
+      "posted": "2022-04-01",
+      "meta": "8.6/10",
+      "summary": "Following a dysfunctional team of MI5 agents as they navigate the espionage world's smoke and mirrors to defend England from sinister forces.",
+      "url": "https://o2tvseries.com/Slow-Horses/Season-01/index.html",
+      "status": 3,
+      "date": "2022-04-27"
+    },     
+    {
+      "thumbnail": "mknight.jpg",
+      "title": "Moon Knight - Season 1 (2022)",
+      "subtitle": "E1-6",
+      "tags": "Oscar Isaac, May Calamawy, Ethan Hawke, F. Murray Abraham, Sofia Danu, Khalid Abdalla",
+      "posted": "2022-03-30",
+      "meta": "8.2/10",
+      "summary": "Steven Grant and mercenary Marc Spector investigate the mysteries of the Egyptian gods from inside the same body.",
+      "url": "https://o2tvseries.com/Moon-Knight/Season-01/index.html",
+      "status": 3,
+      "date": "2022-04-27"
+    },       
+    {
       "thumbnail": "halo.jpeg",
       "title": "Halo - Season 1 (2022)",
       "subtitle": "E1-9",
@@ -24,6 +72,18 @@
       "status": 3,
       "date": "2022-03-28"
     },   
+    {
+      "thumbnail": "wecrashed.jpg",
+      "title": "WeCrashed - Season 1 (2022)",
+      "subtitle": "E1-8",
+      "tags": "Jared Leto, Kyle Marvin, Anne Hathaway, Anthony Edwards, Campbell Scott, Kim Eui-sung",
+      "posted": "2022-03-18",
+      "meta": "6.9/10",
+      "summary": "WeWork grows from a single co-working space into a global brand worth $47 billion in under a decade. Then, in less than a year, its valuation plummets.",
+      "url": "https://o2tvseries.com/WeCrashed/Season-01/index.html",
+      "status": 3,
+      "date": "2022-04-27"
+    },     
     {
       "thumbnail": "tcont.jpg",
       "title": "The Contractor (2022)",
@@ -60,6 +120,18 @@
       "status": 3,
       "date": "2022-03-14"
     }, 
+    {
+      "thumbnail": "thebatman.jpg",
+      "title": "The Batman (2022)",
+      "subtitle": "233MB",
+      "tags": "Robert Pattinson, Andy Serkis, Jeffrey Wright, Zoe Kravitz, Colin Farrel, John Turturro, Paul Dano",
+      "posted": "2022-03-04",
+      "meta": "7.9/10",
+      "summary": "Batman ventures into Gotham City's underworld when a sadistic killer leaves behind a trail of cryptic clues.",
+      "url": "https://www.sabishare.com/file/cZBVXLSVX10-the-batman-2022-netnaija-com-mp4",
+      "status": 2,
+      "date": "2022-04-27"
+    },      
     {
       "thumbnail": "tdrop.jpg",
       "title": "The Dropout - Season 1 (2022)",
@@ -119,7 +191,7 @@
       "url": "https://o2tvseries.com/The-Endgame/Season-01/index.html",
       "status": 3,
       "date": "2022-02-23"
-    }, 
+    },     
     {
       "thumbnail": "spacef2.jpeg",
       "title": "Space Force - Season 2 (2022)",
@@ -131,7 +203,31 @@
       "url": "https://o2tvseries.com/Space-Force/Season-02/index.html",
       "status": 3,
       "date": "2022-02-27"
-    }, 
+    },
+    {
+      "thumbnail": "severance.png",
+      "title": "Severance - Season 1 (2022)",
+      "subtitle": "E1-9",
+      "tags": "Adam Scott, Britt Lower, John Turturro, Zach Cherry, Patricia Arquette, Tramell Tillman, Dichen Lachman",
+      "posted": "2022-02-18",
+      "meta": "8.8/10",
+      "summary": "Mark leads a team of employees whose memories have been surgically divided between work and personal life, but he soon begins to discover the truth about their jobs.",
+      "url": "https://o2tvseries.com/Severance/Season-01/index.html",
+      "status": 3,
+      "date": "2022-04-27"
+    },       
+    {
+      "thumbnail": "uncharted.jpeg",
+      "title": "Uncharted (2022)",
+      "subtitle": "291MB",
+      "tags": "Tom Holland, Mark wahlberg, Antonio Banderas, Sophia Taylor Ali, Tati Gabriellem, Bryan Cranston",
+      "posted": "2022-02-17",
+      "meta": "5.5/10",
+      "summary": "Treasure hunter Victor 'Sully' Sullivan recruits street-smart Nathan Drake to help him recover a 500-year-old lost fortune amassed by explorer Ferdinand Magellan.",
+      "url": "https://www.sabishare.com/file/BowDzdsuk11-uncharted-2022-netnaija-com-mp4",
+      "status": 2,
+      "date": "2022-04-27"
+    },       
     {
       "thumbnail": "bowl.jpg",
       "title": "Pepsi Super Bowl LVI Halftime Show",
@@ -455,7 +551,7 @@
       "url": "https://www.sabishare.com/file/putPafaRj45-house-of-gucci-2021-netnaija-com-mp4",
       "status": 2,
       "date": "2022-03-25"
-    },       
+    },           
     {
       "thumbnail": "ps5.jpg",
       "title": "How Sony PlayStation 5 was built",
@@ -469,6 +565,18 @@
       "date": "2022-01-20"
     },     
     {
+      "thumbnail": "cowboyb.jpg",
+      "title": "Cowboy Bebop - Season 1 (2021)",
+      "subtitle": "E1-10",
+      "tags": "John Cho, Daniella Pineda, Mustafa Shakir, Elena Satine, Alex Hassell, Lucy Currey",
+      "posted": "2021-11-19",
+      "meta": "5.7/10",
+      "summary": "A ragtag crew of bounty hunters chases down the galaxy's most dangerous criminals; they'll save the world for the right price.",
+      "url": "https://o2tvseries.com/Cowboy-Bebop/Season-01/index.html",
+      "status": 3,
+      "date": "2022-04-27"
+    },       
+    {
       "thumbnail": "yj.jpeg",
       "title": "Yellowjackets - Season 1 (2021)",
       "subtitle": "E1-10",
@@ -480,6 +588,18 @@
       "status": 3,
       "date": "2022-01-19"
     },
+    {
+      "thumbnail": "mayorok.png",
+      "title": "Mayor of Kingstown - Season 1 (2021)",
+      "subtitle": "E1-10",
+      "tags": "Kyle Chandler, Jeremy Renner, Taylor Handley, Dianne Wiest, Aidan Gillen, Emma Laird, Hugh Dillon, Tobi Bamtefa, Pha'rez Lass, Andrew Howard",
+      "posted": "2021-11-14",
+      "meta": "5.8/10",
+      "summary": "A crime drama about an important contemporary issue, America's prison system, where the business of incarceration is the only thriving industry.",
+      "url": "https://o2tvseries.com/Mayor-of-Kingstown/Season-01/index.html",
+      "status": 3,
+      "date": "2022-04-27"
+    },       
     {
       "thumbnail": "wework.jpeg",
       "title": "Adam Neumann first public interview since leaving WeWork",
