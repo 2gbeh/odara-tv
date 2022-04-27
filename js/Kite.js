@@ -697,6 +697,78 @@ class Kite {
         "status": 0,
         "date": "2022-03-28"
       },
+      {
+        "img": "jumia_easter.png",
+        "org": null,
+        "who": null,
+        "tel": null,
+        "url": "https://jumia.com.ng",
+        "status": 0,
+        "date": "2022-04-15"
+      },
+      {
+        "img": "digitalocean.png",
+        "org": null,
+        "who": null,
+        "tel": null,
+        "url": "https://www.digitalocean.com/reports/tech-stack-guide-for-startups",
+        "status": 0,
+        "date": "2022-04-27"
+      },
+      {
+        "img": "ciscomeraki.png",
+        "org": null,
+        "who": null,
+        "tel": null,
+        "url": "https://radius.webinaze.com",
+        "status": 0,
+        "date": "2022-04-27"
+      },
+      {
+        "img": "fairmoney2.png",
+        "org": null,
+        "who": null,
+        "tel": null,
+        "url": "https://fairmoney.io",
+        "status": 0,
+        "date": "2022-04-27"
+      },      
+      {
+        "img": "gcuacuk.png",
+        "org": null,
+        "who": null,
+        "tel": null,
+        "url": "https://gcu.ac.uk",
+        "status": 0,
+        "date": "2022-04-27"
+      },      
+      {
+        "img": "itskillscentre.png",
+        "org": null,
+        "who": null,
+        "tel": null,
+        "url": "https://itskillscentre.com.ng",
+        "status": 0,
+        "date": "2022-04-27"
+      },      
+      {
+        "img": "metaschool.png",
+        "org": null,
+        "who": null,
+        "tel": null,
+        "url": "https://metaschool.so",
+        "status": 0,
+        "date": "2022-04-27"
+      },      
+      {
+        "img": "adobe.png",
+        "org": null,
+        "who": null,
+        "tel": null,
+        "url": "https://adobe.com",
+        "status": 0,
+        "date": "2022-04-27"
+      },      
     ];
   }
 }
