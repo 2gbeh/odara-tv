@@ -1,5 +1,5 @@
 {
-  "root": [ 
+  "root": [  
     {
       "thumbnail": "chivalry.png",
       "title": "Chivalry - Season 1 (2022)",
@@ -888,6 +888,18 @@
       "status": 2,
       "date": "2022-03-25"
     },    
+    {
+      "thumbnail": "psychoux.jpg",
+      "title": "Psychology behind UX Design - Harrish Murugesan",
+      "subtitle": "18:00",
+      "tags": "TEDx Talks",
+      "posted": "2020-12-03",
+      "meta": "54.1k",      
+      "summary": "UI/UX plays a vital role in deciding whether or not people use a particular product. This is accomplished by tapping into human senses such as sight, touch, and hearing.",
+      "url": "https://m.youtube.com/watch?v=fdXI9yznzz8",
+      "status": 4,
+      "date": "2022-05-08"
+    },      
     {
       "thumbnail": "supintel.jpeg",
       "title": "Superintelligence (2020)",
