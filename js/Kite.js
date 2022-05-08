@@ -769,6 +769,51 @@ class Kite {
         "status": 0,
         "date": "2022-04-27"
       },      
+      {
+        "img": "microtecpe.png",
+        "org": null,
+        "who": null,
+        "tel": null,
+        "url": "https://microtecpe.com",
+        "status": 0,
+        "date": "2022-05-08"
+      },      
+      {
+        "img": "ncs.png",
+        "org": null,
+        "who": null,
+        "tel": null,
+        "url": "https://ncs.org.ng",
+        "status": 0,
+        "date": "2022-05-08"
+      },      
+      {
+        "img": "marketeeer1.png",
+        "org": null,
+        "who": null,
+        "tel": null,
+        "url": "https://learn.marketeeer.com",
+        "status": 0,
+        "date": "2022-05-08"
+      },      
+      {
+        "img": "marketeeer2.png",
+        "org": null,
+        "who": null,
+        "tel": null,
+        "url": "https://learn.marketeeer.com",
+        "status": 0,
+        "date": "2022-05-08"
+      },      
+      {
+        "img": "cwwtechafrica.png",
+        "org": null,
+        "who": null,
+        "tel": null,
+        "url": "https://cwwtechafrica.com",
+        "status": 0,
+        "date": "2022-05-08"
+      },      
     ];
   }
 }
