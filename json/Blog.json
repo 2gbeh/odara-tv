@@ -1,6 +1,18 @@
 {
   "root": [  
     {
+      "thumbnail": "mathcs.jpg",
+      "title": "The man who revolutionized Computer Science with Math",
+      "subtitle": "07:49",
+      "tags": "Quanta Magazine",
+      "posted": "2022-05-17",
+      "meta": "768.5k",      
+      "summary": "Leslie Lamport (at Microsoft) revolutionized how computers interact. The Turing Award-winning computer scientist pioneered the field of distributed systems.",
+      "url": "https://m.youtube.com/watch?v=rkZzg7Vowao",
+      "status": 4,
+      "date": "2022-05-29"
+    },   
+    {
       "thumbnail": "bayview.png",
       "title": "Inside Google&apos;s Eco-Friendly Campus in Bay View",
       "subtitle": "04:58",
