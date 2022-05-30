@@ -2,7 +2,7 @@
 /* CSS Document */
 .fabb {
   display: inline-block;
-  /* display: none; */
+  display: none;
 }
 main .card .thumbnail sup {
   display: inline-block;
