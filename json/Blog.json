@@ -1,6 +1,18 @@
 {
   "root": [  
     {
+      "thumbnail": "scaleai.jpg",
+      "title": "Meet Alexandr Wang, 25-year old  startup founder of Scale AI",
+      "subtitle": "06:51",
+      "tags": "Forbes",
+      "posted": "2022-06-12",
+      "meta": "532.5k",      
+      "summary": "Scale AI uses artificial intelligence to automate image recognition and audio transcription. Its customers include GM Cruise, Alphabet, Uber, P&G and others.",
+      "url": "https://m.youtube.com/watch?v=FgzyLoSkL5k",
+      "status": 4,
+      "date": "2022-06-25"
+    },   
+    {
       "thumbnail": "mathcs.jpg",
       "title": "The man who revolutionized Computer Science with Math",
       "subtitle": "07:49",
