@@ -823,6 +823,15 @@ class Kite {
         "status": 0,
         "date": "2022-05-29"
       },      
+      {
+        "img": "zacrac.png",
+        "org": null,
+        "who": null,
+        "tel": null,
+        "url": "https://bit.ly/zacracbootcamp",
+        "status": 0,
+        "date": "2022-06-25"
+      },      
       
     ];
   }
