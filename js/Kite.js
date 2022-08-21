@@ -849,6 +849,15 @@ class Kite {
         "url": "https://schoolsify.academy",
         "status": 0,
         "date": "2022-08-17"
+      },      
+      {
+        "img": "darey_ms.png",
+        "org": null,
+        "who": null,
+        "tel": null,
+        "url": "https://darey.io/master-special",
+        "status": 0,
+        "date": "2022-08-21"
       }, 
     ];
   }
