@@ -1,5 +1,5 @@
 {
-  "root": [  
+  "root": [ 
     {
       "thumbnail": "dosh.jpg",
       "title": "Breaking into the Spirits Industry with Dos Hombres",
@@ -913,6 +913,18 @@
       "date": "2021-12-29"
     }, 
     {
+      "thumbnail": "chakra.png",
+      "title": "Getting Started with Chakra UI - Nigerian-made React Library",
+      "subtitle": "05:44",
+      "tags": "Chakra UI",
+      "posted": "2021-04-12",
+      "meta": "79.5k",
+      "summary": "Create progressive web apps with Chakra UI's simple, modular and accessible component library that gives you the building blocks to build your React/Next apps.",
+      "url": "https://m.youtube.com/watch?v=wI2vqXsjsIo",
+      "status": 4,
+      "date": "2022-09-08"    
+    },
+    {
       "thumbnail": "sasrednot.jpeg",
       "title": "SAS - Red Notice (2021)",
       "subtitle": "264MB",
@@ -1103,7 +1115,19 @@
       "url": "https://fzmovies.net/movie-The%20Dissident--hmp4.htm",
       "status": 2,
       "date": "2022-01-26"
-    },        
+    },  
+    {
+      "thumbnail": "graphql.jpg",
+      "title": "GraphQL - The Documentary",
+      "subtitle": "27:57",
+      "tags": "Honeypot",
+      "posted": "2019-06-24",
+      "meta": "469.5k",
+      "summary": "Co-creators Lee Byron, Dan Schafer & Nick Schrock explore why and how GraphQL came to be and it's impact on big tech companies like GitHub, Meta, Twitter, Airbnb.",
+      "url": "https://m.youtube.com/watch?v=783ccP__No8",
+      "status": 4,
+      "date": "2022-09-08"    
+    },       
     {
       "thumbnail": "mibi.jpeg",
       "title": "Men in Black - International (2019)",
