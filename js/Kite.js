@@ -840,7 +840,7 @@ class Kite {
         "url": "https://amzn.to/3yee2oZ",
         "status": 0,
         "date": "2022-06-25"
-      },  
+      },      
       {
         "img": "schoolsify.png",
         "org": null,
@@ -858,7 +858,25 @@ class Kite {
         "url": "https://darey.io/master-special",
         "status": 0,
         "date": "2022-08-21"
-      }, 
+      },  
+      {
+        "img": "decagon2.png",
+        "org": null,
+        "who": null,
+        "tel": null,
+        "url": "https://decagon.institute",
+        "status": 0,
+        "date": "2022-09-08"
+      },    
+      {
+        "img": "tutorialspoint.png",
+        "org": null,
+        "who": null,
+        "tel": null,
+        "url": "https://tutorialspoint.com",
+        "status": 0,
+        "date": "2022-09-08"
+      },    
     ];
   }
 }
