@@ -1,2 +1,2 @@
 # odara-tv
-Tech News, Movies and TV Shows
+Tech News, Movies & TV Shows
