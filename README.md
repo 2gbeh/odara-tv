@@ -20,4 +20,4 @@ $ cd odara-tv
 
 ## Documentation
 
-![Screenshot](./ui/screens.png)
+![Screenshot](./ui/screenshot.png)
