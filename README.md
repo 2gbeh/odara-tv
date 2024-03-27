@@ -6,6 +6,8 @@ Tech News, Movies & TV Shows
 [![CSS](https://img.shields.io/badge/CSS-3.x-264de4.svg)](https://www.w3schools.com/css/default.asp)
 [![JavaScript](https://img.shields.io/badge/JavaScript-6.x-fade34.svg)](https://www.w3schools.com/js/default.asp)
 
+![Github Pages](https://img.shields.io/badge/github%20pages-121013?style=for-the-badge&logo=github&logoColor=white)
+
 ## Installation
 
 ```
