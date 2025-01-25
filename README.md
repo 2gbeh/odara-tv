@@ -1,3 +1,9 @@
+<p align="center">
+  <a href="#" target="blank">
+    <img src="./odara-tv.png" width="100%" alt="" />
+  </a>
+</p>
+
 # Odara TV
 
 Tech News, Movies & TV Shows
@@ -10,9 +16,8 @@ Tech News, Movies & TV Shows
 
 ## Installation
 
-```
+```bash
 $ git clone https://github.com/2gbeh/odara-tv.git
-
 $ cd odara-tv
 ```
 
@@ -20,6 +25,6 @@ $ cd odara-tv
 
 > Live Server: http://127.0.0.1:5500/
 
-## Documentation
+## Screenshots
 
 ![Screenshot](./ui/screenshot.png)
